@@ -1,602 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Corpus / Cuerpo Ignaciano – Dossier</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    :root {
-      --bg: #0b1720;
-      --card: #111f2b;
-      --accent: #f2c14e;
-      --accent-soft: rgba(242,193,78,0.18);
-      --text-main: #f5f7fa;
-      --text-muted: #c3cedd;
-      --border-soft: #233344;
-      --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      --shadow-soft: 0 14px 40px rgba(0,0,0,0.45);
-      --radius-lg: 16px;
-      --radius-md: 10px;
-      --transition-fast: 0.18s ease-out;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: var(--font-main);
-      background: radial-gradient(circle at top, #19293a 0, #050910 55%, #020308 100%);
-      color: var(--text-main);
-      line-height: 1.6;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .page {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 32px 16px 64px;
-    }
-
-    header {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 24px;
-    }
-
-    .brand {
-      font-size: 18px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-    }
-
-    .lang-switch {
-      display: flex;
-      gap: 8px;
-      background: rgba(6,12,20,0.9);
-      padding: 4px;
-      border-radius: 999px;
-      border: 1px solid var(--border-soft);
-    }
-
-    .lang-btn {
-      border: none;
-      padding: 6px 14px;
-      border-radius: 999px;
-      background: transparent;
-      color: var(--text-muted);
-      font-size: 13px;
-      cursor: pointer;
-      transition: background var(--transition-fast), color var(--transition-fast);
-    }
-
-    .lang-btn.active {
-      background: var(--accent-soft);
-      color: var(--accent);
-    }
-
-    main {
-      background: radial-gradient(circle at top left, rgba(242,193,78,0.08), transparent 55%),
-                  radial-gradient(circle at bottom right, rgba(72,149,239,0.10), transparent 60%),
-                  var(--bg);
-      border-radius: var(--radius-lg);
-      border: 1px solid rgba(255,255,255,0.04);
-      box-shadow: var(--shadow-soft);
-      padding: 28px 22px 32px;
-    }
-
-    @media (min-width: 840px) {
-      main {
-        padding: 32px 32px 40px;
-      }
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 3fr) minmax(260px, 2fr);
-      gap: 24px;
-      align-items: flex-start;
-    }
-
-    @media (max-width: 720px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .eyebrow {
-      font-size: 11px;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 10px;
-    }
-
-    .title {
-      font-size: clamp(26px, 4vw, 32px);
-      margin: 0 0 8px;
-    }
-
-    .subtitle {
-      font-size: 14px;
-      color: var(--text-muted);
-      margin: 0 0 18px;
-    }
-
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: rgba(7,16,25,0.9);
-      border: 1px solid rgba(242,193,78,0.35);
-      color: var(--accent);
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      margin-bottom: 14px;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 9px 16px;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      font-size: 14px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background var(--transition-fast), transform var(--transition-fast),
-                  border-color var(--transition-fast), box-shadow var(--transition-fast);
-      white-space: nowrap;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #f2c14e, #f08c3a);
-      color: #111317;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.45);
-      border-color: rgba(0,0,0,0.4);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 14px 32px rgba(0,0,0,0.6);
-    }
-
-    .btn-ghost {
-      background: rgba(6,13,22,0.95);
-      color: var(--text-main);
-      border-color: var(--border-soft);
-    }
-
-    .btn-ghost:hover {
-      border-color: rgba(242,193,78,0.5);
-      background: rgba(10,20,32,0.98);
-    }
-
-    .hero-meta {
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-
-    .hero-meta span {
-      opacity: 0.9;
-    }
-
-    .hero-meta strong {
-      color: var(--accent);
-      font-weight: 500;
-    }
-
-    .card {
-      background: rgba(5,12,22,0.84);
-      border-radius: 14px;
-      padding: 14px 14px 16px;
-      border: 1px solid rgba(255,255,255,0.03);
-    }
-
-    @media (min-width: 840px) {
-      .card {
-        padding: 16px 16px 18px;
-      }
-    }
-
-    .card h3 {
-      margin-top: 0;
-      margin-bottom: 8px;
-      font-size: 15px;
-    }
-
-    .card p {
-      margin: 0 0 6px;
-      font-size: 13px;
-      color: var(--text-muted);
-    }
-
-    .badge-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 6px;
-    }
-
-    .badge {
-      font-size: 11px;
-      padding: 4px 8px;
-      border-radius: 999px;
-      background: rgba(13,26,40,0.9);
-      border: 1px solid rgba(195,206,221,0.28);
-      color: var(--text-muted);
-    }
-
-    .sections {
-      margin-top: 26px;
-      border-top: 1px solid rgba(255,255,255,0.04);
-      padding-top: 24px;
-    }
-
-    .section {
-      margin-bottom: 20px;
-    }
-
-    .section-title {
-      font-size: 18px;
-      margin: 0 0 4px;
-    }
-
-    .section-subtitle {
-      font-size: 13px;
-      color: var(--text-muted);
-      margin: 0 0 10px;
-    }
-
-    .section p {
-      font-size: 14px;
-      margin: 0 0 8px;
-    }
-
-    .section ul {
-      margin: 4px 0 8px 18px;
-      padding: 0;
-      font-size: 14px;
-      color: var(--text-muted);
-    }
-
-    .section li + li {
-      margin-top: 2px;
-    }
-
-    .meta {
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-
-    footer {
-      margin-top: 18px;
-      font-size: 11px;
-      color: var(--text-muted);
-      text-align: right;
-    }
-
-    .lang-block {
-      display: none;
-    }
-
-    .lang-block.active {
-      display: block;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignacio López Villanueva — Corpus / Cuerpo Ignaciano</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            font-weight: 600;
+        }
+        a {
+            color: #0055cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .lang {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        .section {
+            margin-top: 2.5rem;
+        }
+        .note {
+            background: #f2f2f2;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="page">
-    <header>
-      <div class="brand">CORPUS / CUERPO IGNACIANO</div>
-      <div class="lang-switch">
-        <button class="lang-btn active" data-lang="es">ES · Español</button>
-        <button class="lang-btn" data-lang="en">EN · English</button>
-      </div>
-    </header>
 
-    <main>
-      <!-- =========================================
-           BLOQUE ESPAÑOL
-      ========================================== -->
-      <div class="lang-block active" id="lang-es">
-        <div class="hero-grid">
-          <div>
-            <div class="eyebrow">Dossier de presentación · 2025–2026</div>
-            <h1 class="title">Cuerpo Ignaciano</h1>
-            <p class="subtitle">
-              Sistema filosófico-técnico interdisciplinar desarrollado por Ignacio López Villanueva,
-              que integra epistemología, teoría de sistemas, computación teórica, ética, fenomenología
-              y modelos de coherencia/negentropía en una arquitectura conceptual unificada.
-            </p>
-            <span class="pill">Validación externa · Borrador operativo</span>
+<h1>CORPUS / CUERPO IGNACIANO</h1>
 
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="dossier.pdf" target="_blank" rel="noopener">
-                Descargar dossier en PDF
-              </a>
-              <a class="btn btn-ghost" href="https://philpeople.org/profiles/ignacio-lopez-villanueva" target="_blank" rel="noopener">
-                Ver publicaciones en PhilPapers / PhilPeople
-              </a>
-            </div>
+<div class="lang">
+    <a href="#es">ES · Español</a> · 
+    <a href="#en">EN · English</a>
+</div>
 
-            <div class="hero-meta">
-              <span>Versión: <strong>ES</strong> · Foco en claridad conceptual y acceso rápido para evaluación crítica.</span>
-            </div>
-          </div>
+<hr>
 
-          <aside class="card">
-            <h3>Resumen ejecutivo</h3>
-            <p>
-              El Corpus Ignaciano no es un texto aislado, sino un sistema completo: axiomas, métricas,
-              modelos, pseudocódigo y aplicaciones organizadas en torno a la coherencia operativa y la
-              negentropía estructural.
-            </p>
-            <ul>
-              <li>Más de 30 textos en abierto</li>
-              <li>Axiomas y modelos formales</li>
-              <li>Interfaz entre filosofía, sistemas e IA</li>
-            </ul>
-            <p class="meta">
-              Esta página ofrece un punto de entrada breve para investigadores interesados en evaluar
-              el sistema y su potencial teórico y aplicado.
-            </p>
-            <div class="badge-list">
-              <span class="badge">Epistemología</span>
-              <span class="badge">Teoría de sistemas</span>
-              <span class="badge">IA y complejidad</span>
-              <span class="badge">Negentropía</span>
-            </div>
-          </aside>
-        </div>
+<section id="es" class="section">
+<h2>Dossier de presentación · 2025–2026</h2>
 
-        <div class="sections">
-          <section class="section">
-            <h2 class="section-title">1. Presentación general</h2>
-            <p class="section-subtitle">
-              Marco común para pensar información, acción y coherencia de sistemas humanos y técnicos.
-            </p>
-            <p>
-              El Corpus Ignaciano busca articular un marco común para pensar la información, la acción
-              y la coherencia de sistemas humanos y técnicos. Su núcleo es la idea de que la verdad,
-              la responsabilidad y la continuidad de sistemas complejos pueden modelarse como formas
-              de coherencia operativa y de resistencia a la entropía estructural.
-            </p>
-            <!-- TODO: aquí puedes pegar el resto del texto de la sección 1 en español -->
-          </section>
+<p><strong>Cuerpo Ignaciano</strong> es un sistema filosófico‑técnico interdisciplinar desarrollado por Ignacio López Villanueva, que integra epistemología, teoría de sistemas, computación teórica, ética, fenomenología y modelos de coherencia/negentropía en una arquitectura conceptual unificada.</p>
 
-          <section class="section">
-            <h2 class="section-title">2. Estructura del corpus</h2>
-            <p class="section-subtitle">
-              Textos, niveles y tipos de formalización.
-            </p>
-            <ul>
-              <li>Bloques conceptuales (axiomas, definiciones, esquemas de coherencia).</li>
-              <li>Modelos formales (diagramas, pseudocódigo, estructuras de datos).</li>
-              <li>Aplicaciones (casos, ejercicios, propuestas de diseño institucional y técnico).</li>
-            </ul>
-            <!-- TODO: texto adicional si quieres -->
-          </section>
+<p><a href="dossier.pdf" target="_blank">Descargar dossier en PDF</a></p>
 
-          <section class="section">
-            <h2 class="section-title">3. Áreas de diálogo</h2>
-            <p class="section-subtitle">
-              Posibles cruces con teorías existentes.
-            </p>
-            <p>
-              El corpus se ofrece como interfaz de diálogo con tradiciones como: epistemología social,
-              teoría de la decisión, diseño de sistemas, filosofía de la información, ética de la IA
-              y estudios de complejidad.
-            </p>
-            <!-- TODO: texto adicional si quieres -->
-          </section>
+<h3>Nota sobre Google Scholar</h3>
+<div class="note">
+<p><strong>Nota (ES):</strong><br>
+Este es el perfil público de un investigador independiente.  
+Al no contar con un correo institucional verificado, el perfil de Google Scholar no aparece en las búsquedas internas.  
+Sin embargo, todas las publicaciones, métricas y enlaces mostrados en este sitio y en mis perfiles académicos son oficiales.</p>
+</div>
 
-          <section class="section" id="contacto-es">
-            <h2 class="section-title">4. Lectura crítica y contacto</h2>
-            <p class="section-subtitle">
-              Invitación a evaluación externa y comentarios breves.
-            </p>
-            <p>
-              El Corpus Ignaciano se encuentra en una fase de validación externa. Se agradece
-              especialmente la lectura crítica por parte de investigadores interesados en epistemología,
-              teoría de sistemas, IA, complejidad, filosofía de la información y áreas afines.
-            </p>
-            <div class="card">
-              <h3>Invitación a investigadores</h3>
-              <p>
-                Si desea comentar el dossier, sugerir conexiones teóricas, señalar limitaciones o explorar
-                posibles aplicaciones, puede escribir directamente al autor.
-              </p>
-              <p class="meta">
-                Correo de contacto:
-                <a href="mailto:iglv003@gmail.com">iglv003@gmail.com</a>
-              </p>
-              <p class="meta">
-                Se agradecen especialmente comentarios breves que ayuden a situar el corpus en el mapa de
-                teorías existentes y a orientar futuras formalizaciones.
-              </p>
-            </div>
-          </section>
-        </div>
+<h3>Enlaces oficiales</h3>
+<ul>
+    <li><a href="https://scholar.google.com/citations?user=TU_ID" target="_blank">Google Scholar</a></li>
+    <li><a href="https://orcid.org/0009-0008-4817-5XXX" target="_blank">ORCID</a></li>
+    <li><a href="https://zenodo.org/communities/TU_COMUNIDAD" target="_blank">Zenodo (Corpus)</a></li>
+    <li><a href="https://philpeople.org/profiles/TU_PERFIL" target="_blank">PhilPapers / PhilPeople</a></li>
+</ul>
 
-        <footer>
-          Corpus Ignaciano · Dossier de presentación · Ignacio López Villanueva · 2025–2026
-        </footer>
-      </div>
+<h3>Líneas de investigación</h3>
+<ul>
+    <li>Filosofía computacional</li>
+    <li>Negentropía</li>
+    <li>Ética formal</li>
+    <li>Coherencia operativa</li>
+    <li>Arquitectura del corpus</li>
+</ul>
 
-      <!-- =========================================
-           BLOQUE INGLÉS
-      ========================================== -->
-      <div class="lang-block" id="lang-en">
-        <div class="hero-grid">
-          <div>
-            <div class="eyebrow">Presentation dossier · 2025–2026</div>
-            <h1 class="title">Ignatian Corpus</h1>
-            <p class="subtitle">
-              Interdisciplinary philosophical–technical system developed by Ignacio López Villanueva,
-              integrating epistemology, systems theory, theoretical computation, ethics, phenomenology
-              and coherence/negentropy models into a unified conceptual architecture.
-            </p>
-            <span class="pill">External validation · Working draft</span>
+<h3>Obra destacada</h3>
+<p><strong>Fórmula Cian Universal: Relación Fundamental de Coherencia Operativa</strong><br>
+Preprint en Zenodo (2026)</p>
 
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="dossier.pdf" target="_blank" rel="noopener">
-                Download dossier (PDF)
-              </a>
-              <a class="btn btn-ghost" href="https://philpeople.org/profiles/ignacio-lopez-villanueva" target="_blank" rel="noopener">
-                View publications on PhilPapers / PhilPeople
-              </a>
-            </div>
+</section>
 
-            <div class="hero-meta">
-              <span>Language: <strong>EN</strong> · Focus on conceptual clarity and quick access for critical assessment.</span>
-            </div>
-          </div>
+<hr>
 
-          <aside class="card">
-            <h3>Executive summary</h3>
-            <p>
-              The Ignatian Corpus is not a single text but a complete system: axioms, metrics, models,
-              pseudocode and applications organized around operational coherence and structural
-              negentropy.
-            </p>
-            <ul>
-              <li>30+ open-access texts</li>
-              <li>Axioms and formal models</li>
-              <li>Interface between philosophy, systems and AI</li>
-            </ul>
-            <p class="meta">
-              This page offers a short entry point for researchers interested in evaluating the system
-              and its theoretical and applied potential.
-            </p>
-            <div class="badge-list">
-              <span class="badge">Epistemology</span>
-              <span class="badge">Systems theory</span>
-              <span class="badge">AI & complexity</span>
-              <span class="badge">Negentropy</span>
-            </div>
-          </aside>
-        </div>
+<section id="en" class="section">
+<h2>Presentation Dossier · 2025–2026</h2>
 
-        <div class="sections">
-          <section class="section">
-            <h2 class="section-title">1. General presentation</h2>
-            <p class="section-subtitle">
-              A common framework to think information, action and coherence in human and technical systems.
-            </p>
-            <p>
-              The Ignatian Corpus seeks to articulate a shared framework for thinking about information,
-              action and coherence in complex systems, both human and technical. Its core claim is that
-              truth, responsibility and the continuity of complex systems can be modelled as forms of
-              operational coherence and resistance to structural entropy.
-            </p>
-            <!-- TODO: aquí puedes pegar el resto de la versión inglesa de la sección 1 -->
-          </section>
+<p><strong>Cuerpo Ignaciano</strong> is an interdisciplinary philosophical‑technical system developed by Ignacio López Villanueva, integrating epistemology, systems theory, theoretical computation, ethics, phenomenology, and coherence/negentropy models into a unified conceptual architecture.</p>
 
-          <section class="section">
-            <h2 class="section-title">2. Corpus structure</h2>
-            <p class="section-subtitle">
-              Texts, levels and types of formalization.
-            </p>
-            <ul>
-              <li>Conceptual blocks (axioms, definitions, coherence schemes).</li>
-              <li>Formal models (diagrams, pseudocode, data structures).</li>
-              <li>Applications (cases, exercises, institutional and technical design proposals).</li>
-            </ul>
-            <!-- TODO: texto adicional en inglés si quieres -->
-          </section>
+<p><a href="dossier.pdf" target="_blank">Download dossier (PDF)</a></p>
 
-          <section class="section">
-            <h2 class="section-title">3. Dialogue areas</h2>
-            <p class="section-subtitle">
-              Possible intersections with existing theories.
-            </p>
-            <p>
-              The corpus is proposed as an interface for dialogue with traditions such as social
-              epistemology, decision theory, systems design, philosophy of information, AI ethics and
-              complexity studies.
-            </p>
-            <!-- TODO: texto adicional en inglés si quieres -->
-          </section>
+<h3>Google Scholar Note</h3>
+<div class="note">
+<p><strong>Note (EN):</strong><br>
+This is the public profile of an independent researcher.  
+Without a verified institutional email, the Google Scholar profile does not appear in internal searches.  
+However, all publications, metrics, and links displayed here and in my academic profiles are official.</p>
+</div>
 
-          <section class="section" id="contact-en">
-            <h2 class="section-title">4. Critical reading and contact</h2>
-            <p class="section-subtitle">
-              Invitation to external evaluation and short feedback.
-            </p>
-            <p>
-              The Ignatian Corpus is currently in a phase of external validation. Critical reading is
-              especially welcome from researchers working in epistemology, systems theory, AI, complexity,
-              philosophy of information and related areas.
-            </p>
-            <div class="card">
-              <h3>Invitation to researchers</h3>
-              <p>
-                If you wish to comment on the dossier, suggest theoretical connections, point out
-                limitations or explore possible applications, you may contact the author directly.
-              </p>
-              <p class="meta">
-                Contact email:
-                <a href="mailto:iglv003@gmail.com">iglv003@gmail.com</a>
-              </p>
-              <p class="meta">
-                Short comments that help locate the corpus within existing theoretical landscapes and
-                guide future formalizations are especially appreciated.
-              </p>
-            </div>
-          </section>
-        </div>
+<h3>Official Links</h3>
+<ul>
+    <li><a href="https://scholar.google.com/citations?user=TU_ID" target="_blank">Google Scholar</a></li>
+    <li><a href="https://orcid.org/0009-0008-4817-5XXX" target="_blank">ORCID</a></li>
+    <li><a href="https://zenodo.org/communities/TU_COMUNIDAD" target="_blank">Zenodo (Corpus)</a></li>
+    <li><a href="https://philpeople.org/profiles/TU_PERFIL" target="_blank">PhilPapers / PhilPeople</a></li>
+</ul>
 
-        <footer>
-          Ignatian Corpus · Presentation dossier · Ignacio López Villanueva · 2025–2026
-        </footer>
-      </div>
-    </main>
-  </div>
+</section>
 
-  <script>
-    const buttons = document.querySelectorAll('.lang-btn');
-    const blocks  = {
-      es: document.getElementById('lang-es'),
-      en: document.getElementById('lang-en')
-    };
-
-    buttons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const lang = btn.dataset.lang;
-        buttons.forEach(b => b.classList.toggle('active', b === btn));
-        Object.entries(blocks).forEach(([code, el]) => {
-          el.classList.toggle('active', code === lang);
-        });
-        document.documentElement.lang = lang;
-      });
-    });
-  </script>
 </body>
 </html>
+
+
