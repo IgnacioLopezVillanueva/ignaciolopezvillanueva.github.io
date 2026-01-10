@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corpus Ignaciano · Presentación</title>
+    <title>Corpus Ignaciano · Bilingüe</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -36,7 +36,21 @@
             display: block;
             margin-bottom: 6px;
         }
+        .section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
     </style>
+
+    <script>
+        function showSection(lang) {
+            document.getElementById("es").classList.remove("active");
+            document.getElementById("en").classList.remove("active");
+            document.getElementById(lang).classList.add("active");
+        }
+    </script>
 </head>
 
 <body>
@@ -44,13 +58,19 @@
 <h1>CORPUS / CUERPO IGNACIANO</h1>
 
 <div class="lang">
-    ES · Español · EN · English
+    <a href="#" onclick="showSection('es')">ES · Español</a> · 
+    <a href="#" onclick="showSection('en')">EN · English</a>
 </div>
+
+<!-- ============================
+     SECCIÓN EN ESPAÑOL
+     ============================ -->
+<div id="es" class="section active">
 
 <h2>Dossier de presentación · 2025–2026</h2>
 
 <p>
-Cuerpo Ignaciano es un sistema filosófico‑técnico interdisciplinar desarrollado por Ignacio López Villanueva, que integra epistemología, teoría de sistemas, computación teórica, ética formal, fenomenología y modelos de coherencia/negentropía en una arquitectura conceptual unificada.
+Cuerpo Ignaciano es un sistema filosófico‑técnico interdisciplinar desarrollado por Ignacio López Villanueva. Integra epistemología, teoría de sistemas, computación teórica, ética formal, fenomenología y modelos de coherencia/negentropía en una arquitectura conceptual unificada.
 </p>
 
 <p>
@@ -60,26 +80,39 @@ Cuerpo Ignaciano es un sistema filosófico‑técnico interdisciplinar desarroll
 <div class="links">
     <h3>Enlaces oficiales</h3>
 
-    <a href="https://scholar.google.com/citations?user=1B2gskwAAAAJ" target="_blank">
-        Google Scholar
-    </a>
+    <a href="https://scholar.google.com/citations?user=1B2gskwAAAAJ" target="_blank">Google Scholar</a>
+    <a href="https://orcid.org/0009-0008-4817-5228" target="_blank">ORCID</a>
+    <a href="https://zenodo.org/search?q=Ignacio%20L%C3%B3pez%20Villanueva" target="_blank">Zenodo</a>
+    <a href="https://philpeople.org/profiles" target="_blank">PhilPapers / PhilPeople</a>
+</div>
 
-    <a href="https://orcid.org/0009-0008-4817-5228" target="_blank">
-        ORCID
-    </a>
+</div>
 
-    <a href="#" target="_blank">
-        Zenodo (pendiente)
-    </a>
+<!-- ============================
+     SECCIÓN EN INGLÉS
+     ============================ -->
+<div id="en" class="section">
 
-    <a href="#" target="_blank">
-        PhilPapers / PhilPeople (pendiente)
-    </a>
+<h2>Presentation Dossier · 2025–2026</h2>
+
+<p>
+The Ignacian Body is an interdisciplinary philosophical‑technical system developed by Ignacio López Villanueva. It integrates epistemology, systems theory, theoretical computation, formal ethics, phenomenology, and models of coherence/negentropy into a unified conceptual architecture.
+</p>
+
+<p>
+    <a class="button" href="dossier.pdf" target="_blank">Download dossier (PDF)</a>
+</p>
+
+<div class="links">
+    <h3>Official Links</h3>
+
+    <a href="https://scholar.google.com/citations?user=1B2gskwAAAAJ" target="_blank">Google Scholar</a>
+    <a href="https://orcid.org/0009-0008-4817-5228" target="_blank">ORCID</a>
+    <a href="https://zenodo.org/search?q=Ignacio%20L%C3%B3pez%20Villanueva" target="_blank">Zenodo</a>
+    <a href="https://philpeople.org/profiles" target="_blank">PhilPapers / PhilPeople</a>
+</div>
+
 </div>
 
 </body>
 </html>
-
-
-
-
