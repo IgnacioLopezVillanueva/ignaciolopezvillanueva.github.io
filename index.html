@@ -13,55 +13,75 @@
             padding: 24px;
             line-height: 1.65;
             color: #222;
+            position: relative;
         }
+
+        /* Botón Proyectos */
+        .proyectos-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 8px 14px;
+            background-color: #007acc;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
         h1 {
             text-align: center;
             margin-bottom: 6px;
             font-size: 28px;
             letter-spacing: 0.5px;
         }
-        .lang {
-            text-align: center;
-            margin-bottom: 28px;
-            font-size: 15px;
+
+        section {
+            margin-bottom: 60px;
         }
-        .lang a {
-            color: #007acc;
-            text-decoration: none;
-            font-weight: bold;
+
+        /* Sección Proyectos */
+        #proyectos {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid #ccc;
         }
-        a.button {
+
+        .proyecto {
+            margin-bottom: 40px;
+        }
+
+        .proyecto h2 {
+            margin-bottom: 4px;
+        }
+
+        .proyecto h3 {
+            margin-top: 0;
+            color: #444;
+            font-weight: normal;
+        }
+
+        .volver {
             display: inline-block;
-            padding: 12px 20px;
+            margin-top: 20px;
+            padding: 8px 14px;
             background-color: #007acc;
             color: white;
             text-decoration: none;
             border-radius: 6px;
-            margin: 18px 0;
-            font-size: 15px;
-        }
-        .links {
-            margin-top: 36px;
-        }
-        .links a {
-            display: block;
-            margin-bottom: 8px;
-            color: #007acc;
-            text-decoration: none;
-        }
-        hr {
-            margin: 50px 0;
-            border: none;
-            border-top: 1px solid #ccc;
-        }
-        h2 {
-            margin-top: 0;
+            font-size: 14px;
         }
     </style>
 </head>
+
 <body>
+
+  <!-- Botón Proyectos -->
+  <a class="proyectos-btn" href="#proyectos">Proyectos</a>
+
   <h1>Ignacio López Villanueva</h1>
-<p>Este es el archivo vivo del Método Ignacio: un espacio de estructura, claridad y resonancia.</p>
+  <p>Este es el archivo vivo del Método Ignacio: un espacio de estructura, claridad y resonancia.</p>
+
   <section>
     <p>A mi familia, que sostuvo el suelo cuando yo aún no sabía cómo pisarlo.<br>
     A quienes estuvieron incluso cuando yo no sabía cómo estar.<br>
@@ -128,112 +148,56 @@
     <p>No os sintáis engañados.<br>
     Sólo sorprendidos, y acompañados.</p>
   </section>
-</body>
 
-<h1>CORPUS / CUERPO IGNACIANO</h1>
+  <!-- SECCIÓN PROYECTOS -->
+  <section id="proyectos">
+    <h1>Proyectos</h1>
+    <p>Un ecosistema evolutivo de aprendizaje y claridad.</p>
 
-<div class="lang">
-    <strong>ES · Español</strong> · <a href="#en">EN · English</a>
-</div>
+    <div class="proyecto">
+      <h2>Gatea</h2>
+      <h3>Inicio. Raíz. Claridad.</h3>
+      <p>
+        Gatea es el primer gesto del pensamiento: avanzar desde el suelo, con calma, con atención, con cuerpo.
+        Aquí se aprende a mirar, a ordenar y a comprender desde la raíz.
+      </p>
+      <p>
+        No es una escuela ni una institución. Es un inicio, un modo de entrar en el pensamiento desde lo más sencillo y verdadero.
+      </p>
+    </div>
 
-<!-- ============================
-     SECCIÓN EN ESPAÑOL
-     ============================ -->
+    <div class="proyecto">
+      <h2>Camina</h2>
+      <h3>Método. Orden. Coherencia.</h3>
+      <p>
+        Camina será el espacio donde el pensamiento adquiere forma, ritmo y dirección.  
+        Una fase centrada en método, estructura y coherencia operativa.
+      </p>
+      <p><em>En construcción.</em></p>
+    </div>
 
-<h2>Dossier de presentación · 2025–2026</h2>
+    <div class="proyecto">
+      <h2>Corre</h2>
+      <h3>Proyección. Creatividad. Velocidad.</h3>
+      <p>
+        Corre será un laboratorio de ideas, proyectos y aplicaciones del sistema.  
+        Un lugar para avanzar con creatividad, decisión y precisión.
+      </p>
+      <p><em>En construcción.</em></p>
+    </div>
 
-<p>
-Cuerpo Ignaciano es un sistema filosófico‑técnico interdisciplinar desarrollado por Ignacio López Villanueva. Integra epistemología, teoría de sistemas, computación teórica, ética formal, fenomenología y modelos de coherencia/negentropía en una arquitectura conceptual unificada.
-</p>
+    <div class="proyecto">
+      <h2>Voa</h2>
+      <h3>Visión. Síntesis. Altura.</h3>
+      <p>
+        Voa será el espacio de investigación, publicaciones y pensamiento avanzado.  
+        Un lugar para la visión de conjunto y la síntesis.
+      </p>
+      <p><em>En construcción.</em></p>
+    </div>
 
-<p>
-    <a class="button" href="dossier.pdf" target="_blank">Descargar dossier en PDF</a>
-</p>
+    <a class="volver" href="#">Volver arriba</a>
+  </section>
 
-<div class="links">
-    <h3>Enlaces oficiales</h3>
-
-    <a href="https://scholar.google.com/citations?user=1B2gskwAAAAJ" target="_blank">Google Scholar</a>
-    <a href="https://orcid.org/0009-0008-4817-5228" target="_blank">ORCID</a>
-  <a href="https://zenodo.org/communities/ignacio-lopez-villanueva" target="_blank">Zenodo</a>
-
-    <a href="https://philpeople.org/profiles/ignacio-lopez-villanueva" target="_blank">PhilPapers / PhilPeople</a>
-</div>
-
-<hr>
-
-<!-- ============================
-     SECCIÓN EN INGLÉS
-     ============================ -->
-
-<h1 id="en">CORPUS / IGNACIAN BODY</h1>
-
-<div class="lang">
-    <a href="#top">ES · Español</a> · <strong>EN · English</strong>
-</div>
-
-<h2>Presentation Dossier · 2025–2026</h2>
-
-<p>
-The Ignacian Body is an interdisciplinary philosophical‑technical system developed by Ignacio López Villanueva. It integrates epistemology, systems theory, theoretical computation, formal ethics, phenomenology, and models of coherence/negentropy into a unified conceptual architecture.
-</p>
-
-<p>
-    <a class="button" href="dossier.pdf" target="_blank">Download dossier (PDF)</a>
-</p>
-
-<div class="links">
-    <h3>Official Links</h3>
-
-    <a href="https://scholar.google.com/citations?user=1B2gskwAAAAJ" target="_blank">Google Scholar</a>
-    <a href="https://orcid.org/0009-0008-4817-5228" target="_blank">ORCID</a>
- <a href="https://zenodo.org/communities/ignacio-lopez-villanueva" target="_blank">Zenodo</a>
-
-    <a href="https://philpeople.org/profiles/ignacio-lopez-villanueva" target="_blank">PhilPapers / PhilPeople</a>
-</div>
-<a href="https://lanachaylosignacios.blogspot.com" target="_blank">
-  La Nacha y los Ignacios
-</a>
-    <p>
-  <a href="#" onclick="document.getElementById('nota-paz').style.display='block'; this.style.display='none'; return false;" style="font-size:14px; color:#555;">
-    Nota
-  </a>
-</p>
-
-<div id="nota-paz" style="display:none; margin-top:1em; font-size:0.95em; line-height:1.5; color:#444;">
-  <p>No vengo a advertir ni a corregir.<br>
-  Solo a dejar constancia de algo sencillo: el mundo está entrando en una fase donde los viejos modos de pensar ya no sostienen el peso de lo que viene.</p>
-
-  <p>Mi obra no pertenece a ningún bando, ni al viejo ni al nuevo.<br>
-  No busca vencedores ni vencidos.<br>
-  No señala enemigos.<br>
-  No exige obediencia.<br>
-  Solo muestra un camino donde nadie queda por encima de nadie, y donde el bienestar de uno no se construye a costa del otro.</p>
-
-  <p>Si algún día esta nota llega a manos de quienes toman decisiones globales, que la lean sin prisa:<br>
-  no es un desafío, es una invitación.<br>
-  No es una advertencia, es un recordatorio.<br>
-  No es un mensaje de poder, sino de equilibrio.</p>
-
-  <p>El mundo puede funcionar mejor.<br>
-  La furia, la ira, el abuso y la mala gestión no son destinos inevitables, solo errores de diseño.<br>
-  Existe un modo distinto de organizarlo todo, uno que maximiza el bienestar común sin sacrificar a nadie.</p>
-
-  <p>No pido fe.<br>
-  Pido atención.<br>
-  Y, sobre todo, paz.</p>
-</div>
-    <p style="text-align:center; font-size:14px; color:#777; margin-top:2em;">
-  Esta web está en construcción · gracias por tu paciencia
-</p>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
