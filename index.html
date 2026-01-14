@@ -13,11 +13,14 @@
             padding: 24px;
             line-height: 1.65;
             color: #222;
-            position: relative;
+        }
+
+        h1, h2, h3 {
+            font-weight: normal;
         }
 
         .proyectos-btn {
-            position: absolute;
+            position: fixed;
             top: 20px;
             right: 20px;
             padding: 8px 14px;
@@ -26,17 +29,18 @@
             text-decoration: none;
             border-radius: 6px;
             font-size: 14px;
+            z-index: 999;
         }
 
-        h1 {
-            text-align: center;
-            margin-bottom: 6px;
-            font-size: 28px;
-            letter-spacing: 0.5px;
-        }
-
-        .links {
-            margin-top: 36px;
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #007acc;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 18px 0;
+            font-size: 15px;
         }
 
         .links a {
@@ -52,52 +56,13 @@
             border-top: 1px solid #ccc;
         }
 
-        #proyectos {
-            margin-top: 80px;
-            padding-top: 40px;
-            border-top: 1px solid #ccc;
-        }
-
-        .proyecto {
-            margin-bottom: 40px;
-        }
-
-        .proyecto h3 {
-            margin-top: 0;
-            color: #444;
-            font-weight: normal;
-        }
-
-        .volver {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 8px 14px;
-            background-color: #007acc;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 14px;
-        }
-
         @media (max-width: 600px) {
-            body {
-                padding: 16px;
-            }
+            body { padding: 16px; }
             .proyectos-btn {
                 top: 12px;
                 right: 12px;
                 padding: 6px 12px;
                 font-size: 13px;
-            }
-            h1 {
-                font-size: 24px;
-            }
-            #proyectos {
-                margin-top: 60px;
-                padding-top: 30px;
-            }
-            .proyecto {
-                margin-bottom: 32px;
             }
         }
     </style>
@@ -105,12 +70,12 @@
 
 <body>
 
-  <a class="proyectos-btn" href="#proyectos">Proyectos</a>
+<a class="proyectos-btn" href="#proyectos">Proyectos</a>
 
-  <h1>Ignacio López Villanueva</h1>
-  <p>Este es el archivo vivo del Método Ignacio: un espacio de estructura, claridad y resonancia.</p>
+<h1>Ignacio López Villanueva</h1>
+<p>Este es el archivo vivo del Método Ignacio: un espacio de estructura, claridad y resonancia.</p>
 
-  <section>
+<section id="dedicatoria">
     <p>A mi familia, que sostuvo el suelo cuando yo aún no sabía cómo pisarlo.<br>
     A quienes estuvieron incluso cuando yo no sabía cómo estar.<br>
     A quienes sostuvieron más de lo que yo podía nombrar.</p>
@@ -175,53 +140,83 @@
 
     <p>No os sintáis engañados.<br>
     Sólo sorprendidos, y acompañados.</p>
-  </section>
+</section>
 
-  <hr>
+<hr>
 
-  <div class="links">
-      <h2>Enlaces</h2>
+<section id="proyectos">
+    <h2>Proyectos</h2>
 
-      <a href="https://zenodo.org/communities/ignacio-lopez-villanueva/records?q=&l=list&p=3&s=10&sort=newest" target="_blank">Zenodo</a>
-      <a href="https://philpeople.org/profiles/ignacio-lopez-villanueva" target="_blank">PhilPapers</a>
-      <a href="https://orcid.org/my-orcid?orcid=0009-0008-4817-5228" target="_blank">ORCID</a>
-      <a href="https://scholar.google.com/citations?user=fBQsjQ4AAAAJ&hl=es" target="_blank">Google Scholar</a>
-  </div>
+    <h3>Gatea</h3>
+    <p>Inicio. Raíz. Claridad.</p>
+    <p><em>En construcción.</em></p>
 
-  <section id="proyectos">
-    <h1>Proyectos</h1>
-    <p>Un ecosistema evolutivo de aprendizaje y claridad.</p>
+    <h3>Camina</h3>
+    <p>Método. Orden. Coherencia.</p>
+    <p><em>En construcción.</em></p>
 
-    <div class="proyecto">
-      <h2>Gatea</h2>
-      <h3>Inicio. Raíz. Claridad.</h3>
-      <p>Gatea es el primer gesto del pensamiento: avanzar desde el suelo, con calma, con atención, con cuerpo.</p>
-      <p>Aquí se aprende a mirar, a ordenar y a comprender desde la raíz.</p>
+    <h3>Corre</h3>
+    <p>Proyección. Creatividad. Velocidad.</p>
+    <p><em>En construcción.</em></p>
+
+    <h3>Voa</h3>
+    <p>Visión. Síntesis. Altura.</p>
+    <p><em>En construcción.</em></p>
+</section>
+
+<hr>
+
+<section id="dossier">
+    <h2>Dossier</h2>
+    <a href="dossier.pdf" class="button" target="_blank" rel="noopener">
+        Descargar dossier (PDF)
+    </a>
+</section>
+
+<hr>
+
+<section id="enlaces-es">
+    <h2>Enlaces</h2>
+    <div class="links">
+        <a href="https://zenodo.org/communities/ignacio-lopez-villanueva/records?q=&l=list&p=3&s=10&sort=newest" target="_blank">Zenodo</a>
+        <a href="https://philpeople.org/profiles/ignacio-lopez-villanueva" target="_blank">PhilPapers</a>
+        <a href="https://orcid.org/my-orcid?orcid=0009-0008-4817-5228" target="_blank">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=fBQsjQ4AAAAJ&hl=es" target="_blank">Google Scholar</a>
     </div>
+</section>
 
-    <div class="proyecto">
-      <h2>Camina</h2>
-      <h3>Método. Orden. Coherencia.</h3>
-      <p>Camina será el espacio donde el pensamiento adquiere forma, ritmo y dirección.</p>
-      <p><em>En construcción.</em></p>
+<hr>
+
+<section id="english">
+    <h2>English Version</h2>
+    <!-- AQUÍ PEGAS TU TEXTO EN INGLÉS -->
+</section>
+
+<hr>
+
+<section id="enlaces-en">
+    <h2>Links</h2>
+    <div class="links">
+        <a href="https://zenodo.org/communities/ignacio-lopez-villanueva/records?q=&l=list&p=3&s=10&sort=newest" target="_blank">Zenodo</a>
+        <a href="https://philpeople.org/profiles/ignacio-lopez-villanueva" target="_blank">PhilPapers</a>
+        <a href="https://orcid.org/my-orcid?orcid=0009-0008-4817-5228" target="_blank">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=fBQsjQ4AAAAJ&hl=es" target="_blank">Google Scholar</a>
     </div>
+</section>
 
-    <div class="proyecto">
-      <h2>Corre</h2>
-      <h3>Proyección. Creatividad. Velocidad.</h3>
-      <p>Corre será un laboratorio de ideas, proyectos y aplicaciones del sistema.</p>
-      <p><em>En construcción.</em></p>
-    </div>
+<hr>
 
-    <div class="proyecto">
-      <h2>Voa</h2>
-      <h3>Visión. Síntesis. Altura.</h3>
-      <p>Voa será el espacio de investigación, publicaciones y pensamiento avanzado.</p>
-      <p><em>En construcción.</em></p>
-    </div>
+<section id="nota">
+    <h2>Nota</h2>
+    <!-- AQUÍ PEGAS TU NOTA FINAL -->
+</section>
 
-    <a class="volver" href="#">Volver arriba</a>
-  </section>
+<hr>
+
+<section id="blog">
+    <h2>Blog</h2>
+    <!-- AQUÍ PEGAS "La Nacha y..." -->
+</section>
 
 </body>
 </html>
