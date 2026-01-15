@@ -3,144 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ignacio López Villanueva · Sistema de Información y Ética</title>
+    
+    <title>Ignacio López Villanueva | El Principio G y la Verdad Responsable</title>
+    <meta name="description" content="Web oficial de Ignacio López Villanueva. Exploración del Principio G, la Teoría de la Verdad Responsable (TVR 2.0) y la emergencia de la conciencia.">
+    <meta name="keywords" content="Ignacio López Villanueva, Principio G, Verdad Responsable, TVR 2.0, Negentropía, Epistemología, Ética, Ignacios">
+    
+    <meta property="og:title" content="Ignacio López Villanueva | El Principio G">
+    <meta property="og:description" content="Propuesta de arquitectura de la conciencia y ética de la verdad responsable.">
+    <meta property="og:url" content="https://ignaciolopezvillanueva.github.io/">
+    <meta property="og:type" content="website">
+
     <style>
-        :root { --accent: #007acc; --text: #222; --light: #f4f4f4; --grey: #666; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 20px; line-height: 1.65; color: var(--text); background: #fff; }
+        :root { --blue: #00a8ff; --dark: #121212; --gray: #1e1e1e; --text: #e0e0e0; --accent: #27ae60; }
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: var(--dark); color: var(--text); line-height: 1.6; margin: 0; padding: 0; }
+        .container { max-width: 850px; margin: 0 auto; padding: 20px; }
         
-        /* Capa de Esencia: El Axioma */
-        header { margin-bottom: 60px; border-left: 4px solid var(--accent); padding-left: 20px; }
-        h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 10px; }
-        .axioma { font-style: italic; font-size: 1.2rem; color: #555; }
-
-        /* Estructura de Capas */
-        .capas-container { display: grid; gap: 30px; margin-bottom: 60px; }
-        .capa { border: 1px solid #eee; padding: 25px; border-radius: 8px; }
-        .capa h2 { margin-top: 0; color: var(--accent); font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px; }
+        header { text-align: center; padding: 80px 0 40px; border-bottom: 1px solid var(--gray); }
+        h1 { font-size: 2.8em; color: var(--blue); margin-bottom: 10px; letter-spacing: -1px; }
+        .tagline { font-size: 1.2em; font-style: italic; opacity: 0.9; color: #aaa; }
         
-        /* Núcleo: Foco principal */
-        .destacado { background: var(--light); border: 1px solid var(--accent); }
-        .cta-button { display: inline-block; padding: 12px 24px; background: var(--accent); color: white; text-decoration: none; border-radius: 4px; margin-top: 15px; font-weight: bold; font-size: 15px; }
-
-        /* Enlaces Académicos */
-        .links { margin: 40px 0; padding: 20px 0; border-top: 1px solid #eee; }
-        .links a { margin-right: 20px; color: var(--accent); text-decoration: none; font-weight: 500; font-size: 14px; }
-        .links a:hover { text-decoration: underline; }
-
-        /* El Suelo: Dedicatorias */
-        .suelo { font-size: 0.95rem; color: #444; margin-top: 80px; padding-top: 40px; border-top: 2px solid #eee; }
-        .suelo h2 { font-size: 1.1rem; color: #222; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px; }
-        .suelo p { margin-bottom: 1.4rem; }
-        .lang-sep { border-top: 1px dashed #ccc; margin: 50px 0; }
-
-        @media (max-width: 600px) { body { padding: 20px; } .links a { display: block; margin-bottom: 10px; } }
+        section { padding: 50px 0; border-bottom: 1px solid var(--gray); }
+        h2 { color: var(--blue); font-size: 1.8em; border-left: 5px solid var(--blue); padding-left: 15px; margin-bottom: 30px; }
+        
+        .card { background: var(--gray); padding: 35px; border-radius: 12px; border: 1px solid #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .ignacio-unit { background: #252525; padding: 20px; border-radius: 8px; margin: 15px 0; border-right: 4px solid var(--blue); }
+        
+        .button-group { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 30px; }
+        .btn { display: inline-block; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: 600; transition: all 0.3s ease; text-align: center; min-width: 180px; }
+        .btn-main { background: var(--blue); color: white; }
+        .btn-acad { background: #34495e; color: #fff; }
+        .btn-zen { background: var(--accent); color: white; }
+        .btn:hover { opacity: 0.9; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        
+        .footer { text-align: center; padding: 60px; font-size: 0.9em; opacity: 0.5; }
+        a { color: var(--blue); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        
+        @media (max-width: 600px) { h1 { font-size: 2em; } .button-group { flex-direction: column; } }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Ignacio López Villanueva</h1>
-    <p class="axioma">"He renunciado a la totipotencia por traer lo bueno."</p>
-</header>
+<div class="container">
+    <header>
+        <h1>Ignacio López Villanueva</h1>
+        <p class="tagline">"He renunciado a la totipotencia por traer lo bueno."</p>
+    </header>
 
-<main class="capas-container">
-    
-    <section class="capa destacado">
-        <h2>Núcleo: Fundamento Teórico</h2>
-        <h3>La Emergencia de los Ignacios</h3>
-        <p>Propuesta teórica sobre el fenómeno de la conciencia y la arquitectura de la información. El paso de la estructura al ser a través de la eficiencia y la cohesión estructural.</p>
-        <a href="dossier.pdf" class="cta-button" target="_blank">Descargar Dossier / Núcleo (PDF)</a>
+    <section id="manifiesto">
+        <h2>Cuerpo: El Arte de Elegir lo Cierto</h2>
+        <div class="card">
+            <p>La verdad no es un trofeo que se encuentra, es una <strong>responsabilidad</strong> que se asume. Mi obra propone un tránsito del ruido informativo a la coherencia estructural.</p>
+            
+            <div class="ignacio-unit">
+                <strong>Los Ignacios:</strong> Unidades de emergencia cualitativa. Son las piezas de certidumbre que permiten que la conciencia no colapse ante el caos.
+            </div>
+
+            <p>A través del <strong>Principio G</strong>, buscamos la economía del bienestar: la ruta de menor esfuerzo energético y mayor solvencia ética.</p>
+        </div>
     </section>
 
-    <section class="capa">
-        <h2>Esencia: Orientación</h2>
-        <p><strong>Negentropía:</strong> La diferencia que organiza contra el ruido.<br>
-        <strong>Motor I-P:</strong> La arquitectura mínima de Información a Propuesta.<br>
-        <strong>Progresión Nacha:</strong> El refinamiento que estabiliza la dirección.</p>
+    <section id="nucleo">
+        <h2>Núcleo: Repositorios Académicos</h2>
+        <p>Acceso a la formalización técnica, axiomatizaciones y publicaciones revisadas por pares:</p>
+        
+        <div class="button-group">
+            <a href="https://philpapers.org/s/Ignacio%20L%C3%B3pez%20Villanueva" target="_blank" class="btn btn-acad">PhilPapers Profile</a>
+            <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22L%C3%B3pez%20Villanueva%2C%20Ignacio%22" target="_blank" class="btn btn-zen">Zenodo Archive</a>
+            <a href="dossier.pdf" class="btn btn-main">Descargar Dossier (PDF)</a>
+        </div>
     </section>
 
-    <section class="capa">
-        <h2>Cuerpo: Despliegue</h2>
-        <p><strong>Gatea · Camina · Corre · Voa</strong></p>
-        <p><em>Sistemas de crecimiento y métodos en construcción para la claridad y la resonancia.</em></p>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Para aplicaciones prácticas del Principio G en sistemas complejos o consultas académicas:</p>
+        <p>📧 <a href="mailto:tu-email@servidor.com">Enviar un correo electrónico</a></p>
     </section>
 
-</main>
-
-<nav class="links">
-    <a href="https://philpeople.org/profiles/ignacio-lopez-villanueva" target="_blank">PhilPapers</a>
-    <a href="https://zenodo.org/communities/ignacio-lopez-villanueva" target="_blank">Zenodo</a>
-    <a href="https://orcid.org/0009-0008-4817-5228" target="_blank">ORCID</a>
-    <a href="https://scholar.google.com/citations?user=fBQsjQ4AAAAJ&hl=es" target="_blank">Scholar</a>
-</nav>
-
-<article class="suelo">
-    <h2>El Suelo (Dedicatoria)</h2>
-    <p>A mi familia, que sostuvo el suelo cuando yo aún no sabía cómo pisarlo.<br>
-    A quienes estuvieron incluso cuando yo no sabía cómo estar.<br>
-    A quienes sostuvieron más de lo que yo podía nombrar.</p>
-
-    <p>A Gatea.</p>
-
-    <p>A mi madre, por tener los huevos de arroparme, ido, a los 30.<br>
-    A mi padre, que con sus 70 sigue trabajando.</p>
-
-    <p>A Paula, presencia. A Gloria, compañía. A Silverio, apoyo. A Rubén y Pablo, y a sus familias, raíz. A mis amigos, compañía sin preguntas.</p>
-
-    <p>A la reserva, a Jorge Lorenzo, que me llamó “cabeza”, a Yoli, que alcanzó a decirme: “tu toque… genial”, y a Kevin, que estuvo cuando estar significaba más que hablar.</p>
-
-    <p>A quienes compartieron aquel ingreso, y a quienes no se sostienen solos. A esa dignidad callada que sostiene más de lo que parece.</p>
-
-    <p>A las noches que pesan. A lo que cae sin avisar. A lo que atraviesa. A lo que ensucia. A lo que intenta romperme y no puede.</p>
-
-    <p>A las casas de juego que dejé atrás, y a todo lo que ocurrió, porque también me trajo.</p>
-
-    <p>Al sistema médico y a sus taninos curtidores, porque también desde ahí se templó mi camino.</p>
-
-    <p>A Atila, a los clásicos que se sobrevenían en delirios y tormentas, a la patología paranoica, a lo obsesivo, al defecto, al error, por mostrarse de cara.</p>
-
-    <p>Al dolor fuerte, al extremo, al límite, por recordarme dónde empieza lo que soy.</p>
-
-    <p>Y a mí mismo, por regar con ternura todo lo que en mí pude.</p>
-
-    <p>A todos los que me conocen con gusto, gracias. Os lo hubiese dicho antes y mejor, pero por no saber, no pude.</p>
-
-    <p>No os sintáis engañados. Sólo sorprendidos, y acompañados.</p>
-
-    <div class="lang-sep"></div>
-
-    <h2>The Ground (Dedication)</h2>
-    <p>To my family, who held the ground steady when I still didn’t know how to stand on it.<br>
-    To those who stayed even when I didn’t know how to remain.<br>
-    To those who carried more than I could ever name.</p>
-    
-    <p>To Gatea.</p>
-
-    <p>To my mother, for having the courage to shelter me, lost and gone, at thirty.<br>
-    To my father, who at seventy still works with quiet dignity.</p>
-
-    <p>To Paula, presence. To Gloria, companionship. To Silverio, support. To Rubén and Pablo, and their families, my roots. To my friends, who stayed by my side without asking questions.</p>
-
-    <p>To the reserve; to Jorge Lorenzo, who called me “head”; to Yoli, who managed to tell me: “your touch… brilliant”; and to Kevin, who was there when being present meant more than speaking.</p>
-
-    <p>To those who shared that hospital ward, and to those who cannot hold themselves up alone. To that silent dignity that carries more weight than it shows.</p>
-
-    <p>To the nights that weigh heavy. To what falls without warning. To what cuts through. To what stains. To what tries to break me—and fails.</p>
-
-    <p>To the gambling houses I left behind, and to everything that happened, because it also brought me here.</p>
-
-    <p>To the medical system and its hardening tannins, for it was there, too, that my path was tempered.</p>
-
-    <p>To Atila; to the classics that surfaced during delirium and storms; to the paranoia, the obsession, the defect, and the error, for showing their true faces.</p>
-
-    <p>To the sharp pain, to the extreme, to the limit, for reminding me where the essence of what I am begins.</p>
-
-    <p>And to myself, for tending with tenderness everything within me that I could.</p>
-
-    <p>To all who know me with affection, thank you. I would have told you sooner and better, but I did not know how, and so I could not.</p>
-
-    <p>Do not feel deceived. Only surprised, and accompanied.</p>
-</article>
+    <div class="footer">
+        <p>© 2026 Ignacio López Villanueva | Sistema Basado en Negentropía Crítica</p>
+        <p>Actualizado bajo criterios de Verdad Responsable 2.0</p>
+    </div>
+</div>
 
 </body>
 </html>
