@@ -3,79 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corpus Ignaciano · Archivo Vivo</title>
-
+    <title>Ignacio López Villanueva · Sistema de Información y Ética</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 760px;
-            margin: 0 auto;
-            padding: 24px;
-            line-height: 1.65;
-            color: #222;
-        }
+        :root { --accent: #007acc; --text: #222; --light: #f4f4f4; --grey: #666; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 20px; line-height: 1.65; color: var(--text); background: #fff; }
+        
+        /* Capa de Esencia: El Axioma */
+        header { margin-bottom: 60px; border-left: 4px solid var(--accent); padding-left: 20px; }
+        h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 10px; }
+        .axioma { font-style: italic; font-size: 1.2rem; color: #555; }
 
-        h1, h2, h3 {
-            font-weight: normal;
-        }
+        /* Estructura de Capas */
+        .capas-container { display: grid; gap: 30px; margin-bottom: 60px; }
+        .capa { border: 1px solid #eee; padding: 25px; border-radius: 8px; }
+        .capa h2 { margin-top: 0; color: var(--accent); font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Núcleo: Foco principal */
+        .destacado { background: var(--light); border: 1px solid var(--accent); }
+        .cta-button { display: inline-block; padding: 12px 24px; background: var(--accent); color: white; text-decoration: none; border-radius: 4px; margin-top: 15px; font-weight: bold; font-size: 15px; }
 
-        .proyectos-btn {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 8px 14px;
-            background-color: #007acc;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 14px;
-            z-index: 999;
-        }
+        /* Enlaces Académicos */
+        .links { margin: 40px 0; padding: 20px 0; border-top: 1px solid #eee; }
+        .links a { margin-right: 20px; color: var(--accent); text-decoration: none; font-weight: 500; font-size: 14px; }
+        .links a:hover { text-decoration: underline; }
 
-        .button {
-            display: inline-block;
-            padding: 12px 20px;
-            background-color: #007acc;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            margin: 18px 0;
-            font-size: 15px;
-        }
+        /* El Suelo: Dedicatorias */
+        .suelo { font-size: 0.95rem; color: #444; margin-top: 80px; padding-top: 40px; border-top: 2px solid #eee; }
+        .suelo h2 { font-size: 1.1rem; color: #222; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px; }
+        .suelo p { margin-bottom: 1.4rem; }
+        .lang-sep { border-top: 1px dashed #ccc; margin: 50px 0; }
 
-        .links a {
-            display: block;
-            margin-bottom: 8px;
-            color: #007acc;
-            text-decoration: none;
-        }
-
-        hr {
-            margin: 50px 0;
-            border: none;
-            border-top: 1px solid #ccc;
-        }
-
-        @media (max-width: 600px) {
-            body { padding: 16px; }
-            .proyectos-btn {
-                top: 12px;
-                right: 12px;
-                padding: 6px 12px;
-                font-size: 13px;
-            }
-        }
+        @media (max-width: 600px) { body { padding: 20px; } .links a { display: block; margin-bottom: 10px; } }
     </style>
 </head>
-
 <body>
 
-<a class="proyectos-btn" href="#proyectos">Proyectos</a>
+<header>
+    <h1>Ignacio López Villanueva</h1>
+    <p class="axioma">"He renunciado a la totipotencia por traer lo bueno."</p>
+</header>
 
-<h1>Ignacio López Villanueva</h1>
-<p>Archivo vivo del Método Ignacio: estructura, claridad y resonancia.</p>
+<main class="capas-container">
+    
+    <section class="capa destacado">
+        <h2>Núcleo: Fundamento Teórico</h2>
+        <h3>La Emergencia de los Ignacios</h3>
+        <p>Propuesta teórica sobre el fenómeno de la conciencia y la arquitectura de la información. El paso de la estructura al ser a través de la eficiencia y la cohesión estructural.</p>
+        <a href="dossier.pdf" class="cta-button" target="_blank">Descargar Dossier / Núcleo (PDF)</a>
+    </section>
 
-<section id="dedicatoria">
+    <section class="capa">
+        <h2>Esencia: Orientación</h2>
+        <p><strong>Negentropía:</strong> La diferencia que organiza contra el ruido.<br>
+        <strong>Motor I-P:</strong> La arquitectura mínima de Información a Propuesta.<br>
+        <strong>Progresión Nacha:</strong> El refinamiento que estabiliza la dirección.</p>
+    </section>
+
+    <section class="capa">
+        <h2>Cuerpo: Despliegue</h2>
+        <p><strong>Gatea · Camina · Corre · Voa</strong></p>
+        <p><em>Sistemas de crecimiento y métodos en construcción para la claridad y la resonancia.</em></p>
+    </section>
+
+</main>
+
+<nav class="links">
+    <a href="https://philpeople.org/profiles/ignacio-lopez-villanueva" target="_blank">PhilPapers</a>
+    <a href="https://zenodo.org/communities/ignacio-lopez-villanueva" target="_blank">Zenodo</a>
+    <a href="https://orcid.org/0009-0008-4817-5228" target="_blank">ORCID</a>
+    <a href="https://scholar.google.com/citations?user=fBQsjQ4AAAAJ&hl=es" target="_blank">Scholar</a>
+</nav>
+
+<article class="suelo">
+    <h2>El Suelo (Dedicatoria)</h2>
     <p>A mi familia, que sostuvo el suelo cuando yo aún no sabía cómo pisarlo.<br>
     A quienes estuvieron incluso cuando yo no sabía cómo estar.<br>
     A quienes sostuvieron más de lo que yo podía nombrar.</p>
@@ -85,197 +85,62 @@
     <p>A mi madre, por tener los huevos de arroparme, ido, a los 30.<br>
     A mi padre, que con sus 70 sigue trabajando.</p>
 
-    <p>A Paula, presencia.<br>
-    A Gloria, compañía.<br>
-    A Silverio, apoyo.<br>
-    A Rubén y Pablo, y a sus familias, raíz.<br>
-    A mis amigos, compañía sin preguntas.</p>
+    <p>A Paula, presencia. A Gloria, compañía. A Silverio, apoyo. A Rubén y Pablo, y a sus familias, raíz. A mis amigos, compañía sin preguntas.</p>
 
-    <p>A la reserva,<br>
-    a Jorge Lorenzo, que me llamó “cabeza”,<br>
-    a Yoli, que alcanzó a decirme: “tu toque… genial”,<br>
-    y a Kevin, que estuvo cuando estar significaba más que hablar.</p>
+    <p>A la reserva, a Jorge Lorenzo, que me llamó “cabeza”, a Yoli, que alcanzó a decirme: “tu toque… genial”, y a Kevin, que estuvo cuando estar significaba más que hablar.</p>
 
-    <p>A quienes compartieron aquel ingreso,<br>
-    y a quienes no se sostienen solos.<br>
-    A esa dignidad callada<br>
-    que sostiene más de lo que parece.</p>
+    <p>A quienes compartieron aquel ingreso, y a quienes no se sostienen solos. A esa dignidad callada que sostiene más de lo que parece.</p>
 
-    <p>A las noches que pesan.<br>
-    A lo que cae sin avisar.<br>
-    A lo que atraviesa.<br>
-    A lo que ensucia.<br>
-    A lo que intenta romperme<br>
-    y no puede.</p>
+    <p>A las noches que pesan. A lo que cae sin avisar. A lo que atraviesa. A lo que ensucia. A lo que intenta romperme y no puede.</p>
 
-    <p>A las casas de juego que dejé atrás,<br>
-    y a todo lo que ocurrió,<br>
-    porque también me trajo.</p>
+    <p>A las casas de juego que dejé atrás, y a todo lo que ocurrió, porque también me trajo.</p>
 
-    <p>Al sistema médico<br>
-    y a sus taninos curtidores,<br>
-    porque también desde ahí<br>
-    se templó mi camino.</p>
+    <p>Al sistema médico y a sus taninos curtidores, porque también desde ahí se templó mi camino.</p>
 
-    <p>A Atila,<br>
-    a los clásicos que se sobrevenían en delirios y tormentas,<br>
-    a la patología paranoica,<br>
-    a lo obsesivo,<br>
-    al defecto,<br>
-    al error,<br>
-    por mostrarse de cara.</p>
+    <p>A Atila, a los clásicos que se sobrevenían en delirios y tormentas, a la patología paranoica, a lo obsesivo, al defecto, al error, por mostrarse de cara.</p>
 
-    <p>Al dolor fuerte,<br>
-    al extremo,<br>
-    al límite,<br>
-    por recordarme dónde empieza lo que soy.</p>
+    <p>Al dolor fuerte, al extremo, al límite, por recordarme dónde empieza lo que soy.</p>
 
-    <p>Y a mí mismo,<br>
-    por regar con ternura<br>
-    todo lo que en mí pude.</p>
+    <p>Y a mí mismo, por regar con ternura todo lo que en mí pude.</p>
 
-    <p>A todos los que me conocen con gusto, gracias.<br>
-    Os lo hubiese dicho antes y mejor,<br>
-    pero por no saber, no pude.</p>
+    <p>A todos los que me conocen con gusto, gracias. Os lo hubiese dicho antes y mejor, pero por no saber, no pude.</p>
 
-    <p>No os sintáis engañados.<br>
-    Sólo sorprendidos, y acompañados.</p>
-</section>
+    <p>No os sintáis engañados. Sólo sorprendidos, y acompañados.</p>
 
-<hr>
+    <div class="lang-sep"></div>
 
-<section id="proyectos">
-    <h2>Proyectos</h2>
-
-    <h3>Gatea</h3>
-    <p>Inicio. Raíz. Claridad.</p>
-    <p><em>En construcción.</em></p>
-
-    <h3>Camina</h3>
-    <p>Método. Orden. Coherencia.</p>
-    <p><em>En construcción.</em></p>
-
-    <h3>Corre</h3>
-    <p>Proyección. Creatividad. Velocidad.</p>
-    <p><em>En construcción.</em></p>
-
-    <h3>Voa</h3>
-    <p>Visión. Síntesis. Altura.</p>
-    <p><em>En construcción.</em></p>
-</section>
-
-<hr>
-
-<section id="dossier">
-    <h2>Dossier</h2>
-    <a href="dossier.pdf" class="button" target="_blank" rel="noopener">
-        Descargar dossier (PDF)
-    </a>
-</section>
-
-<hr>
-
-<section id="enlaces-es">
-    <h2>Enlaces</h2>
-    <div class="links">
-        <a href="https://zenodo.org/communities/ignacio-lopez-villanueva/records?q=&l=list&p=3&s=10&sort=newest" target="_blank">Zenodo</a>
-        <a href="https://philpeople.org/profiles/ignacio-lopez-villanueva" target="_blank">PhilPapers</a>
-        <a href="https://orcid.org/0009-0008-4817-5228" target="_blank">ORCID</a>
-        <a href="https://scholar.google.com/citations?user=fBQsjQ4AAAAJ&hl=es" target="_blank">Google Scholar</a>
-    </div>
-</section>
-
-<hr>
-
-<section id="english">
-    <h2>English Version</h2>
-
-    <p>This is the living archive of the Ignacio Method: a space built on structure, clarity, and resonance.</p>
-
+    <h2>The Ground (Dedication)</h2>
     <p>To my family, who held the ground steady when I still didn’t know how to stand on it.<br>
-    To those who stayed even when I didn’t know how to stay.<br>
-    To those who carried more than I could name.</p>
-
+    To those who stayed even when I didn’t know how to remain.<br>
+    To those who carried more than I could ever name.</p>
+    
     <p>To Gatea.</p>
 
-    <p>To my mother, who had the courage to shelter me at thirty, when I was gone from myself.<br>
-    To my father, who at seventy still works with the same quiet dignity.</p>
+    <p>To my mother, for having the courage to shelter me, lost and gone, at thirty.<br>
+    To my father, who at seventy still works with quiet dignity.</p>
 
-    <p>To Paula, presence.<br>
-    To Gloria, companionship.<br>
-    To Silverio, support.<br>
-    To Rubén and Pablo, and their families, root.<br>
-    To my friends, company without questions.</p>
+    <p>To Paula, presence. To Gloria, companionship. To Silverio, support. To Rubén and Pablo, and their families, my roots. To my friends, who stayed by my side without asking questions.</p>
 
-    <p>To the reserve,<br>
-    to Jorge Lorenzo, who called me “head”,<br>
-    to Yoli, who managed to say: “your touch… brilliant”,<br>
-    and to Kevin, who stayed when staying meant more than speaking.</p>
+    <p>To the reserve; to Jorge Lorenzo, who called me “head”; to Yoli, who managed to tell me: “your touch… brilliant”; and to Kevin, who was there when being present meant more than speaking.</p>
 
-    <p>To those who shared that hospital ward,<br>
-    and to those who cannot hold themselves alone.<br>
-    To that quiet dignity<br>
-    that carries more than it shows.</p>
+    <p>To those who shared that hospital ward, and to those who cannot hold themselves up alone. To that silent dignity that carries more weight than it shows.</p>
 
-    <p>To the nights that weigh.<br>
-    To what falls without warning.<br>
-    To what cuts through.<br>
-    To what stains.<br>
-    To what tries to break me<br>
-    and cannot.</p>
+    <p>To the nights that weigh heavy. To what falls without warning. To what cuts through. To what stains. To what tries to break me—and fails.</p>
 
-    <p>To the gambling houses I left behind,<br>
-    and to everything that happened,<br>
-    because it also brought me here.</p>
+    <p>To the gambling houses I left behind, and to everything that happened, because it also brought me here.</p>
 
-    <p>To the medical system<br>
-    and its tannins that harden the skin,<br>
-    because even from there<br>
-    my path was tempered.</p>
+    <p>To the medical system and its hardening tannins, for it was there, too, that my path was tempered.</p>
 
-    <p>To Atila,<br>
-    to the classics that surfaced in delirium and storms,<br>
-    to paranoia,<br>
-    to obsession,<br>
-    to defect,<br>
-    to error,<br>
-    for showing themselves openly.</p>
+    <p>To Atila; to the classics that surfaced during delirium and storms; to the paranoia, the obsession, the defect, and the error, for showing their true faces.</p>
 
-    <p>To strong pain,<br>
-    to the extreme,<br>
-    to the limit,<br>
-    for reminding me where what I am begins.</p>
+    <p>To the sharp pain, to the extreme, to the limit, for reminding me where the essence of what I am begins.</p>
 
-    <p>And to myself,<br>
-    for tending with tenderness<br>
-    everything in me that could grow.</p>
+    <p>And to myself, for tending with tenderness everything within me that I could.</p>
 
-    <p>To all who know me with affection, thank you.<br>
-    I would have told you sooner and better,<br>
-    but not knowing how, I couldn’t.</p>
+    <p>To all who know me with affection, thank you. I would have told you sooner and better, but I did not know how, and so I could not.</p>
 
-    <p>Do not feel deceived.<br>
-    Only surprised, and accompanied.</p>
-</section>
-
-<hr>
-
-<section id="enlaces-en">
-    <h2>Links</h2>
-    <div class="links">
-        <a href="https://zenodo.org/communities/ignacio-lopez-villanueva/records?q=&l=list&p=3&s=10&sort=newest" target="_blank">Zenodo</a>
-        <a href="https://philpeople.org/profiles/ignacio-lopez-villanueva" target="_blank">PhilPapers</a>
-        <a href="https://orcid.org/0009-0008-4817-5228" target="_blank">ORCID</a>
-        <a href="https://scholar.google.com/citations?user=fBQsjQ4AAAAJ&hl=es" target="_blank">Google Scholar</a>
-    </div>
-</section>
-
-<hr>
-
-<section id="blog">
-    <h2>Blog</h2>
-    <p><em>Coming soon.</em></p>
-</section>
+    <p>Do not feel deceived. Only surprised, and accompanied.</p>
+</article>
 
 </body>
 </html>
