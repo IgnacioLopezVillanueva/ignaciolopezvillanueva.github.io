@@ -5,41 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Ignacio López Villanueva | El Principio G y la Verdad Responsable</title>
-    <meta name="description" content="Web oficial de Ignacio López Villanueva. Exploración del Principio G, la Teoría de la Verdad Responsable (TVR 2.0) y la emergencia de la conciencia.">
-    <meta name="keywords" content="Ignacio López Villanueva, Principio G, Verdad Responsable, TVR 2.0, Negentropía, Epistemología, Ética, Ignacios">
+    <meta name="description" content="Portal oficial de Ignacio López Villanueva. Arquitectura de la conciencia, Teoría de la Verdad Responsable (TVR 2.0) y el Principio G.">
+    <meta name="keywords" content="Ignacio López Villanueva, Principio G, Verdad Responsable, TVR 2.0, Negentropía, Epistemología, Ignacios, Conciencia">
     
     <meta property="og:title" content="Ignacio López Villanueva | El Principio G">
-    <meta property="og:description" content="Propuesta de arquitectura de la conciencia y ética de la verdad responsable.">
+    <meta property="og:description" content="Hacia una ética de la coherencia y la emergencia de la conciencia.">
     <meta property="og:url" content="https://ignaciolopezvillanueva.github.io/">
     <meta property="og:type" content="website">
 
     <style>
-        :root { --blue: #00a8ff; --dark: #121212; --gray: #1e1e1e; --text: #e0e0e0; --accent: #27ae60; }
-        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: var(--dark); color: var(--text); line-height: 1.6; margin: 0; padding: 0; }
-        .container { max-width: 850px; margin: 0 auto; padding: 20px; }
+        :root { 
+            --blue: #00a8ff; 
+            --dark: #0a0a0a; 
+            --gray: #161616; 
+            --text: #f0f0f0; 
+            --accent: #2ecc71; 
+            --subtle: #888;
+        }
         
-        header { text-align: center; padding: 80px 0 40px; border-bottom: 1px solid var(--gray); }
-        h1 { font-size: 2.8em; color: var(--blue); margin-bottom: 10px; letter-spacing: -1px; }
-        .tagline { font-size: 1.2em; font-style: italic; opacity: 0.9; color: #aaa; }
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            background-color: var(--dark); 
+            color: var(--text); 
+            line-height: 1.7; 
+            margin: 0; 
+            padding: 0; 
+        }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
         
-        section { padding: 50px 0; border-bottom: 1px solid var(--gray); }
-        h2 { color: var(--blue); font-size: 1.8em; border-left: 5px solid var(--blue); padding-left: 15px; margin-bottom: 30px; }
+        header { text-align: center; padding: 100px 0 60px; border-bottom: 1px solid #222; }
+        h1 { font-size: 3em; color: var(--blue); margin: 0; letter-spacing: -2px; }
+        .tagline { font-size: 1.25em; color: var(--subtle); font-style: italic; margin-top: 15px; }
+
+        section { padding: 60px 0; border-bottom: 1px solid #222; }
+        h2 { font-size: 2em; color: var(--blue); margin-bottom: 30px; border-left: 5px solid var(--blue); padding-left: 20px; }
+        h3 { color: #fff; margin-top: 0; }
+
+        .manifesto-container { 
+            background: var(--gray); 
+            padding: 40px; 
+            border-radius: 16px; 
+            border: 1px solid #333; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4); 
+        }
+
+        .ignacio-unit { 
+            background: #202020; 
+            padding: 25px; 
+            border-radius: 12px; 
+            margin: 20px 0; 
+            border-right: 4px solid var(--blue); 
+        }
+
+        .button-group { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 40px; }
         
-        .card { background: var(--gray); padding: 35px; border-radius: 12px; border: 1px solid #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        .ignacio-unit { background: #252525; padding: 20px; border-radius: 8px; margin: 15px 0; border-right: 4px solid var(--blue); }
+        .btn { 
+            display: inline-block; 
+            padding: 14px 28px; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: 700; 
+            transition: all 0.3s ease; 
+            text-align: center;
+            font-size: 0.95em;
+        }
         
-        .button-group { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 30px; }
-        .btn { display: inline-block; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: 600; transition: all 0.3s ease; text-align: center; min-width: 180px; }
-        .btn-main { background: var(--blue); color: white; }
+        .btn-main { background: var(--blue); color: #fff; box-shadow: 0 4px 15px rgba(0,168,255,0.3); }
         .btn-acad { background: #34495e; color: #fff; }
-        .btn-zen { background: var(--accent); color: white; }
-        .btn:hover { opacity: 0.9; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .btn-zen { background: var(--accent); color: #fff; }
         
-        .footer { text-align: center; padding: 60px; font-size: 0.9em; opacity: 0.5; }
-        a { color: var(--blue); text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        .btn:hover { transform: translateY(-3px); opacity: 0.95; box-shadow: 0 8px 25px rgba(0,0,0,0.5); }
+
+        .contact-area { text-align: center; padding: 40px; background: #111; border-radius: 12px; }
+        .contact-area a { color: var(--blue); font-weight: bold; text-decoration: none; font-size: 1.1em; }
+
+        footer { text-align: center; padding: 80px 20px; font-size: 0.85em; color: #555; }
         
-        @media (max-width: 600px) { h1 { font-size: 2em; } .button-group { flex-direction: column; } }
+        hr { border: 0; border-top: 1px solid #222; margin: 40px 0; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2em; }
+            .button-group { flex-direction: column; }
+            .btn { width: 100%; }
+        }
     </style>
 </head>
 <body>
@@ -51,39 +100,43 @@
     </header>
 
     <section id="manifiesto">
-        <h2>Cuerpo: El Arte de Elegir lo Cierto</h2>
-        <div class="card">
-            <p>La verdad no es un trofeo que se encuentra, es una <strong>responsabilidad</strong> que se asume. Mi obra propone un tránsito del ruido informativo a la coherencia estructural.</p>
+        <h2>Cuerpo: Manifiesto "Traer lo Bueno"</h2>
+        <div class="manifesto-container">
+            <h3>1. El Fin de la Verdad Absoluta</h3>
+            <p>La verdad no es un descubrimiento frío, sino una <strong>responsabilidad activa</strong>. Mi propuesta, la <em>Verdad Responsable 2.0</em>, nos aleja del ruido informativo para centrarnos en lo que permite la acción ética y coherente.</p>
             
             <div class="ignacio-unit">
-                <strong>Los Ignacios:</strong> Unidades de emergencia cualitativa. Son las piezas de certidumbre que permiten que la conciencia no colapse ante el caos.
+                <strong>Los Ignacios:</strong> Son unidades de emergencia cualitativa. Cuando la información se organiza con éxito, surge una "pieza sólida" de conciencia que nos permite pisar firme sobre el caos.
             </div>
 
-            <p>A través del <strong>Principio G</strong>, buscamos la economía del bienestar: la ruta de menor esfuerzo energético y mayor solvencia ética.</p>
+            <h3>2. El Principio G</h3>
+            <p>Es la gravedad hacia el orden. Todo sistema vivo tiende a buscar el estado de mayor bienestar y menor conflicto energético. Mi obra formaliza este pulso natural como guía para la toma de decisiones complejas.</p>
         </div>
     </section>
 
     <section id="nucleo">
-        <h2>Núcleo: Repositorios Académicos</h2>
-        <p>Acceso a la formalización técnica, axiomatizaciones y publicaciones revisadas por pares:</p>
+        <h2>Núcleo: Obra Técnica y Formalización</h2>
+        <p>Acceso a los repositorios de investigación, axiomatizaciones y el corpus teórico completo revisado en PhilPapers y Zenodo:</p>
         
         <div class="button-group">
-            <a href="https://philpapers.org/s/Ignacio%20L%C3%B3pez%20Villanueva" target="_blank" class="btn btn-acad">PhilPapers Profile</a>
-            <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22L%C3%B3pez%20Villanueva%2C%20Ignacio%22" target="_blank" class="btn btn-zen">Zenodo Archive</a>
+            <a href="https://philpapers.org/s/Ignacio%20L%C3%B3pez%20Villanueva" target="_blank" class="btn btn-acad">Perfil en PhilPapers</a>
+            <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22L%C3%B3pez%20Villanueva%2C%20Ignacio%22" target="_blank" class="btn btn-zen">Archivo Zenodo</a>
             <a href="dossier.pdf" class="btn btn-main">Descargar Dossier (PDF)</a>
         </div>
     </section>
 
     <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Para aplicaciones prácticas del Principio G en sistemas complejos o consultas académicas:</p>
-        <p>📧 <a href="mailto:tu-email@servidor.com">Enviar un correo electrónico</a></p>
+        <div class="contact-area">
+            <h3>Aplicación Práctica</h3>
+            <p>Para colaboraciones en el ámbito de la IA, ética sistémica o arquitectura de la conciencia:</p>
+            <a href="mailto:tu-email@dominio.com">ignaciolopezvillanueva@gmail.com</a>
+        </div>
     </section>
 
-    <div class="footer">
-        <p>© 2026 Ignacio López Villanueva | Sistema Basado en Negentropía Crítica</p>
-        <p>Actualizado bajo criterios de Verdad Responsable 2.0</p>
-    </div>
+    <footer>
+        <p>© 2026 Ignacio López Villanueva | Sistema Negentrópico de Verdad Responsable</p>
+        <p>Basado en la integración de Esencia, Cuerpo y Núcleo.</p>
+    </footer>
 </div>
 
 </body>
