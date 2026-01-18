@@ -52,7 +52,6 @@
         .btn-main { background: var(--blue); color: #fff; }
         .btn-acad { background: #34495e; color: #fff; }
         .btn-zen { background: var(--accent); color: #fff; }
-        .btn-revolut { background: transparent; border: 1px solid #444; color: var(--subtle); }
         .btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
 
         .ai-guide { background: #111; padding: 25px; border-radius: 12px; border: 1px solid #333; margin-top: 40px; }
@@ -129,7 +128,9 @@
             <p style="font-size: 0.95em; margin-bottom: 30px;">Este gesto es libre, basado en el <em>animus donandi</em>, y no altera el acceso íntegro al corpus.</p>
             
             <div class="button-group">
-                <a href="https://revolut.me/ignaciolopezvillanueva" target="_blank" class="btn btn-revolut" style="width: 280px;">Tarjeta / Internacional (Revolut)</a>
+                <a href="https://revolut.me/ignaciolopezvillanueva" target="_blank" class="btn btn-main" style="width: 320px;">
+                    Apoyo con Tarjeta / Apple Pay / Google Pay
+                </a>
             </div>
             
             <p style="font-size: 0.75em; color: #555; margin-top: 30px; line-height: 1.4;">
@@ -149,6 +150,7 @@
 </div>
 
 <script>
+    // Configuración de saldo
     const SALDO_ACTUAL = 0; 
     document.getElementById('display-balance').innerText = SALDO_ACTUAL + " €";
 
