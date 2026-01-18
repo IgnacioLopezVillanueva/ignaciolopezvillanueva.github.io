@@ -91,6 +91,8 @@
             text-decoration: none;
             transition: 0.3s;
             cursor: pointer;
+            border: none;
+            font-family: inherit;
         }
         .donation-btn:hover {
             transform: translateY(-2px);
@@ -100,6 +102,7 @@
             font-size: 0.85em;
             color: var(--subtle);
             margin-top: 10px;
+            line-height: 1.5;
         }
         .balance {
             font-size: 0.9em;
@@ -161,7 +164,6 @@
         <a href="mailto:iglv003@gmail.com" style="color: var(--blue); font-weight: bold; text-decoration: none;">iglv003@gmail.com</a>
     </section>
 
-    <!-- BLOQUE DE DONATIVO CON PRIVACIDAD MÁXIMA -->
     <section id="donativo">
         <div class="donation-box">
             <div class="donation-title">Donativo a la persona–creador</div>
@@ -170,15 +172,14 @@
 
             <div class="note">Este gesto es libre y no altera el acceso al corpus.</div>
 
-            <button onclick="copyBizum()" class="donation-btn">
+            <button onclick="copyBizum(this)" class="donation-btn">
                 Copiar número para Bizum
             </button>
 
-            <div class="note" style="margin-top:12px;">
-                El botón se retirará al alcanzar el límite de suficiencia personal (10.000 €).
-            </div>
-            <div class="note" style="margin-top:12px;">
-    Este sitio es un proyecto personal sin actividad económica. Las aportaciones realizadas por los usuarios son gestos voluntarios sin contraprestación de bienes o servicios. No se recogen datos personales ni se generan perfiles de usuario. El acceso al contenido es siempre íntegro y gratuito.
+            <div class="note" style="margin-top:20px; border-top: 1px solid #333; padding-top: 20px;">
+                <strong>Aviso Legal y Compromiso de Suficiencia:</strong><br>
+                Este sitio es un proyecto personal de divulgación sin estructura empresarial ni ánimo de lucro comercial. Las aportaciones vía Bizum se realizan bajo el principio de <em>animus donandi</em> (acto de liberalidad entre particulares) y no constituyen el pago por bienes o servicios. El acceso al conocimiento aquí expuesto es, y seguirá siendo, gratuito e íntegro. <br><br>
+                Este canal de gratitud se cerrará permanentemente al alcanzar el <strong>límite de suficiencia personal (10.000 €)</strong>, momento en el que el botón será retirado para evitar la acumulación o la desnaturalización del gesto original.
             </div>
         </div>
     </section>
@@ -198,14 +199,28 @@
         });
     }
 
-    function copyBizum() {
-        navigator.clipboard.writeText("640222654").then(() => {
-            alert("Número Bizum copiado: +34 640 22 26 54");
+    /**
+     * Ofuscación técnica: el número no existe como texto en el HTML.
+     * Se construye dinámicamente al hacer clic para evitar rastreos automáticos.
+     */
+    function copyBizum(element) {
+        const p1 = "640";
+        const p2 = "222";
+        const p3 = "654";
+        const full = p1 + p2 + p3;
+        
+        navigator.clipboard.writeText(full).then(() => {
+            const originalText = element.innerText;
+            element.innerText = "¡Número copiado!";
+            element.style.background = "var(--accent)";
+            
+            setTimeout(() => { 
+                element.innerText = originalText; 
+                element.style.background = "var(--blue)";
+            }, 2500);
         });
     }
 </script>
 
 </body>
 </html>
-
-
