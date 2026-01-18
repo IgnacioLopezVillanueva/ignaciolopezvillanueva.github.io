@@ -61,8 +61,7 @@
         .prompt-area { position: relative; background: #000; padding: 15px; border-left: 3px solid var(--blue); margin-top: 15px; }
         code { display: block; color: #aaa; font-size: 0.9em; white-space: pre-wrap; margin-bottom: 10px; }
         .copy-btn { font-size: 0.7em; padding: 5px 10px; background: #333; color: var(--text); border-radius: 4px; border: none; cursor: pointer; }
-        
-        /* Estilos específicos para la sección de donativo */
+
         .donation-status { text-align: center; margin-bottom: 20px; }
         .balance-val { font-size: 2.5em; color: var(--accent); font-weight: bold; display: block; }
 
@@ -130,7 +129,6 @@
             <p style="font-size: 0.95em; margin-bottom: 30px;">Este gesto es libre, basado en el <em>animus donandi</em>, y no altera el acceso íntegro al corpus.</p>
             
             <div class="button-group">
-                <button id="bizum-btn" onclick="copyBizum(this)" class="btn btn-main" style="width: 280px;">Copiar número para Bizum (España)</button>
                 <a href="https://revolut.me/ignaciolopezvillanueva" target="_blank" class="btn btn-revolut" style="width: 280px;">Tarjeta / Internacional (Revolut)</a>
             </div>
             
@@ -151,7 +149,6 @@
 </div>
 
 <script>
-    // Configuración de saldo
     const SALDO_ACTUAL = 0; 
     document.getElementById('display-balance').innerText = SALDO_ACTUAL + " €";
 
@@ -161,19 +158,6 @@
             const btn = document.querySelector('.copy-btn');
             btn.innerText = '¡Copiado!';
             setTimeout(() => { btn.innerText = 'Copiar Prompt'; }, 2000);
-        });
-    }
-
-    function copyBizum(btn) {
-        const num = "640" + "222" + "654";
-        navigator.clipboard.writeText(num).then(() => {
-            const originalText = btn.innerText;
-            btn.innerText = "¡Número copiado!";
-            btn.style.background = "var(--accent)";
-            setTimeout(() => { 
-                btn.innerText = originalText; 
-                btn.style.background = ""; 
-            }, 2000);
         });
     }
 </script>
