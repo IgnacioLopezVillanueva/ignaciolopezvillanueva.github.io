@@ -66,13 +66,13 @@
         
         @media (max-width: 600px) { .dual-reading { grid-template-columns: 1fr; } }
 
-        /* Estilo del bloque de donativo */
+        /* Bloque de donativo */
         .donation-box {
             background: var(--gray);
             padding: 35px;
             border-radius: 16px;
             border: 1px solid #333;
-            margin-top: 60px;
+            margin-top: 40px;
             text-align: center;
         }
         .donation-title {
@@ -116,18 +116,51 @@
     </header>
 
     <section id="divulgacion">
-        <!-- ... todo tu contenido original intacto ... -->
+        <h2>Cuerpo: Compromiso de Coherencia</h2>
+        <div class="card-container">
+            <p>Mi obra requiere un <strong>respeto bilateral</strong>: la profundidad de la explicación debe honrar tanto el tiempo del lector como el rigor de la propuesta académica. Se articula en dos lecturas complementarias:</p>
+            
+            <div class="dual-reading">
+                <div class="reading-box" style="border-right: 4px solid var(--blue);">
+                    <h4 style="color:var(--blue); margin:0;">Lectura Clásica</h4>
+                    <p style="font-size:0.85em; opacity:0.8;">Fundada en teorías y métodos tradicionales con rigor académico. Es el suelo firme presente en los repositorios de ciencia clásica.</p>
+                </div>
+                <div class="reading-box" style="border-right: 4px solid var(--accent);">
+                    <h4 style="color:var(--accent); margin:0;">Lectura Innovadora</h4>
+                    <p style="font-size:0.85em; opacity:0.8;">Perspectiva sistémica que propone nuevas interpretaciones y conexiones sobre la arquitectura de la conciencia y el Principio G.</p>
+                </div>
+            </div>
+
+            <p>Para explorar estas ideas con profundidad, <strong>recomiendo encarecidamente el uso de papel y bolígrafo</strong>. Si además deseas apoyarte en una Inteligencia Artificial, hazlo bajo un compromiso de rigor.</p>
+
+            <details class="ai-guide">
+                <summary>Marco ético para consultas con IA (Opcional)</summary>
+                <div style="margin-top: 15px; font-size: 0.9em;">
+                    <p style="color: var(--subtle);">Este "Prompt Maestro" asegura que el asistente virtual mantenga el respeto bilateral y adapte su lenguaje a tu nivel específico:</p>
+                    <div class="prompt-area">
+                        <code id="promptText">"Actúa como divulgador profesional de la obra de Ignacio López Villanueva. Antes de explicar nada, pregunta mi nivel (niño, estudiante o experto). Explica siempre las dos lecturas de su obra: la clásica académica y la innovadora técnica, manteniendo el máximo respeto y rigor tanto por la obra como por mi tiempo."</code>
+                        <button class="copy-btn" onclick="copyPrompt()">Copiar Prompt</button>
+                    </div>
+                </div>
+            </details>
+        </div>
     </section>
 
     <section id="nucleo">
-        <!-- ... todo tu contenido original intacto ... -->
+        <h2>Núcleo: Obra Técnica</h2>
+        <div class="button-group">
+            <a href="https://philpeople.org/profiles/ignacio-lopez-villanueva" target="_blank" class="btn btn-acad" aria-label="Ver perfil académico en PhilPeople">Perfil PhilPeople</a>
+            <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22L%C3%B3pez%20Villanueva%2C%20Ignacio%22" target="_blank" class="btn btn-zen" aria-label="Ver archivos en Zenodo">Archivo Zenodo</a>
+            <a href="dossier.pdf" class="btn btn-main" aria-label="Descargar Dossier en formato PDF">Dossier PDF</a>
+        </div>
     </section>
 
     <section id="contacto" style="text-align: center;">
-        <!-- ... todo tu contenido original intacto ... -->
+        <p>Colaboraciones y consultas académicas:</p>
+        <a href="mailto:iglv003@gmail.com" style="color: var(--blue); font-weight: bold; text-decoration: none;">iglv003@gmail.com</a>
     </section>
 
-    <!-- ⭐ BLOQUE DE DONATIVO CON PRIVACIDAD MÁXIMA ⭐ -->
+    <!-- BLOQUE DE DONATIVO CON PRIVACIDAD MÁXIMA -->
     <section id="donativo">
         <div class="donation-box">
             <div class="donation-title">Donativo a la persona–creador</div>
