@@ -6,16 +6,16 @@
     <title>Principio G - Teoría de la Verdad Responsable</title>
     <style>
         :root {
-            --bg: #0a0a0a;
+            --bg: #0d0d0d;
             --text: #e0e0e0;
             --accent: #00ff88;
-            --blue: #007bff;
-            --subtle: #888;
-            --card-bg: #111;
+            --blue: #0070f3;
+            --subtle: #a0a0a0;
+            --card-bg: #161616;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: var(--bg);
             color: var(--text);
             line-height: 1.6;
@@ -26,99 +26,95 @@
             align-items: center;
         }
 
-        .container {
-            max-width: 800px;
-            width: 100%;
-        }
+        .container { max-width: 700px; width: 100%; }
 
         header {
             text-align: center;
-            padding: 40px 0;
-            border-bottom: 1px solid #333;
+            padding: 60px 0 40px;
+            border-bottom: 1px solid #222;
         }
 
-        h1 { font-size: 2.5em; margin-bottom: 10px; }
-        .subtitle { color: var(--accent); font-weight: bold; }
+        h1 { font-size: 2.2em; letter-spacing: -1px; margin-bottom: 5px; }
+        .subtitle { color: var(--accent); font-weight: 500; font-size: 1.1em; }
 
         section {
-            margin: 40px 0;
-            padding: 20px;
+            margin: 30px 0;
+            padding: 25px;
             background: var(--card-bg);
-            border-radius: 8px;
+            border-radius: 12px;
             border: 1px solid #222;
         }
 
-        h2 { color: var(--blue); border-left: 4px solid var(--blue); padding-left: 15px; }
+        h2 { color: var(--blue); font-size: 1.4em; margin-top: 0; }
 
         .prompt-box {
             background: #000;
             padding: 20px;
-            border-radius: 5px;
-            border: 1px dashed var(--accent);
+            border-radius: 8px;
+            border: 1px solid #333;
             position: relative;
-            font-family: monospace;
+            font-family: "SFMono-Regular", Consolas, monospace;
             font-size: 0.9em;
+            color: #ccc;
         }
 
         .copy-btn {
             position: absolute;
             top: 10px;
             right: 10px;
-            background: var(--accent);
-            color: #000;
-            border: none;
-            padding: 5px 10px;
+            background: #222;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 4px 10px;
             cursor: pointer;
-            border-radius: 3px;
-            font-weight: bold;
+            border-radius: 4px;
+            font-size: 0.75em;
         }
 
         .donation-box {
             text-align: center;
-            background: #161616;
-            padding: 30px;
-            border: 1px solid var(--blue);
+            border: 1px solid #333;
+            border-radius: 12px;
+            background: linear-gradient(180deg, #1a1a1a 0%, #111 100%);
         }
 
-        .donation-title { font-size: 1.2em; margin-bottom: 15px; }
-        .balance { font-size: 2em; color: var(--accent); margin: 10px 0; }
-        .note { font-size: 0.85em; color: var(--subtle); }
+        .balance { font-size: 2.5em; font-weight: bold; color: var(--text); margin: 15px 0; }
+        .balance-label { color: var(--accent); font-size: 0.8em; text-transform: uppercase; letter-spacing: 1px; }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+            margin: 25px 0;
+        }
 
         .donation-btn {
-            background: var(--blue);
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 4px;
-            font-size: 1em;
+            width: 100%;
+            max-width: 300px;
+            padding: 14px;
+            border-radius: 8px;
+            font-weight: 600;
             cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .btn-intl {
-            background: transparent;
-            border: 1px solid #444;
-            color: var(--subtle);
-            width: 250px;
-            padding: 12px;
-            font-size: 0.85em;
+            transition: all 0.2s ease;
             text-decoration: none;
-            display: inline-block;
+            font-size: 0.95em;
             text-align: center;
-            border-radius: 4px;
-            transition: 0.3s;
         }
 
-        .btn-intl:hover { border-color: var(--accent); color: var(--accent); }
+        .bizum { background: var(--blue); color: white; border: none; }
+        .revolut { background: transparent; border: 1px solid #444; color: white; }
+        .donation-btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
 
-        footer {
-            text-align: center;
-            font-size: 0.8em;
-            color: var(--subtle);
-            margin-top: 50px;
-        }
+        .note { font-size: 0.8em; color: var(--subtle); line-height: 1.5; }
 
-        a { color: var(--accent); text-decoration: none; }
+        footer { padding: 40px; color: #444; font-size: 0.75em; text-align: center; }
+
+        a { color: var(--blue); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
     </style>
 </head>
 <body>
@@ -126,113 +122,84 @@
     <div class="container">
         <header>
             <h1>PRINCIPIO G</h1>
-            <p class="subtitle">Teoría de la Verdad Responsable 2.0</p>
-            <p>Un modelo de negentropía aplicado a la conciencia y la arquitectura de sistemas.</p>
+            <div class="subtitle">Teoría de la Verdad Responsable 2.0</div>
         </header>
 
-        <section id="introduccion">
-            <h2>Introducción</h2>
-            <p>He renunciado a la totipotencia por traer lo bueno. Este repositorio contiene el núcleo lógico de la TVR 2.0, diseñada para estructurar la información bajo principios de suficiencia y responsabilidad.</p>
+        <section>
+            <h2>La Renuncia</h2>
+            <p>He renunciado a la totipotencia por traer lo bueno. Este espacio no es una web comercial, sino un nodo de transferencia de conocimiento negentrópico.</p>
         </section>
 
-        <section id="prompt-maestro">
+        <section>
             <h2>Prompt Maestro</h2>
-            <p>Utiliza este prompt en modelos de IA avanzados para activar el modo de análisis bajo el Principio G:</p>
             <div class="prompt-box">
-                <button class="copy-btn" onclick="copyPrompt()">Copiar Prompt</button>
+                <button class="copy-btn" onclick="copyPrompt()">Copiar</button>
                 <div id="promptText">
-                    "Actúa como un arquitecto de sistemas negentrópicos. Aplica el Principio G y la Teoría de la Verdad Responsable para analizar el siguiente problema, priorizando la suficiencia sobre la abundancia y la veracidad sobre la probabilidad..."
+                    Actúa como un arquitecto de sistemas negentrópicos. Aplica el Principio G y la Teoría de la Verdad Responsable para analizar...
                 </div>
             </div>
         </section>
 
-        <section id="repositorios">
-            <h2>Acceso al Corpus</h2>
-            <p>Puedes consultar la documentación técnica completa y los papers originales en:</p>
+        <section>
+            <h2>Corpus Académico</h2>
+            <p>Documentación técnica y papers disponibles en repositorios abiertos:</p>
             <ul>
-                <li><a href="https://philpapers.org/" target="_blank">PhilPapers (Filosofía de la Mente)</a></li>
-                <li><a href="https://zenodo.org/" target="_blank">Zenodo (Open Science)</a></li>
+                <li><strong>PhilPapers:</strong> <a href="https://philpapers.org/" target="_blank">Filosofía de la Mente</a></li>
+                <li><strong>Zenodo:</strong> <a href="https://zenodo.org/" target="_blank">Open Science Framework</a></li>
             </ul>
         </section>
 
-        <section id="donativo">
-            <div class="donation-box">
-                <div class="donation-title">Donativo a la persona–creador</div>
-
-                <div id="display-balance" class="balance">Saldo: 0 €</div>
-                <div id="display-date" class="note" style="margin-bottom: 20px;">Actualizado a: 18/01/2026</div>
-
-                <div class="note">Este gesto es libre y no altera el acceso al corpus.</div>
-
-                <div style="display: flex; flex-direction: column; gap: 12px; align-items: center; margin-top: 25px;">
-                    
-                    <button id="main-bizum-btn" onclick="copyBizum(this)" class="donation-btn" style="width: 280px; margin: 0; cursor: pointer;">
-                        Copiar número para Bizum (España)
-                    </button>
-
-                    <a id="intl-btn" href="https://revolut.me/ignaciolopezvillanueva" target="_blank" class="btn-intl">
-                        Apoyo con Tarjeta (Internacional)
-                    </a>
-                </div>
-
-                <div class="note" style="margin-top:25px; border-top: 1px solid #333; padding-top: 20px; font-size: 0.8em; line-height: 1.4;">
-                    <strong>Aviso Legal y Compromiso de Suficiencia:</strong><br>
-                    Este sitio es un proyecto personal de divulgación sin estructura empresarial. Las aportaciones se realizan bajo el principio de <em>animus donandi</em>. El acceso al conocimiento es gratuito e íntegro. <br><br>
-                    Este canal de gratitud se cerrará permanentemente al alcanzar el <strong>límite de suficiencia personal (10.000 €)</strong>.
-                </div>
+        <section class="donation-box">
+            <div class="balance-label">Estado de Suficiencia Personal</div>
+            <div id="display-balance" class="balance">0 €</div>
+            <div id="display-date" class="note">Actualizado: 18/01/2026</div>
+            
+            <div class="btn-group">
+                <button onclick="copyBizum(this)" class="donation-btn bizum">
+                    Bizum (España)
+                </button>
+                <a href="https://revolut.me/ignaciolopezvillanueva" target="_blank" class="donation-btn revolut">
+                    Tarjeta (Internacional)
+                </a>
             </div>
+
+            <p class="note">
+                Este canal se cerrará permanentemente al alcanzar los <strong>10.000 €</strong>.<br>
+                El acceso al conocimiento seguirá siendo libre.
+            </p>
         </section>
 
         <footer>
-            <p>Principio G - Teoría de la Verdad Responsable © 2026</p>
+            PRINCIPIO G & TVR 2.0 — 2026
         </footer>
     </div>
 
     <script>
-        // --- CONFIGURACIÓN DE IGNACIO (EDITA ESTO) ---
-        const SALDO_ACTUAL = 0;       // Suma aquí lo que recibas por Bizum y Revolut
-        const LIMITE_MAXIMO = 10000;  
-        // --------------------------------------------
+        // CONFIGURACIÓN DE SALDO
+        const SALDO_ACTUAL = 0; 
+        const LIMITE = 10000;
 
-        function gestionarSuficiencia() {
-            const btnBizum = document.getElementById('main-bizum-btn');
-            const btnIntl = document.getElementById('intl-btn');
-            const balanceDisplay = document.getElementById('display-balance');
-            
-            balanceDisplay.innerText = "Saldo: " + SALDO_ACTUAL + " €";
+        document.getElementById('display-balance').innerText = SALDO_ACTUAL + " €";
 
-            if (SALDO_ACTUAL >= LIMITE_MAXIMO) {
-                btnBizum.style.display = 'none';
-                btnIntl.style.display = 'none';
-                balanceDisplay.innerText = "Saldo: Límite de suficiencia alcanzado (10.000 €)";
-                balanceDisplay.style.color = "var(--accent)";
-            }
-        }
-
-        window.onload = gestionarSuficiencia;
-
-        function copyBizum(element) {
-            const p1 = "640"; const p2 = "222"; const p3 = "654";
-            const full = p1 + p2 + p3;
-            navigator.clipboard.writeText(full).then(() => {
-                const originalText = element.innerText;
-                element.innerText = "¡Número copiado!";
-                const originalBg = element.style.background;
-                element.style.background = "var(--accent)";
-                setTimeout(() => { 
-                    element.innerText = originalText; 
-                    element.style.background = originalBg; 
-                }, 2500);
+        function copyBizum(btn) {
+            const num = "640" + "222" + "654";
+            navigator.clipboard.writeText(num).then(() => {
+                const oldText = btn.innerText;
+                btn.innerText = "Número copiado";
+                btn.style.background = "#00ff88";
+                btn.style.color = "#000";
+                setTimeout(() => {
+                    btn.innerText = oldText;
+                    btn.style.background = "";
+                    btn.style.color = "";
+                }, 2000);
             });
         }
 
         function copyPrompt() {
             const text = document.getElementById('promptText').innerText;
-            navigator.clipboard.writeText(text).then(() => {
-                const btn = document.querySelector('.copy-btn');
-                btn.innerText = '¡Copiado!';
-                setTimeout(() => { btn.innerText = 'Copiar Prompt'; }, 2000);
-            });
+            navigator.clipboard.writeText(text);
+            alert("Prompt copiado al portapapeles");
         }
     </script>
 </body>
