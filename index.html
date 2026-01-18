@@ -90,6 +90,7 @@
             font-weight: 700;
             text-decoration: none;
             transition: 0.3s;
+            cursor: pointer;
         }
         .donation-btn:hover {
             transform: translateY(-2px);
@@ -149,9 +150,9 @@
     <section id="nucleo">
         <h2>Núcleo: Obra Técnica</h2>
         <div class="button-group">
-            <a href="https://philpeople.org/profiles/ignacio-lopez-villanueva" target="_blank" class="btn btn-acad" aria-label="Ver perfil académico en PhilPeople">Perfil PhilPeople</a>
-            <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22L%C3%B3pez%20Villanueva%2C%20Ignacio%22" target="_blank" class="btn btn-zen" aria-label="Ver archivos en Zenodo">Archivo Zenodo</a>
-            <a href="dossier.pdf" class="btn btn-main" aria-label="Descargar Dossier en formato PDF">Dossier PDF</a>
+            <a href="https://philpeople.org/profiles/ignacio-lopez-villanueva" target="_blank" class="btn btn-acad">Perfil PhilPeople</a>
+            <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22L%C3%B3pez%20Villanueva%2C%20Ignacio%22" target="_blank" class="btn btn-zen">Archivo Zenodo</a>
+            <a href="dossier.pdf" class="btn btn-main">Dossier PDF</a>
         </div>
     </section>
 
@@ -169,10 +170,9 @@
 
             <div class="note">Este gesto es libre y no altera el acceso al corpus.</div>
 
-            <!-- PRIVACIDAD MÁXIMA: número oculto -->
-            <a href="bizum://send?phone=34640222654" class="donation-btn">
-                Enviar donativo por Bizum
-            </a>
+            <button onclick="copyBizum()" class="donation-btn">
+                Copiar número para Bizum
+            </button>
 
             <div class="note" style="margin-top:12px;">
                 El botón se retirará al alcanzar el límite de suficiencia personal (10.000 €).
@@ -192,6 +192,12 @@
             const btn = document.querySelector('.copy-btn');
             btn.innerText = '¡Copiado!';
             setTimeout(() => { btn.innerText = 'Copiar Prompt'; }, 2000);
+        });
+    }
+
+    function copyBizum() {
+        navigator.clipboard.writeText("640222654").then(() => {
+            alert("Número Bizum copiado: 640 22 26 54");
         });
     }
 </script>
