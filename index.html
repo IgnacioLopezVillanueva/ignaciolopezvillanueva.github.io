@@ -1,208 +1,282 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ignacio López Villanueva | El Principio G</title>
-    <meta name="description" content="Portal oficial de Ignacio López Villanueva. Exploración del Principio G, la Teoría de la Verdad Responsable (TVR 2.0) y la arquitectura de la conciencia.">
-    
-    <style>
-        :root { 
-            --blue: #00a8ff; 
-            --dark: #0a0a0a; 
-            --gray: #161616; 
-            --text: #f0f0f0; 
-            --accent: #2ecc71; 
-            --subtle: #888;
-        }
-        
-        body { 
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
-            background-color: var(--dark); 
-            color: var(--text); 
-            line-height: 1.7; 
-            margin: 0; 
-            padding: 0; 
-        }
+  <meta charset="UTF-8">
+  <title>Ignacio López Villanueva — IGNATIUM LEX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tipografía Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-        
-        header { text-align: center; padding: 100px 0 60px; border-bottom: 1px solid #222; }
-        h1 { font-size: 3em; color: var(--blue); margin: 0; letter-spacing: -2px; }
-        .tagline { font-size: 1.25em; color: var(--subtle); font-style: italic; margin-top: 15px; }
+  <style>
+    :root {
+      --bg-main: #FFFFFF;
+      --bg-soft: #F5F5F5;
+      --text-main: #1A1A1A;
+      --text-soft: #555555;
+      --border-soft: #C8C8C8;
+      --link: #0A4CFF;
+      --max-width: 980px;
+    }
 
-        section { padding: 60px 0; border-bottom: 1px solid #222; }
-        h2 { font-size: 1.8em; color: var(--blue); margin-bottom: 30px; border-left: 5px solid var(--blue); padding-left: 20px; }
-        
-        .card-container { 
-            background: var(--gray); 
-            padding: 40px; 
-            border-radius: 16px; 
-            border: 1px solid #333; 
-        }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-        .dual-reading { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 25px 0; }
-        .reading-box { background: #202020; padding: 20px; border-radius: 12px; }
-        
-        .button-group { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 40px; justify-content: center; }
-        .btn { 
-            display: inline-block; padding: 14px 28px; text-decoration: none; border-radius: 8px; 
-            font-weight: 700; transition: all 0.3s ease; text-align: center; font-size: 0.9em; cursor: pointer; border: none;
-        }
-        .btn-main { background: var(--blue); color: #fff; }
-        .btn-acad { background: #34495e; color: #fff; }
-        .btn-zen { background: var(--accent); color: #fff; }
-        .btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      background: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
 
-        .ai-guide { background: #111; padding: 25px; border-radius: 12px; border: 1px solid #333; margin-top: 40px; }
-        summary { color: var(--blue); font-weight: bold; cursor: pointer; outline: none; }
-        
-        .prompt-area { position: relative; background: #000; padding: 15px; border-left: 3px solid var(--blue); margin-top: 15px; }
-        code { display: block; color: #aaa; font-size: 0.9em; white-space: pre-wrap; margin-bottom: 10px; }
-        .copy-btn { font-size: 0.7em; padding: 5px 10px; background: #333; color: var(--text); border-radius: 4px; border: none; cursor: pointer; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-        .donation-status { text-align: center; margin-bottom: 20px; }
-        .balance-val { font-size: 2.5em; color: var(--accent); font-weight: bold; display: block; }
+    header {
+      border-bottom: 1px solid var(--border-soft);
+      background: var(--bg-main);
+    }
 
-        footer { text-align: center; padding: 80px 20px; font-size: 0.85em; color: #555; }
-        
-        @media (max-width: 600px) { .dual-reading { grid-template-columns: 1fr; } }
-    </style>
+    .shell {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 24px 20px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 24px;
+    }
+
+    .brand {
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+
+    nav { display: flex; gap: 18px; font-size: 14px; }
+    nav a { color: var(--text-soft); }
+
+    main { padding-bottom: 80px; }
+
+    section { padding: 72px 20px 0; }
+    section:first-of-type { padding-top: 56px; }
+
+    .section-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-soft);
+      margin-bottom: 12px;
+    }
+
+    h1, h2, h3 {
+      font-weight: 500;
+      letter-spacing: -0.01em;
+    }
+
+    h1 { font-size: 30px; margin-bottom: 8px; }
+    h2 { font-size: 22px; margin-bottom: 16px; }
+    h3 { font-size: 17px; margin-top: 24px; margin-bottom: 4px; }
+
+    p { font-size: 15px; margin-bottom: 8px; }
+    .muted { color: var(--text-soft); }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text { flex: 1 1 360px; }
+
+    .hero-img {
+      flex: 0 0 260px;
+      text-align: center;
+    }
+
+    .hero-img img {
+      max-width: 260px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .divider {
+      border-top: 1px solid var(--border-soft);
+      margin: 32px 0 0;
+    }
+
+    .list-plain { list-style: none; margin-top: 4px; }
+    .list-plain li { margin-bottom: 4px; font-size: 15px; }
+
+    footer {
+      border-top: 1px solid var(--border-soft);
+      margin-top: 72px;
+    }
+
+    footer .shell {
+      padding-top: 20px;
+      padding-bottom: 24px;
+      font-size: 13px;
+      color: var(--text-soft);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    @media (max-width: 720px) {
+      .hero { flex-direction: column; text-align: center; }
+      .hero-img { margin-top: 20px; }
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="container">
-    <header>
-        <h1>Ignacio López Villanueva</h1>
-        <p class="tagline">"He renunciado a la totipotencia por traer lo bueno."</p>
-    </header>
+<header>
+  <div class="shell topbar">
+    <div class="brand">Ignacio López Villanueva</div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#obra">Obra</a>
+      <a href="#investigacion">Investigación</a>
+      <a href="#publicaciones">Publicaciones</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
 
-    <section id="bio">
-        <h2>Bio</h2>
-        <p>
-            Soy Ignacio López Villanueva (Iñaki en círculos cercanos). Vivo en A Coruña, Galicia, y trabajo como pensador e investigador independiente. No pertenezco al ámbito académico, pero considero que sin rigor no hay pensamiento que valga. Mi formación es autodidacta y ecléctica, construida a partir de estudio continuo, análisis crítico y experimentación conceptual.
-        </p>
-        <p>
-            He dedicado años a desarrollar nuevos paradigmas basados en una filosofía objetiva y formalizable, donde la epistemología se verifica y la verdad se trata como estructura, no como opinión. Entre mis líneas de trabajo destacan:
-        </p>
-        <ul>
-            <li>La emergencia de los ignacios: un modelo donde la qualia se entiende como reorganización eficiente de información en entornos negentrópicos.</li>
-            <li>El Principio G: un marco que hace manejables factores tradicionalmente difusos —como la ética o el vector humanista— mediante relaciones recursivas.</li>
-            <li>Modelos funcionales de toma de decisiones, como el RGB.</li>
-            <li>Tratados sobre la verdad, como TVR 2.0.</li>
-            <li>El análisis del problema P vs NP desde una perspectiva estructural.</li>
-            <li>El Operium como posible arquitectura de coherencia en el universo.</li>
-        </ul>
-        <p>Mi trabajo se desarrolla como obra viva, abierta y en constante refinamiento. Ya es suficiente, suficientemente.</p>
-    </section>
+<main>
 
-    <section id="divulgacion">
-        <h2>Cuerpo: Compromiso de Coherencia</h2>
-        <div class="card-container">
-            <p>Mi obra requiere un <strong>respeto bilateral</strong>: la profundidad de la explicación debe honrar tanto el tiempo del lector como el rigor de la propuesta académica. Se articula en dos lecturas complementarias:</p>
-            
-            <div class="dual-reading">
-                <div class="reading-box" style="border-right: 4px solid var(--blue);">
-                    <h4 style="color:var(--blue); margin:0;">Lectura Clásica</h4>
-                    <p style="font-size:0.85em; opacity:0.8;">Fundada en teorías y métodos tradicionales con rigor académico. Es el suelo firme presente en los repositorios de ciencia clásica.</p>
-                </div>
-                <div class="reading-box" style="border-right: 4px solid var(--accent);">
-                    <h4 style="color:var(--accent); margin:0;">Lectura Innovadora</h4>
-                    <p style="font-size:0.85em; opacity:0.8;">Perspectiva sistémica que propone nuevas interpretaciones y conexiones sobre la arquitectura de la conciencia y el Principio G.</p>
-                </div>
-            </div>
+  <!-- INICIO -->
+  <section id="inicio">
+    <div class="section-inner">
+      <div class="section-label">Inicio</div>
 
-            <p>Para explorar estas ideas con profundidad, <strong>recomiendo encarecidamente el uso de papel y bolígrafo</strong>. Si además deseas apoyarte en una Inteligencia Artificial, hazlo bajo un compromiso de rigor.</p>
-
-            <details class="ai-guide">
-                <summary>Marco ético para consultas con IA (Opcional)</summary>
-                <div style="margin-top: 15px; font-size: 0.9em;">
-                    <p style="color: var(--subtle);">Este "Prompt Maestro" asegura que el asistente virtual mantenga el respeto bilateral y adapte su lenguaje a tu nivel específico:</p>
-                    <div class="prompt-area">
-                        <code id="promptText">"Actúa como divulgador profesional de la obra de Ignacio López Villanueva. Antes de explicar nada, pregunta mi nivel (niño, estudiante o experto). Explica siempre las dos lecturas de su obra: la clásica académica y la innovadora técnica, manteniendo el máximo respeto y rigor tanto por la obra como por mi tiempo."</code>
-                        <button class="copy-btn" onclick="copyPrompt()">Copiar Prompt</button>
-                    </div>
-                </div>
-            </details>
-        </div>
-    </section>
-
-    <section id="nucleo">
-        <h2>Núcleo: Obra Técnica</h2>
-        <div class="button-group">
-            <a href="https://philpeople.org/profiles/ignacio-lopez-villanueva" target="_blank" class="btn btn-acad">Perfil PhilPeople</a>
-            <a href="https://zenodo.org/communities/ignacio-lopez-villanueva/records?q=&l=list&p=1&s=10&sort=newest" target="_blank" class="btn btn-zen">Archivo Zenodo</a>
-            <a href="dossier.pdf" class="btn btn-main">Dossier PDF</a>
+      <div class="hero">
+        <div class="hero-text">
+          <h1>IGNATIUM LEX</h1>
+          <p class="muted">Teoría de la existencia y los sistemas capaces.</p>
+          <p class="muted">ONTESIS → ONTESIA.</p>
+          <p class="muted">Investigación independiente en coherencia estructural y sistemas capaces.</p>
         </div>
 
-        <!-- Experimentos clave -->
-        <div style="background: #202020; padding: 20px; border-radius: 12px; margin-top: 30px;">
-            <h4 style="color: var(--blue); margin: 0 0 15px;">📄 Experimentos clave (acceso directo)</h4>
-            <ul style="list-style: none; padding: 0; margin: 0;">
-                <li>✅ <strong>Demostración básica del TVR</strong> – <a href="https://zenodo.org/records/19495266" target="_blank" style="color: var(--accent);">Zenodo</a> | <a href="https://philpapers.org/rec/LPEEOY-2" target="_blank" style="color: var(--accent);">PhilPapers</a></li>
-                <li style="margin-top: 12px;">✅ <strong>Experimento crítico</strong> – <a href="https://zenodo.org/records/19496471" target="_blank" style="color: var(--accent);">Zenodo</a> | <a href="https://philpapers.org/rec/LPEECD-17" target="_blank" style="color: var(--accent);">PhilPapers</a></li>
-                <li style="margin-top: 12px;">✅ <strong>Unificación del corpus</strong> – <a href="https://zenodo.org/records/19497311" target="_blank" style="color: var(--accent);">Zenodo</a> | <a href="https://philpapers.org/rec/LPEUED" target="_blank" style="color: var(--accent);">PhilPapers</a></li>
-            </ul>
+        <div class="hero-img">
+          <img src="ruta-de-tu-imagen.png" alt="Imagen conceptual de Ignacio López Villanueva">
         </div>
-    </section>
+      </div>
 
-    <!-- Datos reales de PhilPapers -->
-    <section id="alcance">
-        <div style="background: #0a2a1a; padding: 30px; border-radius: 16px; text-align: center; border: 1px solid #2ecc71;">
-            <h3 style="color: #2ecc71; margin: 0 0 15px;">🌍 5 continentes leen mi trabajo</h3>
-            <p style="color: var(--subtle);">Según estadísticas de PhilPapers, personas en <strong>Stuttgart, Mumbai, Beijing, Nueva York, Johannesburgo, Singapur, Hong Kong, Quito, Varsovia, Montreal, São Paulo y Shanghái</strong> han descargado mis papers.</p>
-            <p style="margin-top: 20px;">Si formas parte de una organización interesada en aplicar el Principio G o el TVR, <strong>contacta para una consultoría profesional</strong>.</p>
-            <a href="mailto:iglv003@gmail.com?subject=Consulta%20profesional" class="btn btn-main" style="margin-top: 20px;">Solicitar información</a>
-        </div>
-    </section>
+      <div class="divider"></div>
+    </div>
+  </section>
 
-    <section id="gratitud">
-        <h2>Suficiencia: Canal de Gratitud</h2>
-        <div class="card-container" style="text-align: center;">
-            <div class="donation-status">
-                <span class="balance-val" id="display-balance">0 €</span>
-                <p class="note" style="color: var(--subtle); font-size: 0.9em;">Límite de suficiencia personal: 10.000 €</p>
-            </div>
+  <!-- OBRA -->
+  <section id="obra">
+    <div class="section-inner">
+      <div class="section-label">Obra</div>
 
-            <p style="font-size: 0.95em; margin-bottom: 30px;">Este gesto es libre, basado en el <em>animus donandi</em>, y no altera el acceso íntegro al corpus.</p>
-            
-            <div class="button-group">
-                <a href="https://revolut.me/ignaciolopezvillanueva" target="_blank" class="btn btn-main" style="width: 320px;">
-                    Apoyo con Tarjeta / Apple Pay / Google Pay
-                </a>
-            </div>
-            
-            <p style="font-size: 0.75em; color: #555; margin-top: 30px; line-height: 1.4;">
-                Actualizado a: 11/04/2026. Al alcanzar el límite, este canal se cerrará permanentemente.
-            </p>
-        </div>
-    </section>
+      <h2>Marco general</h2>
 
-    <section id="contacto" style="text-align: center;">
-        <h2>Contacto</h2>
-        <p>Colaboraciones y consultas académicas:</p>
-        <p><a href="mailto:iglv003@gmail.com" style="color: var(--blue); font-weight: bold; text-decoration: none; font-size: 1.2em;">iglv003@gmail.com</a></p>
-        <p style="color: var(--subtle); font-size: 0.9em; margin-top: 20px;">Para consultas sobre aplicación del Principio G, escribe directamente.</p>
-    </section>
+      <h3>IGNATIUM LEX</h3>
+      <p>Marco general de la existencia capaz.</p>
+      <p class="muted">Estructura conceptual que articula ONTESIS y ONTESIA como obras formales complementarias.</p>
 
-    <footer>
-        <p>© 2026 Ignacio López Villanueva | Sistema Negentrópico de Verdad Responsable</p>
-    </footer>
-</div>
+      <h3>ONTESIS</h3>
+      <p>Fundamento formal de la existencia capaz.</p>
+      <p class="muted">Define los modos S (estructura), C (coherencia) y A (acción). Manuscrito enviado a <em>THEORIA</em>. Disponible en PhilArchive y Zenodo.</p>
 
-<script>
-    const SALDO_ACTUAL = 0; 
-    document.getElementById('display-balance').innerText = SALDO_ACTUAL + " €";
+      <h3>ONTESIA</h3>
+      <p>Monografía en desarrollo.</p>
+      <p class="muted">Extiende ONTESIS hacia una teoría general de sistemas capaces y derivados.</p>
 
-    function copyPrompt() {
-        const text = document.getElementById('promptText').innerText;
-        navigator.clipboard.writeText(text).then(() => {
-            const btn = document.querySelector('.copy-btn');
-            btn.innerText = '¡Copiado!';
-            setTimeout(() => { btn.innerText = 'Copiar Prompt'; }, 2000);
-        });
-    }
-</script>
+      <h3>TGEO</h3>
+      <p>Modelo matemático para dinámicas de coherencia estructural.</p>
+
+      <div class="divider"></div>
+    </div>
+  </section>
+
+  <!-- INVESTIGACIÓN -->
+  <section id="investigacion">
+    <div class="section-inner">
+      <div class="section-label">Investigación</div>
+      <h2>Líneas principales</h2>
+
+      <ul class="list-plain">
+        <li>— Existencia capaz y modos fundamentales.</li>
+        <li>— Coherencia estructural en sistemas complejos.</li>
+        <li>— Dinámicas S–C–A y reorganización.</li>
+        <li>— Sistemas derivados.</li>
+        <li>— Ontología física bajo SCA.</li>
+      </ul>
+
+      <div class="divider"></div>
+    </div>
+  </section>
+
+  <!-- PUBLICACIONES -->
+  <section id="publicaciones">
+    <div class="section-inner">
+      <div class="section-label">Publicaciones</div>
+      <h2>Repositorios</h2>
+
+      <ul class="list-plain">
+        <li>— PhilArchive</li>
+        <li>— Zenodo</li>
+        <li>— PhilPapers</li>
+      </ul>
+
+      <p class="muted">Incluyen ONTESIS, desarrollos de ONTESIA y documentos técnicos asociados.</p>
+
+      <div class="divider"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi">
+    <div class="section-inner">
+      <div class="section-label">Sobre mí</div>
+      <h2>Perfil</h2>
+
+      <p>Ignacio López Villanueva.</p>
+      <p>Investigación independiente en ontología formal, coherencia estructural y sistemas capaces.</p>
+      <p class="muted">Autor de IGNATIUM LEX, ONTESIS y ONTESIA.</p>
+
+      <div class="divider"></div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="section-inner">
+      <div class="section-label">Contacto</div>
+      <h2>Contacto profesional</h2>
+      <p><a href="mailto:ignacio@iglv.es">ignacio@iglv.es</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="shell">
+    <div>© Ignacio López Villanueva</div>
+    <div class="muted">IGNATIUM LEX — ONTESIS → ONTESIA</div>
+  </div>
+</footer>
 
 </body>
 </html>
