@@ -18,5 +18,9 @@ La TGEO trasciende los modelos discretos clásicos mediante el estudio de sistem
 ## Citación
 Si utilizas este corpus en tus investigaciones, por favor consulta el archivo [CITATION.cff](CITATION.cff) para obtener la referencia bibliográfica oficial.
 
+
+
+
+Consulta el [Índice de Documentación Técnica](docs/INDEX_DOCS.md) para acceder a la obra completa en PhilPapers
 ---
 *Publicado por Ignacio López Villanueva (ORCID: 0009-0008-4817-5228).*
