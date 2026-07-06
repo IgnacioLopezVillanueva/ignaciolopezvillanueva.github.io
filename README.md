@@ -34,6 +34,9 @@ Aquí puedes acceder directamente a los PDFs del Corpus:
 - [📝 Índice de Documentación (Detallado)](docs/INDEX_DOCS.md)
 - 
 
+---
+### Auditoría de Visibilidad
+![Contador de visitas](https://hit.yey.fi/ignaciolopezvillanueva/ignaciolopezvillanueva.github.io)
 
 --
 
