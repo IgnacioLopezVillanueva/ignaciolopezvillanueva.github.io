@@ -22,5 +22,21 @@ Si utilizas este corpus en tus investigaciones, por favor consulta el archivo [C
 
 
 Consulta el [Índice de Documentación Técnica](docs/INDEX_DOCS.md) para acceder a la obra completa en PhilPapers
----
+
+## Acceso a Documentación Técnica (Tratados)
+Aquí puedes acceder directamente a los PDFs del Corpus:
+
+- [📄 Germen 02](docs/Germen_02%20(1).pdf)
+- [📄 IGNATIUM LEX EXISTENTIAE](docs/IGNATIUM_LEX_EXISTENTIAE-1%20(2).pdf)
+- [📄 ONTESIS](docs/ONTESIS%20(2).pdf)
+- [📄 Ontesia 2](docs/ontesia%202.pdf)
+- [📄 Ontesia - Ontesis](docs/ontesia-%20ontesis.pdf)
+- [📝 Índice de Documentación (Detallado)](docs/INDEX_DOCS.md)
+- 
+
+
+--
+
+
+
 *Publicado por Ignacio López Villanueva (ORCID: 0009-0008-4817-5228).*
