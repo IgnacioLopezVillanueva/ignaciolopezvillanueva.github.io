@@ -9,8 +9,8 @@ El **Corpus Ignaciano** es la formalización auditada de la **Teoría General de
 ## Estructura de Auditoría
 Este repositorio se organiza para facilitar la trazabilidad técnica y la transparencia epistemológica:
 - **[Nota de Auditoría y Aclaratoria](ACLARATORIA.md):** Registro de correcciones y delimitación formal frente a los teoremas de Gödel y Tarski.
-- **[/docs](docs/):** Documentación técnica, tratados formales y especificaciones de seguridad (Proyecto GERMEN 02).
-- **[/src](src/):** Implementaciones computacionales, incluyendo el motor de clausura y los módulos de observación estructural (MI*).
+- **[docs](docs/):** Documentación técnica, tratados formales y especificaciones de seguridad (Proyecto GERMEN 02).
+- **[src](src/):** Implementaciones computacionales, incluyendo el motor de clausura y los módulos de observación estructural (MI*).
 
 ## Estado Epistemológico
 El corpus trasciende los modelos discretos clásicos mediante el estudio de sistemas operacionales, continuos y contextualmente cerrados. La consistencia del sistema se valida mediante la **estabilidad dinámica** y la clausura operativa.
