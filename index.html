@@ -1,280 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Ignacio López Villanueva — IGNATIUM LEX</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Tipografía Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --bg-main: #FFFFFF;
-      --bg-soft: #F5F5F5;
-      --text-main: #1A1A1A;
-      --text-soft: #555555;
-      --border-soft: #C8C8C8;
-      --link: #0A4CFF;
-      --max-width: 980px;
+    <meta charset="UTF-8">
+    <title>Corpus Ignaciano | Lex Existentiae</title>
+    <meta name="description" content="Formalización auditada del Corpus Ignaciano: arquitectura de sistemas cerrados, sintropía y Métrica G.">
+    <!-- JSON-LD para indexación académica -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "headline": "Corpus Ignaciano: Lex Existentiae",
+      "author": {
+        "@type": "Person",
+        "name": "Ignacio López Villanueva",
+        "sameAs": "https://orcid.org/0009-0008-4817-5228"
+      },
+      "abstract": "Arquitectura conceptual y formalización auditada de un marco que estudia la organización operativa de sistemas cerrados y su resistencia frente a la degradación entrópica.",
+      "identifier": "10.5281/zenodo.21217682",
+      "keywords": ["Corpus Ignaciano", "Sintropía", "Métrica G", "Geometría de Regge"]
     }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-}
-    body {
-      font-family: "Inter", system-ui, sans-serif;
-      background: var(--bg-main);
-      color: var(--text-main);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    header {
-      border-bottom: 90px solid var(--border-soft);
-      background: var(--bg-main);
-    }
-
-    .shell {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 20px 20px;
-    }
-
-    .topbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 10px;
-    }
-
-    .brand {
-      font-size:30px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      font-weight: 400;
-    }
-
-    nav { display: flex; gap: 16px; font-size: 14px; }
-    nav a { color: var(--text-soft); }
-
-    main { padding-bottom: 60px; }
-
-    section { padding: 72px 20px 0; }
-    section:first-of-type { padding-top: 56px; }
-
-    .section-inner {
-      max-width: var(--max-width);
-      margin: 0 auto;
-    }
-
-    .section-label {
-      font-size: 12px;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--text-soft);
-      margin-bottom: 12px;
-    }
-
-    h1, h2, h3 {
-      font-weight:480px;
-      letter-spacing: -0.01em;
-    }
-
-    h1 { font-size: 38px; margin-bottom: 8px; }
-    h2 { font-size:34px; margin-bottom: 16px; }
-    h3 { font-size: 30px; margin-top: 24px; margin-bottom: 4px; }
-
-    p { font-size: 18px; margin-bottom: 8px; }
-    .muted { color: var(--text-soft); }
-
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .hero-text { flex: 1 1 260px; }
-
-    .hero-img {
-      flex: 0 0 260px;
-     
-    }
-
-    .hero-img img {
-      max-width: 360px;
-      height: auto;
-      display: block;
-      margin: -30 auto;
-      border-color: black;
-    }
-
-    .divider {
-      border-top: 1px solid var(--border-soft);
-      margin: 32px 0 0;
-    }
-
-    .list-plain { list-style: none; margin-top: 4px; }
-    .list-plain li { margin-bottom: 4px; font-size: 15px; }
-
-    footer {
-      border-top: 1px solid var(--border-soft);
-      margin-top: 72px;
-    }
-
-    footer .shell {
-      padding-top: 20px;
-      padding-bottom: 24px;
-      font-size: 13px;
-      color: var(--text-soft);
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-  </style>
+    </script>
 </head>
-
 <body>
-
-<header>
-  <div class="shell topbar">
-    <div class="brand">Ignacio López Villanueva</div>
+    <h1>Corpus Ignaciano</h1>
+    <p>Base formal de la Teoría General de la Existencia Operativa (TGEO).</p>
     <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#obra">Obra</a>
-      <a href="#investigacion">Investigación</a>
-      <a href="#publicaciones">Publicaciones</a>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#contacto">Contacto</a>
+        <a href="README.md">Documentación Técnica</a>
+        <a href="ACLARATORIA.md">Nota Editorial v1.1</a>
     </nav>
-  </div>
-</header>
-
-<main>
-
-  <!-- INICIO -->
-  <section id="inicio">
-    <div class="section-inner">
-      <div class="section-label">Inicio</div>
-
-      <div class="hero">
-        <div class="hero-text">
-          <h1>IGNATIUM LEX</h1>
-          <p class="muted">Teoría de la existencia y los sistemas capaces.</p>
-          <p class="muted">ONTESIS → ONTESIA.</p>
-          <p class="muted">Investigación independiente en coherencia estructural y sistemas capaces.</p>
-        </div>
-
-        <div class="hero-img">
-          <img src="Ignacio Lopez Villanueva.png" alt="Imagen conceptual de Ignacio López Villanueva">
-        </div>
-      </div>
-
-      <div class="divider"></div>
-    </div>
-  </section>
-
-  <!-- OBRA -->
-  <section id="obra">
-    <div class="section-inner">
-      <div class="section-label">Obra</div>
-
-      <h2>Marco general</h2>
-
-      <h3>IGNATIUM LEX</h3>
-      <p>Marco general de la existencia capaz.</p>
-      <p class="muted">Estructura conceptual que articula ONTESIS y ONTESIA como obras formales complementarias.</p>
-
-      <h3>ONTESIS</h3>
-      <p>Fundamento formal de la existencia capaz.</p>
-      <p class="muted">Define los modos S (estructura), C (coherencia) y A (acción). Manuscrito enviado a <em>THEORIA</em>. Disponible en PhilArchive y Zenodo.</p>
-
-      <h3>ONTESIA</h3>
-      <p>Monografía en desarrollo.</p>
-      <p class="muted">Extiende ONTESIS hacia una teoría general de sistemas capaces y derivados.</p>
-
-      <h3>TGEO</h3>
-      <p>Modelo matemático para dinámicas de coherencia estructural.</p>
-
-      <div class="divider"></div>
-    </div>
-  </section>
-
-  <!-- INVESTIGACIÓN -->
-  <section id="investigacion">
-    <div class="section-inner">
-      <div class="section-label">Investigación</div>
-      <h2>Líneas principales</h2>
-
-      <ul class="list-plain">
-        <li>— Existencia capaz y modos fundamentales.</li>
-        <li>— Coherencia estructural en sistemas complejos.</li>
-        <li>— Dinámicas S–C–A y reorganización.</li>
-        <li>— Sistemas derivados.</li>
-        <li>— Ontología física bajo SCA.</li>
-      </ul>
-
-      <div class="divider"></div>
-    </div>
-  </section>
-
-  <!-- PUBLICACIONES -->
-  <section id="publicaciones">
-    <div class="section-inner">
-      <div class="section-label">Publicaciones</div>
-      <h2>Repositorios</h2>
-
-      <ul class="list-plain">
-        <li>— PhilArchive</li>
-        <li>— Zenodo</li>
-        <li>— PhilPapers</li>
-      </ul>
-
-      <p class="muted">Incluyen ONTESIS, desarrollos de ONTESIA y documentos técnicos asociados.</p>
-
-      <div class="divider"></div>
-    </div>
-  </section>
-
-  <!-- SOBRE MÍ -->
-  <section id="sobre-mi">
-    <div class="section-inner">
-      <div class="section-label">Sobre mí</div>
-      <h2>Perfil</h2>
-
-      <p>Ignacio López Villanueva.</p>
-      <p>Investigación independiente en ontología formal, coherencia estructural y sistemas capaces.</p>
-      <p class="muted">Autor de IGNATIUM LEX, ONTESIS y ONTESIA.</p>
-
-      <div class="divider"></div>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section id="contacto">
-    <div class="section-inner">
-      <div class="section-label">Contacto</div>
-      <h2>Contacto profesional</h2>
-      <p><a href="mailto:ignacio@iglv.es">ignacio@iglv.es</a></p>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div class="shell">
-    <div>© Ignacio López Villanueva</div>
-    <div class="muted">IGNATIUM LEX — ONTESIS → ONTESIA</div>
-  </div>
-</footer>
-
 </body>
 </html>
