@@ -1,8 +1,6 @@
 # Corpus Ignaciano: Lex Existentiae Ontesis Ontesia
-
-[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.21217682-blue)](https://doi.org/10.5281/zenodo.21217682)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-
+https://zenodo.org/communities/ignacio-lopez-villanueva/records?q=&l=list&p=1&s=10&sort=newest
+https://philpeople.org/profiles/ignacio-lopez-villanueva
 ## Resumen Ejecutivo
 El **Corpus Ignaciano** es la formalización auditada de la **Teoría General de la Existencia Operativa (TGEO)**. Este repositorio actúa como nodo central de la ontología generativa que define las condiciones de existencia, operación y persistencia de sistemas cerrados frente a la degradación entrópica.
 
