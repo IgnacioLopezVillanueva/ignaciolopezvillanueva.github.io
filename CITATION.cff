@@ -1,1 +1,19 @@
 
+cff-version: 1.2.0
+message: "Si utilizas este Corpus, por favor cítalo como sigue:"
+authors:
+  - family-names: "López Villanueva"
+    given-names: "Ignacio"
+    orcid: "https://orcid.org/0009-0008-4817-5228"
+title: "Corpus Ignaciano: Lex Existentiae"
+version: 1.1
+doi: 10.5281/zenodo.21217682
+date-released: 2026-07-06
+license: CC-BY-4.0
+url: "https://ignaciolopezvillanueva.github.io"
+keywords:
+  - "Corpus Ignaciano"
+  - "Teoría General de la Existencia Operativa"
+  - "TGEO"
+  - "Sintropía"
+  - "Sistemas Cerrados"
