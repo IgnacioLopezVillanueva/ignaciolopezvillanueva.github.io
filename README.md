@@ -13,7 +13,7 @@ Este repositorio se organiza para facilitar la trazabilidad técnica y la transp
 - **[/src](src/):** Implementaciones computacionales, incluyendo el motor de clausura y los módulos de observación estructural (MI*).
 
 ## Estado Epistemológico
-La TGEO trasciende los modelos discretos clásicos mediante el estudio de sistemas operacionales, continuos y contextualmente cerrados. La consistencia del sistema se valida mediante la **estabilidad dinámica** y la clausura operativa.
+El corpus trasciende los modelos discretos clásicos mediante el estudio de sistemas operacionales, continuos y contextualmente cerrados. La consistencia del sistema se valida mediante la **estabilidad dinámica** y la clausura operativa.
 
 ## Citación
 Si utilizas este corpus en tus investigaciones, por favor consulta el archivo [CITATION.cff](CITATION.cff) para obtener la referencia bibliográfica oficial.
