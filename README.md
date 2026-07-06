@@ -23,7 +23,7 @@ Si utilizas este corpus en tus investigaciones, por favor consulta el archivo [C
 
 Consulta el [Índice de Documentación Técnica](docs/INDEX_DOCS.md) para acceder a la obra completa en PhilPapers
 ## Acceso a Documentación Técnica (Tratados)
-Aquí puedes acceder directamente a los PDFs del Corpus:
+Aquí puedes acceder directamente a los documentos del Corpus:
 
 - [📄 Germen_02](docs/Germen_02%20(1).pdf)
 - [📄 IGNATIUM LEX EXISTENTIAE](docs/IGNATIUM_LEX_EXISTENTIAE-1%20(2).pdf)
@@ -31,10 +31,9 @@ Aquí puedes acceder directamente a los PDFs del Corpus:
 - [📄 Ontesia 2](docs/ontesia%202.pdf)
 - [📄 Ontesia - Ontesis](docs/ontesia-%20ontesis.pdf)
 - [📄 La Mina de los Numeros Preciosos](docs/La%20Mina%20de%20los%20Numeros%20Preciosos-1.pdf)
-- [📄 Porqué la matemática se convirtió en una bola de nieve](docs/Porqué%20la%20matemática%20se%20convirtió%20en%20una%20bola%20de%20nieve-1.pdf)
+- [📄 Porqué la matemática se convirtió en una bola de nieve](docs/Porqu%C3%A9%20la%20matem%C3%A1tica%20se%20convirti%C3%B3%20en%20una%20bola%20de%20nieve.md)
 - [📝 Índice de Documentación (Detallado)](docs/INDEX_DOCS.md)
 - 
-
 ---
 ### Auditoría de Visibilidad
 ![Contador de visitas](https://hit.yey.fi/ignaciolopezvillanueva/ignaciolopezvillanueva.github.io)
