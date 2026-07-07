@@ -5,7 +5,7 @@ https://philpeople.org/profiles/ignacio-lopez-villanueva
 El **Corpus Ignaciano** es la resonancia y relación iterativa de diversos componentes, incluyendo la TGEO, TUC, EPA, ONTESIS y ONTESIA. Este repositorio actúa como nodo central de la ontología generativa que define las condiciones de existencia, operación y persistencia de sistemas abiertos que integran la complejidad de lo externo evitando la degradación entrópica interna.
 ## Estructura de Auditoría
 Este repositorio se organiza para facilitar la trazabilidad técnica y la transparencia epistemológica:
-- **[Nota de Auditoría y Aclaratoria](ACLARATORIA.md):** Registro de correcciones y delimitación formal frente a los teoremas de Gödel y Tarski.
+- **[Nota de Auditoría y Aclaratoria](ACLARATORIA.md):** Registro de correcciones y delimitación formal. Como por ejemplo frente a los teoremas de Gödel y Tarski.
 - **[docs](docs/):** Documentación técnica, tratados formales y especificaciones de seguridad (Proyecto GERMEN 02).
 - **[src](src/):** Implementaciones computacionales, incluyendo el motor de clausura y los módulos de observación estructural (MI*).
 
