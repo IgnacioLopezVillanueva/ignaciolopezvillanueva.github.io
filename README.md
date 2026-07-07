@@ -37,9 +37,6 @@ Aquí puedes acceder directamente a los documentos del Corpus:
 - [📝 Índice de Documentación (Detallado)](docs/INDEX_DOCS.md)
 - 
 ---
-### Auditoría de Visibilidad
-
-<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fignaciolopezvillanueva.github.io" alt="Visitas">
 
 
 
