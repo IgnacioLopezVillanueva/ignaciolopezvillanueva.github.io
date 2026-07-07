@@ -30,7 +30,7 @@ Aquí puedes acceder directamente a los documentos del Corpus:
 - [📄 Germen](docs/GERMEN.pdf)
 - [📄 IGNATIUM LEX EXISTENTIAE](docs/IGNATIUM_LEX_EXISTENTIAE-1%20(2).pdf)
 - [📄 ONTESIS](docs/ONTESIS%20(2).pdf)
-- [📄 Ontesia 2](docs/ontesia%202.pdf)
+- [📄 Ontesia](docs/ontesia%202.pdf)
 - [📄 Ontesia - Ontesis](docs/ontesia-%20ontesis.pdf)
 - [📄 La Mina de los Numeros Preciosos](docs/La%20Mina%20de%20los%20Numeros%20Preciosos-1.pdf)
 - [📄 como validar el corpus](docs/Validacion.pdf)
