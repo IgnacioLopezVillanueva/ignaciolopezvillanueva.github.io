@@ -28,8 +28,8 @@ Consulta el [Índice de Documentación Técnica](docs/INDEX_DOCS.md) para accede
 Aquí puedes acceder directamente a los documentos del Corpus:
 
 
-- [📄 Invariancia Estructural y ´Algebra Ont´esica
-Un Marco Dual de Clausura Contextual y Exploraci´on de Sistemas
+- [📄 Invariancia Estructural y Algebra Ontesica,
+Un Marco Dual de Clausura Contextual y Exploracion de Sistemas
 No-Discretizables](docs/RompeRalf.pdf)
 - [📄 MI*: Módulo de Inestabilidad Estructural para MiniSat](docs/Minisat.pdf)
 - [📄 Germen](docs/GERMEN.pdf)
