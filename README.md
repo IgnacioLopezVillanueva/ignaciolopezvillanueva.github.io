@@ -1,9 +1,12 @@
 # Corpus Ignaciano: Lex Existentiae Ontesis Ontesia
 https://zenodo.org/communities/ignacio-lopez-villanueva/records?q=&l=list&p=1&s=10&sort=newest
 https://philpeople.org/profiles/ignacio-lopez-villanueva
+
 ## Resumen Ejecutivo
 
-El **Corpus Ignaciano** es la resonancia y relación iterativa de diversos componentes, incluyendo la **TGEO**, **TUC**, **EPA**, **ONTESIS** y **ONTESIA**. Actúa como un sistema abierto cuya "membrana" ( mediante **Principio G**) opera bajo la instrucción de elegir lo bueno; filtra la complejidad de lo externo no manejado para integrar solo aquello que garantiza la persistencia interna y la estabilidad dinámica frente a la degradación entrópica.
+El **Corpus Ignaciano** es la resonancia y relación iterativa de diversos componentes (entre otros, la **TGEO**, **TUC**, **EPA**, **ONTESIS** y **ONTESIA**). Actúa como un sistema abierto cuya "membrana" (mediante el **Principio G**) opera bajo la instrucción de elegir lo bueno; filtra la complejidad de lo externo no manejado para integrar solo aquello que garantiza la persistencia interna y la estabilidad dinámica frente a la degradación entrópica.
+
+El Corpus se expande sobre el exterior entrópico mediante un proceso dual: primero, el **filtrado selectivo** de recursos externos según su utilidad operativa; y segundo, la **readaptación estructural interna** ante esa nueva inclusión.
 
 ## Estructura de Auditoría
 Este repositorio se organiza para facilitar la trazabilidad técnica y la transparencia epistemológica:
