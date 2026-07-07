@@ -34,7 +34,8 @@ Aquí puedes acceder directamente a los documentos del Corpus:
 - 
 ---
 ### Auditoría de Visibilidad
-![Contador de visitas](https://hit.yey.fi/ignaciolopezvillanueva/ignaciolopezvillanueva.github.io)
+![Visitas](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fignaciolopezvillanueva.github.io)
+
 
 --
 
