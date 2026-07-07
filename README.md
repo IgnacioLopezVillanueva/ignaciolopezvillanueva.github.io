@@ -34,7 +34,8 @@ Aquí puedes acceder directamente a los documentos del Corpus:
 - [📄 Ontesia - Ontesis](docs/ontesia-%20ontesis.pdf)
 - [📄 La Mina de los Numeros Preciosos](docs/La%20Mina%20de%20los%20Numeros%20Preciosos-1.pdf)
 - [📄 como validar el corpus](docs/Validacion.pdf)
-- [📄 Porqué la matemática se convirtió en una bola de nieve](docs/Porqu%C3%A9%20la%20matem%C3%A1tica%20se%20convirti%C3%B3%20en%20una%20bola%20de%20nieve.md)
+- [📄 como validar el corpus](docs/Validacion_fase_2_y_3.pdf)
+- - [📄 Porqué la matemática se convirtió en una bola de nieve](docs/Porqu%C3%A9%20la%20matem%C3%A1tica%20se%20convirti%C3%B3%20en%20una%20bola%20de%20nieve.md)
 - [📝 Índice de Documentación (Detallado)](docs/INDEX_DOCS.md)
 - 
 ---
