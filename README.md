@@ -2,8 +2,7 @@
 https://zenodo.org/communities/ignacio-lopez-villanueva/records?q=&l=list&p=1&s=10&sort=newest
 https://philpeople.org/profiles/ignacio-lopez-villanueva
 ## Resumen Ejecutivo
-El **Corpus Ignaciano** es la formalización auditada de la **Teoría General de la Existencia Operativa (TGEO)**. Este repositorio actúa como nodo central de la ontología generativa que define las condiciones de existencia, operación y persistencia de sistemas cerrados frente a la degradación entrópica.
-
+El **Corpus Ignaciano** es la resonancia y relación iterativa de diversos componentes, incluyendo la TGEO, TUC, EPA, ONTESIS y ONTESIA etc. Este repositorio actúa como nodo central de la ontología generativa que define las condiciones de existencia, operación y persistencia de sistemas abiertos que integran la complejidad de lo externo evitando la degradación entrópica interna.
 ## Estructura de Auditoría
 Este repositorio se organiza para facilitar la trazabilidad técnica y la transparencia epistemológica:
 - **[Nota de Auditoría y Aclaratoria](ACLARATORIA.md):** Registro de correcciones y delimitación formal frente a los teoremas de Gödel y Tarski.
