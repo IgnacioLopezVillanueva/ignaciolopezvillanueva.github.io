@@ -27,7 +27,7 @@ Consulta el [Índice de Documentación Técnica](docs/INDEX_DOCS.md) para accede
 ## Acceso a Documentación Técnica (Tratados)
 Aquí puedes acceder directamente a los documentos del Corpus:
 
-- [📄 Germen_02](docs/GERMEN.pdf)
+- [📄 Germen](docs/GERMEN.pdf)
 - [📄 IGNATIUM LEX EXISTENTIAE](docs/IGNATIUM_LEX_EXISTENTIAE-1%20(2).pdf)
 - [📄 ONTESIS](docs/ONTESIS%20(2).pdf)
 - [📄 Ontesia 2](docs/ontesia%202.pdf)
