@@ -51,12 +51,12 @@ Ontesia despliega la arquitectura completa de sistemas capaces.
 
 ---
 
-## Ley estructural (siglo XXII)
+## Principio operativo
 
-> **En la ciencia de la viabilidad, la mentira solo tiene un adyacente: la reentrada.  
+> En la ciencia de la viabilidad, la mentira solo tiene un adyacente: la reentrada.  
 > La economía negentrópica es catalizador de su absorción.  
 > Ignición corrige. Ontesis clausura.  
-> El objetivo común fija la convergencia hacia el cian.**
+> El objetivo común fija la convergencia hacia el cian, incluso cuando el entorno está caliente y tiende a desacoplar.
 
 ---
 
