@@ -28,6 +28,12 @@ Consulta el [Índice de Documentación Técnica](docs/INDEX_DOCS.md) para accede
 Aquí puedes acceder directamente a los documentos del Corpus:
 
 
+
+
+
+
+ -[📄 IGNICIÓN- de la filosofía operacional a la ciencia de la viabilidad](docs/Ignicion_revisada (1).pdf)
+
 - [📄 Invariancia Estructural y Algebra Ontesica,
 Un Marco Dual de Clausura Contextual y Exploracion de Sistemas
 No-Discretizables](docs/RompeRalf.pdf)
