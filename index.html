@@ -14,12 +14,9 @@
       --text-soft: #4b5263;
       --accent: #1f7ae0;
       --accent-soft: #e3f0ff;
-      --code-bg: #111827;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -45,7 +42,6 @@
     header h1 {
       margin: 0 0 8px;
       font-size: 1.9rem;
-      letter-spacing: 0.02em;
     }
 
     header p {
@@ -62,8 +58,6 @@
     }
 
     nav a {
-      display: inline-flex;
-      align-items: center;
       padding: 6px 10px;
       border-radius: 999px;
       border: 1px solid var(--border);
@@ -71,7 +65,7 @@
       font-size: 0.9rem;
       color: var(--text-soft);
       background: var(--bg-panel);
-      transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+      transition: 0.15s ease;
     }
 
     nav a:hover {
@@ -93,11 +87,6 @@
       font-size: 1.2rem;
     }
 
-    main section p {
-      margin: 0 0 10px;
-      color: var(--text-soft);
-    }
-
     details {
       margin-top: 8px;
       border-radius: 8px;
@@ -113,13 +102,8 @@
       list-style: none;
     }
 
-    summary::-webkit-details-marker {
-      display: none;
-    }
-
     summary::before {
       content: "▸";
-      display: inline-block;
       margin-right: 6px;
       font-size: 0.8rem;
       color: var(--accent);
@@ -149,23 +133,6 @@
       text-decoration: underline;
     }
 
-    .chain {
-      margin-top: 6px;
-      font-weight: 600;
-      color: var(--text);
-    }
-
-    .principio {
-      border-left: 3px solid var(--accent);
-      padding-left: 10px;
-      margin-top: 4px;
-      color: var(--text);
-    }
-
-    .principio p {
-      margin: 0;
-    }
-
     blockquote {
       margin: 8px 0 0;
       padding: 8px 10px;
@@ -174,26 +141,12 @@
       color: var(--text);
     }
 
-    blockquote p {
-      margin: 0 0 4px;
-    }
-
     footer {
       margin-top: 24px;
       padding-top: 12px;
       border-top: 1px solid var(--border);
       font-size: 0.9rem;
       color: var(--text-soft);
-    }
-
-    @media (min-width: 768px) {
-      .page {
-        padding: 32px 0 48px;
-      }
-
-      main section {
-        padding: 18px 18px 20px;
-      }
     }
   </style>
 </head>
@@ -221,7 +174,6 @@
     <main>
       <section id="destacados">
         <h2>Documentos destacados</h2>
-        <p>Documentos fundacionales y operativos del Corpus IGLV. Son la base conceptual, estructural y formal del sistema.</p>
 
         <details open>
           <summary><strong>Ver documentos destacados</strong></summary>
@@ -242,17 +194,12 @@
 
         <details open>
           <summary><strong>Ignición</strong></summary>
-          <p>
-            Ignición es la arquitectura mínima que garantiza viabilidad, estabilidad dinámica y coherencia
-            estructural frente a la entropía externa. Se fundamenta en el <strong>Principio G</strong>.
-          </p>
+          <p>Ignición es la arquitectura mínima que garantiza viabilidad, estabilidad dinámica y coherencia estructural.</p>
         </details>
 
         <details>
           <summary><strong>Ontesis</strong></summary>
-          <p>
-            Ontesis define los estados de estabilidad, su mantenimiento, degradación y recuperación.
-          </p>
+          <p>Ontesis define los estados de estabilidad, su mantenimiento, degradación y recuperación.</p>
         </details>
 
         <details>
@@ -262,12 +209,8 @@
 
         <details>
           <summary><strong>Ontesia</strong></summary>
-          <p>
-            Ontesia despliega la arquitectura completa de sistemas capaces.
-          </p>
+          <p>Ontesia despliega la arquitectura completa de sistemas capaces.</p>
         </details>
-
-        <p class="chain"><strong>Ignición → Ontesis → Ontesis G → Ontesia</strong></p>
       </section>
 
       <section id="principio">
@@ -282,7 +225,6 @@
 
       <section id="completa">
         <h2>Documentación completa</h2>
-        <p>Documentos complementarios, operativos, históricos y de validación del Corpus IGLV.</p>
 
         <details>
           <summary><strong>Ver documentación completa</strong></summary>
@@ -294,23 +236,19 @@
             <li><a href="docs/matematica-bola-de-nieve.html">Porqué la matemática se convirtió en una bola de nieve</a></li>
             <li><a href="docs/Génesis_matematica.pdf">Génesis Matemática</a></li>
             <li><a href="docs/INDEX_DOCS.md?plain=1">Índice de Documentación (Detallado)</a></li>
+            <li><a href="https://scholar.google.com" target="_blank">Google Scholar — Búsqueda académica</a></li>
           </ul>
         </details>
       </section>
 
       <section id="auditoria">
         <h2>Auditoría y aclaratoria</h2>
-        <p>
-          El repositorio incluye una nota de auditoría y aclaratoria que delimita el alcance del corpus,
-          registra correcciones y fija la estructura estable del sistema.
-        </p>
+        <p>El repositorio incluye una nota de auditoría y aclaratoria que delimita el alcance del corpus.</p>
       </section>
 
       <section id="citacion">
         <h2>Citación</h2>
-        <p>
-          Para citar este corpus, consulte el archivo <strong>CITATION.cff</strong> incluido en el repositorio.
-        </p>
+        <p>Para citar este corpus, consulte el archivo <strong>CITATION.cff</strong>.</p>
       </section>
     </main>
 
