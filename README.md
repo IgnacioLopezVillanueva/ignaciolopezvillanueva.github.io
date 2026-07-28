@@ -8,9 +8,6 @@ Su núcleo es **Ignición**, la arquitectura mínima que inicia la fuerza negent
 
 ## Documentos Destacados
 
-Documentos fundacionales y operativos del Corpus IGLV.  
-Todos estos archivos existen realmente en el directorio `/docs`.
-
 <details open>
 <summary><strong>Ver documentos destacados</strong></summary>
 
@@ -19,7 +16,7 @@ Todos estos archivos existen realmente en el directorio `/docs`.
 - [Ontesia](docs/ontesia%202.pdf)
 - [Ontesia–Ontesis](docs/ontesia–ontesis.pdf)
 - [Ignatium Lex Existentiale](docs/IGNATIUM_LEX_EXISTENTIAE-1%20(2).pdf)
-- [Invariancia Estructural y Álgebra Ontésica (RompeRalf)](docs/RompeRalf.pdf)
+- [Invariancia Estructural y Álgebra Ontésica](docs/RompeRalf.pdf)
 - [GERMEN — Especificación de seguridad estructural](docs/GERMEN.pdf)
 
 </details>
@@ -30,46 +27,40 @@ Todos estos archivos existen realmente en el directorio `/docs`.
 
 <details open>
 <summary><strong>Ignición</strong></summary>
-
 Ignición es la arquitectura mínima que garantiza viabilidad, estabilidad dinámica y coherencia
-estructural frente a la entropía externa.  
-Se fundamenta en el **Principio G**, la instrucción mínima de elegir lo bueno para preservar la estructura.
-
+estructural frente a la entropía externa. Se fundamenta en el **Principio G**.
 </details>
 
 <details>
 <summary><strong>Ontesis</strong></summary>
-
-Ontesis define los estados de estabilidad, su mantenimiento, degradación y recuperación.  
-Es la capa estructural mínima del sistema.
-
+Ontesis define los estados de estabilidad, su mantenimiento, degradación y recuperación.
 </details>
 
 <details>
 <summary><strong>Ontesis G</strong></summary>
-
-*Pendiente de subida.*  
-(Actualmente no aparece en el directorio `/docs`.)
-
+*Pendiente de subida.*
 </details>
 
 <details>
 <summary><strong>Ontesia</strong></summary>
-
-Ontesia despliega la arquitectura completa de sistemas capaces:  
-organización interna, acoplamiento, despliegue y operación sin colapso.
-
+Ontesia despliega la arquitectura completa de sistemas capaces.
 </details>
 
 ### Cadena estructural
-
 **Ignición → Ontesis → Ontesis G → Ontesia**
 
 ---
 
-## Documentación Completa
+## Ley estructural (siglo XXII)
 
-Documentos complementarios, operativos, históricos y de validación del Corpus IGLV.
+> **En la ciencia de la viabilidad, la mentira solo tiene un adyacente: la reentrada.  
+> La economía negentrópica es catalizador de su absorción.  
+> Ignición corrige. Ontesis clausura.  
+> El objetivo común fija la convergencia hacia el cian.**
+
+---
+
+## Documentación Completa
 
 <details>
 <summary><strong>Ver documentación completa</strong></summary>
@@ -80,7 +71,7 @@ Documentos complementarios, operativos, históricos y de validación del Corpus 
 - [Validación — Fase 2 y Fase 3](docs/Validación_fase_2_y_fase_3.pdf)
 - [Porqué la matemática se convirtió en una bola de nieve](docs/matematica-bola-de-nieve.html)
 - [Génesis Matemática](docs/Génesis_matematica.pdf)
-- [Índice de Documentación (Detallado)](docs/INDEX_DOCS.md)
+- [Índice de Documentación (Detallado)](docs/INDEX_DOCS.md?plain=1)
 
 </details>
 
