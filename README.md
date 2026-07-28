@@ -6,30 +6,20 @@ Su núcleo es **Ignición**, la arquitectura mínima que inicia la fuerza negent
 
 ---
 
-## Navegación
-
-- [Documentos Destacados](#documentos-destacados)
-- [Núcleo Conceptual](#núcleo-conceptual)
-- [Documentación Completa](#documentación-completa)
-- [Auditoría](#auditoría-y-aclaratoria)
-- [Citación](#citación)
-
----
-
 ## Documentos Destacados
 
 Documentos fundacionales y operativos del Corpus IGLV.  
-Son la base conceptual, estructural y formal del sistema.
+Todos estos archivos existen realmente en el directorio `/docs`.
 
 <details open>
 <summary><strong>Ver documentos destacados</strong></summary>
 
-- [Ignición — Filosofía operacional y ciencia de la viabilidad](docs/Ignicion.pdf)
-- [Ontesis — Teoría base de estabilidad](docs/Ontesis.pdf)
-- [Ontesis G — Estabilidad generalizada en sistemas abiertos](docs/Ontesis_G.pdf)
-- [Ontesia — Teoría general de la existencia y sistemas capaces](docs/Ontesia.pdf)
-- [Ignatium Lex Existentiale — Marco formal del Corpus IGLV](docs/Ignatium.pdf)
-- [Invariancia Estructural y Álgebra Ontésica](docs/Algebra_Ontesica.pdf)
+- [Ignición (revisada)](docs/Ignicion_revisada%20(1).pdf)
+- [Ontesis](docs/ONTESI%20(2).pdf)
+- [Ontesia](docs/ontesia%202.pdf)
+- [Ontesia–Ontesis](docs/ontesia–ontesis.pdf)
+- [Ignatium Lex Existentiale](docs/IGNATIUM_LEX_EXISTENTIAE-1%20(2).pdf)
+- [Invariancia Estructural y Álgebra Ontésica (RompeRalf)](docs/RompeRalf.pdf)
 - [GERMEN — Especificación de seguridad estructural](docs/GERMEN.pdf)
 
 </details>
@@ -58,8 +48,8 @@ Es la capa estructural mínima del sistema.
 <details>
 <summary><strong>Ontesis G</strong></summary>
 
-Ontesis G generaliza Ontesis a sistemas abiertos.  
-Estabilidad dinámica, transiciones y viabilidad en entornos no controlados.
+*Pendiente de subida.*  
+(Actualmente no aparece en el directorio `/docs`.)
 
 </details>
 
@@ -84,12 +74,13 @@ Documentos complementarios, operativos, históricos y de validación del Corpus 
 <details>
 <summary><strong>Ver documentación completa</strong></summary>
 
-- [MI* — Módulo de Inestabilidad Estructural](docs/MI.pdf)
-- [La Mina de los Números Preciosos](docs/Mina.pdf)
+- [MI* — Módulo de Inestabilidad Estructural](docs/Minisat.pdf)
+- [La Mina de los Números Preciosos](docs/La%20Mina%20de%20los%20Numeros%20Preciosos-1.pdf)
 - [Validación del Corpus IGLV — Fases 1–3](docs/Validacion.pdf)
-- [Porqué la matemática se convirtió en una bola de nieve](docs/Bola_de_Nieve.pdf)
-- [Génesis Matemática](docs/Genesis_Matematica.pdf)
-- [Índice de Documentación (Detallado)](docs/INDEX_DOCS.pdf)
+- [Validación — Fase 2 y Fase 3](docs/Validación_fase_2_y_fase_3.pdf)
+- [Porqué la matemática se convirtió en una bola de nieve](docs/matematica-bola-de-nieve.html)
+- [Génesis Matemática](docs/Génesis_matematica.pdf)
+- [Índice de Documentación (Detallado)](docs/INDEX_DOCS.md)
 
 </details>
 
