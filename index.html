@@ -6,156 +6,317 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
+    :root {
+      --bg: #f5f7fa;
+      --bg-panel: #ffffff;
+      --border: #d0d4dd;
+      --text: #1f2430;
+      --text-soft: #4b5263;
+      --accent: #1f7ae0;
+      --accent-soft: #e3f0ff;
+      --code-bg: #111827;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
     }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+
+    header {
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 1.9rem;
+      letter-spacing: 0.02em;
+    }
+
+    header p {
+      margin: 0;
+      color: var(--text-soft);
+      max-width: 720px;
+    }
+
     nav {
-      background: #f2f2f2;
-      padding: 10px;
-      border-radius: 6px;
-      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0 0;
     }
+
     nav a {
-      margin-right: 15px;
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
       text-decoration: none;
-      font-weight: bold;
-      color: #333;
+      font-size: 0.9rem;
+      color: var(--text-soft);
+      background: var(--bg-panel);
+      transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
     }
-    h2 {
-      margin-top: 40px;
+
+    nav a:hover {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: var(--accent);
     }
+
+    main section {
+      margin-bottom: 24px;
+      padding: 16px 16px 18px;
+      background: var(--bg-panel);
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    main section h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+
+    main section p {
+      margin: 0 0 10px;
+      color: var(--text-soft);
+    }
+
     details {
-      margin-bottom: 20px;
-      padding: 10px;
-      background: #fafafa;
-      border: 1px solid #ddd;
-      border-radius: 6px;
+      margin-top: 8px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #fbfcff;
+      padding: 8px 10px 10px;
     }
+
     summary {
       cursor: pointer;
-      font-weight: bold;
+      font-weight: 600;
+      color: var(--text);
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::before {
+      content: "▸";
+      display: inline-block;
+      margin-right: 6px;
+      font-size: 0.8rem;
+      color: var(--accent);
+      transition: transform 0.15s ease;
+    }
+
+    details[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+    }
+
+    li {
+      margin: 4px 0;
+      color: var(--text-soft);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .chain {
+      margin-top: 6px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .principio {
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
+      margin-top: 4px;
+      color: var(--text);
+    }
+
+    .principio p {
+      margin: 0;
+    }
+
+    blockquote {
+      margin: 8px 0 0;
+      padding: 8px 10px;
+      border-left: 3px solid var(--accent);
+      background: var(--accent-soft);
+      color: var(--text);
+    }
+
+    blockquote p {
+      margin: 0 0 4px;
+    }
+
+    footer {
+      margin-top: 24px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--text-soft);
+    }
+
+    @media (min-width: 768px) {
+      .page {
+        padding: 32px 0 48px;
+      }
+
+      main section {
+        padding: 18px 18px 20px;
+      }
     }
   </style>
 </head>
 
 <body>
+  <div class="page">
+    <header>
+      <h1>Corpus IGLV — Filosofía y Ciencia de la Viabilidad</h1>
+      <p>
+        El Corpus IGLV es un conjunto estructurado de documentos conceptuales, operativos y formales
+        orientados a la viabilidad, estabilidad y capacidad de sistemas abiertos. Su núcleo es
+        <strong>Ignición</strong>, la arquitectura mínima que inicia la fuerza negentrópica del sistema.
+      </p>
 
-  <h1>Corpus IGLV — Filosofía y Ciencia de la Viabilidad</h1>
+      <nav>
+        <a href="#destacados">Docs destacados</a>
+        <a href="#nucleo">Núcleo conceptual</a>
+        <a href="#principio">Principio operativo</a>
+        <a href="#completa">Documentación completa</a>
+        <a href="#auditoria">Auditoría</a>
+        <a href="#citacion">Citación</a>
+      </nav>
+    </header>
 
-  <nav>
-    <a href="#destacados">Docs Destacados</a>
-    <a href="#nucleo">Núcleo Conceptual</a>
-    <a href="#completa">Documentación Completa</a>
-    <a href="#auditoria">Auditoría</a>
-    <a href="#citacion">Citación</a>
-  </nav>
+    <main>
+      <section id="destacados">
+        <h2>Documentos destacados</h2>
+        <p>Documentos fundacionales y operativos del Corpus IGLV. Son la base conceptual, estructural y formal del sistema.</p>
 
-  <p>
-    El Corpus IGLV es un conjunto estructurado de documentos conceptuales, operativos y formales
-    orientados a la viabilidad, estabilidad y capacidad de sistemas abiertos. Su núcleo es
-    <strong>Ignición</strong>, la arquitectura mínima que inicia la fuerza negentrópica del sistema.
-  </p>
+        <details open>
+          <summary><strong>Ver documentos destacados</strong></summary>
+          <ul>
+            <li><a href="docs/Ignicion_revisada%20(1).pdf">Ignición (revisada)</a></li>
+            <li><a href="docs/ONTESI%20(2).pdf">Ontesis</a></li>
+            <li><a href="docs/ontesia%202.pdf">Ontesia</a></li>
+            <li><a href="docs/ontesia–ontesis.pdf">Ontesia–Ontesis</a></li>
+            <li><a href="docs/IGNATIUM_LEX_EXISTENTIAE-1%20(2).pdf">Ignatium Lex Existentiale</a></li>
+            <li><a href="docs/RompeRalf.pdf">Invariancia Estructural y Álgebra Ontésica</a></li>
+            <li><a href="docs/GERMEN.pdf">GERMEN — Especificación de seguridad estructural</a></li>
+          </ul>
+        </details>
+      </section>
 
-  <hr>
+      <section id="nucleo">
+        <h2>Núcleo conceptual</h2>
 
-  <h2 id="destacados">Documentos Destacados</h2>
-  <p>Documentos fundacionales y operativos del Corpus IGLV. Son la base conceptual, estructural y formal del sistema.</p>
+        <details open>
+          <summary><strong>Ignición</strong></summary>
+          <p>
+            Ignición es la arquitectura mínima que garantiza viabilidad, estabilidad dinámica y coherencia
+            estructural frente a la entropía externa. Se fundamenta en el <strong>Principio G</strong>.
+          </p>
+        </details>
 
-  <details open>
-    <summary>Ver documentos destacados</summary>
-    <ul>
-      <li><a href="docs/Ignicion_revisada%20(1).pdf">Ignición — Filosofía operacional y ciencia de la viabilidad</a></li>
-      <li><a href="docs/ONTESI%20(2).pdf">Ontesis — Teoría base de estabilidad</a></li>
-      <li><a href="docs/ontesia%202.pdf">Ontesia — Teoría general de la existencia y sistemas capaces</a></li>
-      <li><a href="docs/ontesia–ontesis.pdf">Ontesia–Ontesis</a></li>
-      <li><a href="docs/IGNATIUM_LEX_EXISTENTIAE-1%20(2).pdf">Ignatium Lex Existentiale — Marco formal del Corpus IGLV</a></li>
-      <li><a href="docs/RompeRalf.pdf">Invariancia Estructural y Álgebra Ontésica</a></li>
-      <li><a href="docs/GERMEN.pdf">GERMEN — Especificación de seguridad estructural</a></li>
-    </ul>
-  </details>
+        <details>
+          <summary><strong>Ontesis</strong></summary>
+          <p>
+            Ontesis define los estados de estabilidad, su mantenimiento, degradación y recuperación.
+          </p>
+        </details>
 
-  <hr>
+        <details>
+          <summary><strong>Ontesis G</strong></summary>
+          <p><em>Pendiente de subida.</em></p>
+        </details>
 
-  <h2 id="nucleo">Núcleo Conceptual</h2>
+        <details>
+          <summary><strong>Ontesia</strong></summary>
+          <p>
+            Ontesia despliega la arquitectura completa de sistemas capaces.
+          </p>
+        </details>
 
-  <details open>
-    <summary>Ignición</summary>
-    <p>
-      Ignición es la arquitectura mínima que garantiza viabilidad, estabilidad dinámica y coherencia
-      estructural frente a la entropía externa. Se fundamenta en el <strong>Principio G</strong>, la instrucción
-      mínima de elegir lo bueno para preservar la estructura y blindar la estabilidad interna.
-    </p>
-  </details>
+        <p class="chain"><strong>Ignición → Ontesis → Ontesis G → Ontesia</strong></p>
+      </section>
 
-  <details>
-    <summary>Ontesis</summary>
-    <p>
-      Ontesis define los estados de estabilidad, su mantenimiento, degradación y recuperación. Es la
-      capa estructural mínima del sistema.
-    </p>
-  </details>
+      <section id="principio">
+        <h2>Principio operativo</h2>
+        <blockquote>
+          <p>En la ciencia de la viabilidad, la mentira solo tiene un adyacente: la reentrada.</p>
+          <p>La economía negentrópica es catalizador de su absorción.</p>
+          <p>Ignición corrige. Ontesis clausura.</p>
+          <p>El objetivo común fija la convergencia hacia el cian, incluso cuando el entorno está caliente y tiende a desacoplar.</p>
+        </blockquote>
+      </section>
 
-  <details>
-    <summary>Ontesis G</summary>
-    <p>
-      *Pendiente de subida.*  
-      (Actualmente no aparece en el directorio `/docs`.)
-    </p>
-  </details>
+      <section id="completa">
+        <h2>Documentación completa</h2>
+        <p>Documentos complementarios, operativos, históricos y de validación del Corpus IGLV.</p>
 
-  <details>
-    <summary>Ontesia</summary>
-    <p>
-      Ontesia despliega la arquitectura completa de sistemas capaces: organización interna, acoplamiento,
-      despliegue y operación sin colapso.
-    </p>
-  </details>
+        <details>
+          <summary><strong>Ver documentación completa</strong></summary>
+          <ul>
+            <li><a href="docs/Minisat.pdf">MI* — Módulo de Inestabilidad Estructural</a></li>
+            <li><a href="docs/La%20Mina%20de%20los%20Numeros%20Preciosos-1.pdf">La Mina de los Números Preciosos</a></li>
+            <li><a href="docs/Validacion.pdf">Validación del Corpus IGLV — Fases 1–3</a></li>
+            <li><a href="docs/Validación_fase_2_y_fase_3.pdf">Validación — Fase 2 y Fase 3</a></li>
+            <li><a href="docs/matematica-bola-de-nieve.html">Porqué la matemática se convirtió en una bola de nieve</a></li>
+            <li><a href="docs/Génesis_matematica.pdf">Génesis Matemática</a></li>
+            <li><a href="docs/INDEX_DOCS.md?plain=1">Índice de Documentación (Detallado)</a></li>
+          </ul>
+        </details>
+      </section>
 
-  <h3>Cadena estructural</h3>
-  <p><strong>Ignición → Ontesis → Ontesis G → Ontesia</strong></p>
+      <section id="auditoria">
+        <h2>Auditoría y aclaratoria</h2>
+        <p>
+          El repositorio incluye una nota de auditoría y aclaratoria que delimita el alcance del corpus,
+          registra correcciones y fija la estructura estable del sistema.
+        </p>
+      </section>
 
-  <hr>
+      <section id="citacion">
+        <h2>Citación</h2>
+        <p>
+          Para citar este corpus, consulte el archivo <strong>CITATION.cff</strong> incluido en el repositorio.
+        </p>
+      </section>
+    </main>
 
-  <h2 id="completa">Documentación Completa</h2>
-  <p>Documentos complementarios, operativos, históricos y de validación del Corpus IGLV.</p>
-
-  <details>
-    <summary>Ver documentación completa</summary>
-    <ul>
-      <li><a href="docs/Minisat.pdf">MI* — Módulo de Inestabilidad Estructural</a></li>
-      <li><a href="docs/La%20Mina%20de%20los%20Numeros%20Preciosos-1.pdf">La Mina de los Números Preciosos</a></li>
-      <li><a href="docs/Validacion.pdf">Validación del Corpus IGLV — Fases 1–3</a></li>
-      <li><a href="docs/Validación_fase_2_y_fase_3.pdf">Validación — Fase 2 y Fase 3</a></li>
-      <li><a href="docs/matematica-bola-de-nieve.html">Porqué la matemática se convirtió en una bola de nieve</a></li>
-      <li><a href="docs/Génesis_matematica.pdf">Génesis Matemática</a></li>
-
-      <!-- CORREGIDO -->
-      <li><a href="docs/INDEX_DOCS.md?plain=1">Índice de Documentación (Detallado)</a></li>
-    </ul>
-  </details>
-
-  <hr>
-
-  <h2 id="auditoria">Auditoría y Aclaratoria</h2>
-  <p>
-    El repositorio incluye una nota de auditoría y aclaratoria que delimita el alcance del corpus,
-    registra correcciones y fija la estructura estable del sistema.
-  </p>
-
-  <hr>
-
-  <h2 id="citacion">Citación</h2>
-  <p>
-    Para citar este corpus, consulte el archivo <strong>CITATION.cff</strong> incluido en el repositorio.
-  </p>
-
-  <hr>
-
-  <p><em>Publicado por Ignacio López Villanueva (ORCID: 0009-0008-4817-5228).</em></p>
-
+    <footer>
+      <p><strong>Publicado por Ignacio López Villanueva</strong> (ORCID: 0009-0008-4817-5228).</p>
+    </footer>
+  </div>
 </body>
 </html>
