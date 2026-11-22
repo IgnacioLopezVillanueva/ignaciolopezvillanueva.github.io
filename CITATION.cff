@@ -1,19 +1,44 @@
-
 cff-version: 1.2.0
-message: "Si utilizas este Corpus, por favor cítalo como sigue:"
+title: "Corpus IGLV — Arquitectura Formal de Viabilidad y Coherencia Estructural"
+message: "Si utiliza este corpus, sus especificaciones formales o sus implementaciones en código, por favor cítelo utilizando los siguientes metadatos."
+type: software
 authors:
   - family-names: "López Villanueva"
     given-names: "Ignacio"
-    orcid: "https://orcid.org/0009-0008-4817-5228"
-title: "Corpus Ignaciano: Lex Existentiae"
-version: 1.1
-doi: 10.5281/zenodo.21217682
-date-released: 2026-07-06
-license: CC-BY-4.0
-url: "https://ignaciolopezvillanueva.github.io"
+    orcid: "https://orcid.org"
+    city: "A Coruña"
+    country: "ES"
+repository-code: "https://github.com"
+url: "https://github.io"
+abstract: >-
+  Edición canónica curada y bilingüe (ES/EN) del Corpus IGLV: arquitectura formal
+  de viabilidad operativa, persistencia relacional (Cyber-synekia), clausura
+  ontésica (IGNATIUM–ONTESIS–ONTESIA–ONTESIS G), motor disipativo Ignición v5–v7,
+  dinámica Operium y coherencia estructural (Sistema Cian / LPAC / MI*).
 keywords:
-  - "Corpus Ignaciano"
-  - "Teoría General de la Existencia Operativa"
-  - "TGEO"
-  - "Sintropía"
-  - "Sistemas Cerrados"
+  - "Corpus IGLV"
+  - "Ontesis G"
+  - "Ignición"
+  - "Operium"
+  - "Cyber-synekia"
+  - "Sistema Cian"
+  - "LPAC"
+  - "Viability Theory"
+  - "Negentropy"
+  - "AI Safety"
+license: "CC-BY-4.0"
+version: "2026.11-canonical"
+date-released: "2026-11-22"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24302409"
+    description: "El Operium y la Cascada de Extracción (Motor Ignición V5)"
+  - type: doi
+    value: "10.5281/zenodo.23852880"
+    description: "Ignición. Iteración de código v5, v6 y v7 (Unificado)"
+  - type: doi
+    value: "10.5281/zenodo.21001680"
+    description: "Ontesis g — Clausura ética y geométrica"
+  - type: doi
+    value: "10.5281/zenodo.18128653"
+    description: "Teoría Unificada de Coherencia Estructural — El Sistema Cian"
