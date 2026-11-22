@@ -15,7 +15,7 @@
 ## 1. Cadena Estructural del Núcleo / Core Structural Chain
 
 ```text
-Persistencia & Cyber-synekia ──▶ Ignición (Ejes σ, τ) ──▶ Ontesis / Ontesia ──▶ Ontesis G (Clausura) ──▶ Sistema Cian & MI*
+Persistencia & Cyber-synekia ──▶ Ignición (3 Estratos) ──▶ Ontesis / Ontesia ──▶ Ontesis G (Clausura) ──▶ Sistema Cian & MI*
 ```
 
 ---
@@ -39,13 +39,14 @@ Persistencia & Cyber-synekia ──▶ Ignición (Ejes σ, τ) ──▶ Ontesis
 | **Invariancia Estructural y Lectura Generativa del Límite de Gödel en Sistemas No‑Discretizables** (26 jun 2026) | GL | [`10.5281/zenodo.20916867`](https://doi.org) | Introduce el *umbral de apertura* y reformula la incompletitud como límite expresivo en sistemas generativos no discretizables. |
 | **Ontesis g** (28 jun 2026) | ES | [`10.5281/zenodo.21001680`](https://doi.org) | **Clausura ética y geométrica definitiva:** formaliza el *Principio G*, la *Métrica G* (Índice de Salud Constructiva) y el *Vector Humanista (H)*. |
 
-### C. Arquitectura `Ignición` (Línea de Ejes + Motor Disipativo + `Operium`)
+### C. Arquitectura `Ignición` (Tres Estratos: Teoría Base + Iteración de Código + Motor Disipativo)
 
 | Obra / Work | Idioma Original | DOI Verificado | Aportación Estructural / Structural Contribution |
 | :--- | :---: | :--- | :--- |
-| **Ignición. Iteración de código v5, v6 y v7 (Unificado)** (1 nov 2026) | ES | [`10.5281/zenodo.23852880`](https://doi.org) | Verifica 6 invariantes, supera estrés $20\times$ (v6) y cierra la dimensionalidad en dos ejes $(\sigma, \tau)$ sobre malla $6 \times 6$ (residuo $2.69\%$, v7). |
-| **Motor Ignición v5: Especificación Formal** (3 nov 2026) | ES | [`10.5281/zenodo.23911868`](https://doi.org) | Formaliza el sistema disipativo sin subsidio ($R_{\text{ingreso}}=0$) que convierte choques $ch[t]$ en recurso y demuestra cotas $S(T)$ y $T_m$ por Monte Carlo ($N=10.000$). |
-| **El Operium y la Cascada de Extracción (Motor Ignición V5)** (17 nov 2026) | ES | [`10.5281/zenodo.24302409`](https://doi.org) | Implementación en Python de extracción estructural continua ($P_1 \to P_n$) desde campo infinito $C_1$ con reconfiguración `_metacierre`. |
+| **Estrato 1 · IGNICIÓN — Teoría consolidada (Libros I–IV)** (29 jul 2026) | ES | [`10.5281/zenodo.21670117`](https://doi.org) | Marco teórico base (Libros I–IV): ontología operacional, lógica de la distinción, reentrada, ciclo TCV/RGB y ciencia de la viabilidad. |
+| **Estrato 1 · El Operium y la Cascada de Extracción (Motor Ignición V5)** (17 nov 2026) | ES | [`10.5281/zenodo.24302409`](https://doi.org) | Implementación en Python de extracción estructural continua ($P_1 \to P_n$) desde campo infinito $C_1$ con reconfiguración `_metacierre`. |
+| **Estrato 2 · Ignición. Iteración de código v5, v6 y v7 (Unificado)** (1 nov 2026) | ES | [`10.5281/zenodo.23852880`](https://doi.org) | Cierre de la línea de iteración de código (`v1–v7`): verifica 6 invariantes, supera estrés $20\times$ (v6) y cierra los ejes $(\sigma, \tau)$ en malla $6 \times 6$ (residuo $2.69\%$, v7). |
+| **Estrato 3 · Motor Ignición v5: Especificación Formal** (3 nov 2026) | ES | [`10.5281/zenodo.23911868`](https://doi.org) | Culminación de la línea dinámica (`v3–v5`): sistema disipativo sin subsidio ($R_{\text{ingreso}}=0$) que convierte choques $ch[t]$ en recurso y demuestra cotas $S(T)$ y $T_m$ por Monte Carlo ($N=10.000$). |
 
 ### D. Sistema Cian, Lógica `LPAC` y Complejidad Computacional (`MI*`)
 
@@ -77,3 +78,4 @@ Persistencia & Cyber-synekia ──▶ Ignición (Ejes σ, τ) ──▶ Ontesis
 ---
 
 **Autor / Author:** Ignacio López Villanueva · ORCID: [`0009-0008-4817-5228`](https://orcid.org) · A Coruña, España.
+
