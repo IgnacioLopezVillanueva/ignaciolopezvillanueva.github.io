@@ -1,93 +1,79 @@
-# Corpus IGLV — Filosofía y Ciencia de la Viabilidad
+# Corpus IGLV — Arquitectura Formal de Viabilidad y Coherencia Estructural
+# IGLV Corpus — Formal Architecture for Viability & Structural Coherence (ES / EN)
 
-El Corpus IGLV es un conjunto estructurado de documentos conceptuales, operativos y formales
-orientados a la viabilidad, estabilidad y capacidad de sistemas abiertos.  
-Su núcleo es **Ignición**, la arquitectura mínima que inicia la fuerza negentrópica del sistema.
+[![ORCID](https://shields.io)](https://orcid.org)
+[![Portal Web](https://shields.io)](https://github.io)
+[![Zenodo Community](https://shields.io)](https://zenodo.org)
+[![Zenodo Cyan System](https://shields.io)](https://zenodo.org)
 
----
-
-## Documentos Destacados
-
-<details open>
-<summary><strong>Ver documentos destacados</strong></summary>
-
-- [Ignición (revisada)](docs/Ignicion_revisada%20(1).pdf)
-- [Ontesis](docs/ONTESI%20(2).pdf)
-- [Ontesia](docs/ontesia%202.pdf)
-- [Ontesia–Ontesis](docs/ontesia–ontesis.pdf)
-- [Ignatium Lex Existentiale](docs/IGNATIUM_LEX_EXISTENTIAE-1%20(2).pdf)
-- [Invariancia Estructural y Álgebra Ontésica](docs/RompeRalf.pdf)
-- [GERMEN — Especificación de seguridad estructural](docs/GERMEN.pdf)
-
-</details>
+> **🇪🇸 Guía rápida:** Este repositorio constituye la **edición canónica curada y bilingüe** del Corpus IGLV. Antes de leer los tratados formales, consulte la [**Nota Aclaratoria (`ACLARATORIA.md`)**](./ACLARATORIA.md) —donde se explicita el marco frente a Popper, Gödel y P ≠ NP— y el [**Glosario Canónico (`GLOSSARY.md`)**](./GLOSSARY.md).
+>
+> **🇬🇧 Quick Guide:** This repository serves as the **curated, bilingual canonical edition** of the IGLV Corpus. Before reading the formal treatises, please refer to the [**Methodological Note (`ACLARATORIA.md`)**](./ACLARATORIA.md)—which clarifies the framework regarding Popper, Gödel, and P ≠ NP—and the [**Canonical Glossary (`GLOSSARY.md`)**](./GLOSSARY.md).
 
 ---
 
-## Núcleo Conceptual
+## 1. Cadena Estructural del Núcleo / Core Structural Chain
 
-<details open>
-<summary><strong>Ignición</strong></summary>
-Ignición es la arquitectura mínima que garantiza viabilidad, estabilidad dinámica y coherencia
-estructural frente a la entropía externa. Se fundamenta en el **Principio G**.
-</details>
-
-<details>
-<summary><strong>Ontesis</strong></summary>
-Ontesis define los estados de estabilidad, su mantenimiento, degradación y recuperación.
-</details>
-
-<details>
-<summary><strong>Ontesis G</strong></summary>
-*Pendiente de subida.*
-</details>
-
-<details>
-<summary><strong>Ontesia</strong></summary>
-Ontesia despliega la arquitectura completa de sistemas capaces.
-</details>
-
-### Cadena estructural
-**Ignición → Ontesis → Ontesis G → Ontesia**
+```text
+Persistencia & Cyber-synekia ──▶ Ignición (Ejes σ, τ) ──▶ Ontesis / Ontesia ──▶ Ontesis G (Clausura) ──▶ Sistema Cian & MI*
+```
 
 ---
 
-## Principio operativo
+## 2. Índice Maestro de Piezas Verificadas (DOIs Zenodo) / Master Index of Verified Works
 
-> En la ciencia de la viabilidad, la mentira solo tiene un adyacente: la reentrada.  
-> La economía negentrópica es catalizador de su absorción.  
-> Ignición corrige. Ontesis clausura.  
-> El objetivo común fija la convergencia hacia el cian, incluso cuando el entorno está caliente y tiende a desacoplar.
+### A. Cimientos Formales y Persistencia / Formal Foundations & Persistence
 
----
+| Obra / Work | Idioma Original | DOI Verificado | Aportación Estructural / Structural Contribution |
+| :--- | :---: | :--- | :--- |
+| **Persistencia.** (18 oct 2026) | ES | [`10.5281/zenodo.23458503`](https://doi.org) | Formulación conjuntista de continuidad entre estados sucesivos ($S_t \cap S_{t+1} \neq \emptyset$) frente a identidad fija invariante. |
+| **Cyber-synekia: Tratado de Persistencia Relacional y Máquina de Persistencia en la Dinámica C** (1 nov 2026) | ES | [`10.5281/zenodo.23853133`](https://doi.org) | *Teorema de la Bifurcación Relacional* (preservación normativa frente a muerte ontológica) + implementación en Python de la *Máquina de Persistencia*. |
+| **Separabilidad aditiva** (1 nov 2026) | ES | [`10.5281/zenodo.23852995`](https://doi.org) | Criterio diferencial necesario y suficiente e integrabilidad para desacoplar una acción común de funciones de estado interno. |
 
-## Documentación Completa
+### B. Núcleo Ontésico y Metamatemática / Ontesic Core & Metamathematics
 
-<details>
-<summary><strong>Ver documentación completa</strong></summary>
+| Obra / Work | Idioma Original | DOI Verificado | Aportación Estructural / Structural Contribution |
+| :--- | :---: | :--- | :--- |
+| **IGNATIUM LEX EXISTENTIAE: Clausura Ontésica e Unificación do Espazo de Estados** (3 jun 2026) | GL | [`10.5281/zenodo.20527435`](https://doi.org) | Clausura geométrica mediante flujo gradiente endógeno sobre la Forma Canónica de 7 componentes y métrica Hessiana natural. |
+| **ONTESIA: Teoría General de la Existencia Capaz y Simulador SCA** (12 jun 2026) | ES | [`10.5281/zenodo.20670809`](https://doi.org) | Derivación de la métrica como Hessiano de la Acción sobre un *poset* lógico y simulador reproducible de Sistemas Capaces (SCA). |
+| **Invariancia Estructural y Lectura Generativa del Límite de Gödel en Sistemas No‑Discretizables** (26 jun 2026) | GL | [`10.5281/zenodo.20916867`](https://doi.org) | Introduce el *umbral de apertura* y reformula la incompletitud como límite expresivo en sistemas generativos no discretizables. |
+| **Ontesis g** (28 jun 2026) | ES | [`10.5281/zenodo.21001680`](https://doi.org) | **Clausura ética y geométrica definitiva:** formaliza el *Principio G*, la *Métrica G* (Índice de Salud Constructiva) y el *Vector Humanista (H)*. |
 
-- [MI* — Módulo de Inestabilidad Estructural](docs/Minisat.pdf)
-- [La Mina de los Números Preciosos](docs/La%20Mina%20de%20los%20Numeros%20Preciosos-1.pdf)
-- [Validación del Corpus IGLV — Fases 1–3](docs/Validacion.pdf)
-- [Validación — Fase 2 y Fase 3](docs/Validación_fase_2_y_fase_3.pdf)
-- [Porqué la matemática se convirtió en una bola de nieve](docs/matematica-bola-de-nieve.html)
-- [Génesis Matemática](docs/Génesis_matematica.pdf)
-- [Índice de Documentación (Detallado)](docs/INDEX_DOCS.md?plain=1)
+### C. Arquitectura `Ignición` (Línea de Ejes + Motor Disipativo + `Operium`)
 
-</details>
+| Obra / Work | Idioma Original | DOI Verificado | Aportación Estructural / Structural Contribution |
+| :--- | :---: | :--- | :--- |
+| **Ignición. Iteración de código v5, v6 y v7 (Unificado)** (1 nov 2026) | ES | [`10.5281/zenodo.23852880`](https://doi.org) | Verifica 6 invariantes, supera estrés $20\times$ (v6) y cierra la dimensionalidad en dos ejes $(\sigma, \tau)$ sobre malla $6 \times 6$ (residuo $2.69\%$, v7). |
+| **Motor Ignición v5: Especificación Formal** (3 nov 2026) | ES | [`10.5281/zenodo.23911868`](https://doi.org) | Formaliza el sistema disipativo sin subsidio ($R_{\text{ingreso}}=0$) que convierte choques $ch[t]$ en recurso y demuestra cotas $S(T)$ y $T_m$ por Monte Carlo ($N=10.000$). |
+| **El Operium y la Cascada de Extracción (Motor Ignición V5)** (17 nov 2026) | ES | [`10.5281/zenodo.24302409`](https://doi.org) | Implementación en Python de extracción estructural continua ($P_1 \to P_n$) desde campo infinito $C_1$ con reconfiguración `_metacierre`. |
 
----
+### D. Sistema Cian, Lógica `LPAC` y Complejidad Computacional (`MI*`)
 
-## Auditoría y Aclaratoria
-
-El repositorio incluye una nota de auditoría y aclaratoria que delimita el alcance del corpus,
-registra correcciones y fija la estructura estable del sistema.
-
----
-
-## Citación
-
-Para citar este corpus, consulte el archivo **CITATION.cff** incluido en el repositorio.
+| Obra / Work | Idioma Original | DOI Verificado | Aportación Estructural / Structural Contribution |
+| :--- | :---: | :--- | :--- |
+| **Teoría Unificada de Coherencia Estructural — El Sistema Cian** (2 ene 2026) | ES | [`10.5281/zenodo.18128653`](https://doi.org) | Obra compilada (integra los Documentos 1–13): magnitudes $(G, R, B)$, 5 reglas de *Lógica Paraconsistente del Axioma Cian (LPAC)*, transiciones de fase y regulador $\mathbf{MI}^*$. |
+| **El Problema P vs NP como Condición de Diseño** (2025) | ES | [`10.5281/zenodo.18076505`](https://doi.org) | Plantea la tratabilidad como restricción arquitectónica mediante acotación estructural ($\mathbf{MI}^*$). |
+| **MI\*-SAT v0.3: Standalone Educational SAT Solver with Incremental Structures** (2 nov 2026) | EN | [`10.5281/zenodo.23881112`](https://doi.org) | Código fuente en Python (`mi_star_sat_v0_3.py`) con análisis incremental de fórmulas CNF mediante grafos de dependencia y componentes de Tarjan. |
 
 ---
 
-**Publicado por Ignacio López Villanueva (ORCID: 0009-0008-4817-5228).**
+## 3. Estructura del Repositorio / Repository Structure
+
+* [`index.html`](./index.html) — Portal web bilingüe (`ES / EN`) publicado en GitHub Pages.
+* [`ACLARATORIA.md`](./ACLARATORIA.md) — Puente epistemológico y técnico (Popper, Gödel, $P \neq NP$).
+* [`GLOSSARY.md`](./GLOSSARY.md) — Diccionario terminológico oficial español-inglés.
+* [`CITATION.cff`](./CITATION.cff) — Metadatos normalizados para citación académica.
+* [`docs/`](./docs) — Documentación complementaria y notas históricas de evolución.
+* [`src/`](./src) — Espacio reservado para scripts ejecutables y *benchmarks* reproducibles en Python.
+
+---
+
+## 4. Ecosistema Completo / Full Ecosystem
+
+* **Archivo Histórico Completo (Zenodo — Comunidad General):** [zenodo.org/communities/ignacio-lopez-villanueva](https://zenodo.org)
+* **Colección Monográfica Sistema Cian (Zenodo):** [zenodo.org/communities/corpus-ignaciano](https://zenodo.org)
+* **Archivo Exploratorio y Difusión Filosófica (PhilArchive / PhilPeople):** [philarchive.org/s/Ignacio López Villanueva](https://philarchive.org)
+
+---
+
+**Autor / Author:** Ignacio López Villanueva · ORCID: [`0009-0008-4817-5228`](https://orcid.org) · A Coruña, España.
