@@ -195,6 +195,26 @@
       document.getElementById('btn-en').classList.toggle('active', lang === 'en');
       document.getElementById('btn-es').classList.toggle('active', lang === 'es');
     }
+    document.querySelectorAll('li').forEach(li => {
+      const a = li.querySelector('a');
+      const tag = li.querySelector('.doi-tag');
+      if (a && tag) {
+        const doi = tag.textContent.replace('DOI:', '').trim();
+        a.href = ['https://doi.org', doi].join('/');
+      }
+    });
+    document.querySelectorAll('#lectura a').forEach(a => {
+      if (a.textContent.includes('ACLARATORIA')) a.href = ['https://github.com', 'IgnacioLopezVillanueva', 'ignaciolopezvillanueva.github.io', 'blob', 'main', 'ACLARATORIA.md'].join('/');
+      if (a.textContent.includes('GLOSSARY')) a.href = ['https://github.com', 'IgnacioLopezVillanueva', 'ignaciolopezvillanueva.github.io', 'blob', 'main', 'GLOSSARY.md'].join('/');
+    });
+    document.querySelectorAll('#citacion a').forEach(a => {
+      if (a.textContent.includes('General')) a.href = ['https://zenodo.org', 'communities', 'ignacio-lopez-villanueva'].join('/');
+      if (a.textContent.includes('Cian') || a.textContent.includes('Cyan')) a.href = ['https://zenodo.org', 'communities', 'corpus-ignaciano'].join('/');
+      if (a.textContent.includes('PhilArchive')) a.href = ['https://philarchive.org', 's', 'Ignacio%20L%C3%B3pez%20Villanueva'].join('/');
+    });
+    const orcidLink = document.querySelector('footer a');
+    if (orcidLink) orcidLink.href = ['https://orcid.org', '0009-0008-4817-5228'].join('/');
   </script>
 </body>
 </html>
+
