@@ -13,8 +13,9 @@ url: "https://github.io"
 abstract: >-
   Edición canónica curada y bilingüe (ES/EN) del Corpus IGLV: arquitectura formal
   de viabilidad operativa, persistencia relacional (Cyber-synekia), clausura
-  ontésica (IGNATIUM–ONTESIS–ONTESIA–ONTESIS G), motor disipativo Ignición v5–v7,
-  dinámica Operium y coherencia estructural (Sistema Cian / LPAC / MI*).
+  ontésica (IGNATIUM–ONTESIS–ONTESIA–ONTESIS G), arquitectura Ignición en tres
+  estratos (teoría base y Operium, iteración de código v5–v7, motor disipativo v5)
+  y coherencia estructural (Sistema Cian / LPAC / MI*).
 keywords:
   - "Corpus IGLV"
   - "Ontesis G"
@@ -33,6 +34,9 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.24302409"
     description: "El Operium y la Cascada de Extracción (Motor Ignición V5)"
+  - type: doi
+    value: "10.5281/zenodo.23911868"
+    description: "Corpus IGLV: Especificación Formal del Motor Ignición v5"
   - type: doi
     value: "10.5281/zenodo.23852880"
     description: "Ignición. Iteración de código v5, v6 y v7 (Unificado)"
