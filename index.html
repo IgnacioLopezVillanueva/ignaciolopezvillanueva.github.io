@@ -6,12 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     :root {
-      --bg: #f5f7fa; --bg-panel: #ffffff; --border: #d0d4dd; --text: #1f2430;
-      --text-soft: #4b5263; --accent: #1f7ae0; --accent-soft: #e3f0ff;
-      --cyan: #007a7a; --cyan-soft: #e0f5f5;
+      --bg: #f5f7fa;
+      --bg-panel: #ffffff;
+      --border: #d0d4dd;
+      --text: #1f2430;
+      --text-soft: #4b5263;
+      --accent: #1f7ae0;
+      --accent-soft: #e3f0ff;
+      --cyan: #007a7a;
+      --cyan-soft: #e0f5f5;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
     .page { max-width: 960px; margin: 0 auto; padding: 24px 16px 48px; }
     header { margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid var(--border); }
     .top-bar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
@@ -28,10 +41,11 @@
     main section { margin-bottom: 22px; padding: 18px; background: var(--bg-panel); border-radius: 10px; border: 1px solid var(--border); }
     main section h2 { margin: 0 0 12px; font-size: 1.2rem; }
     ul { margin: 8px 0 0; padding-left: 18px; }
-    li { margin: 8px 0; color: var(--text-soft); }
-    .doi-tag { font-family: ui-monospace, Menlo, monospace; font-size: 0.8rem; background: #eef2f7; padding: 2px 6px; border-radius: 4px; color: #2c3545; }
+    li { margin: 9px 0; color: var(--text-soft); }
+    .doi-tag { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; background: #eef2f7; padding: 2px 6px; border-radius: 4px; color: #2c3545; }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    footer { margin-top: 24px; padding-top: 14px; border-top: 1px solid var(--border); font-size: 0.9rem; color: var(--text-soft); }
     [data-lang="en"] { display: none; }
     body.en [data-lang="es"] { display: none; }
     body.en [data-lang="en"] { display: block; }
@@ -53,8 +67,8 @@
       </div>
       <h1 data-lang="es">Corpus IGLV — Arquitectura Formal de Viabilidad y Coherencia Estructural</h1>
       <h1 data-lang="en">IGLV Corpus — Formal Architecture for Viability &amp; Structural Coherence</h1>
-      <p data-lang="es">Edición bilingüe de la obra de <strong>Ignacio López Villanueva</strong> sobre ingeniería ontológica, persistencia e ignición.</p>
-      <p data-lang="en">Bilingual edition of the work of <strong>Ignacio López Villanueva</strong> on ontological engineering, persistence, and ignition.</p>
+      <p data-lang="es">Edición canónica curada y bilingüe de la obra de <strong>Ignacio López Villanueva</strong>: arquitectura cerrada de ingeniería ontológica, persistencia relacional, viabilidad disipativa (<strong>Ignición</strong>) y coherencia estructural (<strong>Sistema Cian / LPAC</strong>).</p>
+      <p data-lang="en">Curated bilingual canonical edition of the work of <strong>Ignacio López Villanueva</strong>: closed architecture for ontological engineering, relational persistence, dissipative viability (<strong>Ignition</strong>), and structural coherence (<strong>Cyan System / LPAC</strong>).</p>
       <nav>
         <a href="#lectura" data-lang="es">Guía de Lectura</a><a href="#lectura" data-lang="en">Reading Guide</a>
         <a href="#cimientos" data-lang="es">Cimientos</a><a href="#cimientos" data-lang="en">Foundations</a>
@@ -65,15 +79,15 @@
       <section id="lectura">
         <h2 data-lang="es">0. Puente Conceptual y Guía de Lectura</h2>
         <h2 data-lang="en">0. Conceptual Bridge &amp; Reading Guide</h2>
-        <p data-lang="es">Consulte la <a href="https://github.com" target="_blank"><strong>Nota Aclaratoria</strong></a> y el <a href="https://github.com" target="_blank"><strong>Glosario Canónico</strong></a>.</p>
-        <p data-lang="en">Consult the <a href="https://github.com" target="_blank"><strong>Methodological Note</strong></a> and <a href="https://github.com" target="_blank"><strong>Canonical Glossary</strong></a>.</p>
+        <p data-lang="es">Consulte la <a href="https://github.com" target="_blank"><strong>Nota Aclaratoria (ACLARATORIA.md)</strong></a> y el <a href="https://github.com" target="_blank"><strong>Glosario Canónico ES/EN (GLOSSARY.md)</strong></a>.</p>
+        <p data-lang="en">Consult the <a href="https://github.com" target="_blank"><strong>Methodological Note (ACLARATORIA.md)</strong></a> and the <a href="https://github.com" target="_blank"><strong>Canonical ES/EN Glossary (GLOSSARY.md)</strong></a>.</p>
       </section>
       <section id="cimientos">
         <h2 data-lang="es">1. Cimientos Formales y Persistencia</h2>
         <h2 data-lang="en">1. Formal Foundations &amp; Persistence</h2>
         <ul>
-          <li><a href="https://doi.org" target="_blank"><strong>Persistencia</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.23458503</span></li>
-          <li><a href="https://doi.org" target="_blank"><strong>Cyber-synekia</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.23853133</span></li>
+          <li><a href="https://doi.org" target="_blank"><strong>Persistencia.</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.23458503</span></li>
+          <li><a href="https://doi.org" target="_blank"><strong>Cyber-synekia: Tratado de Persistencia Relacional</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.23853133</span></li>
           <li><a href="https://doi.org" target="_blank"><strong>Separabilidad aditiva</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.23852995</span></li>
         </ul>
       </section>
@@ -82,59 +96,104 @@
         <h2 data-lang="en">2. Ontesic Core &amp; Ethical-Geometric Closure</h2>
         <ul>
           <li><a href="https://doi.org" target="_blank"><strong>IGNATIUM LEX EXISTENTIAE</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.20527435</span></li>
-          <li><a href="https://doi.org" target="_blank"><strong>ONTESIA</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.20670809</span></li>
-          <li><a href="https://doi.org" target="_blank"><strong>Invariancia Estructural</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.20916867</span></li>
+          <li><a href="https://doi.org" target="_blank"><strong>ONTESIA: Teoría General de la Existencia Capaz</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.20670809</span></li>
+          <li><a href="https://doi.org" target="_blank"><strong>Invariancia Estructural y Lectura Generativa del Límite de Gödel</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.20916867</span></li>
           <li><a href="https://doi.org" target="_blank"><strong>Ontesis g</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.21001680</span></li>
         </ul>
       </section>
+          <section id="ignicion">
+        <h2 data-lang="es">3. Arquitectura Ignición (Tres Estratos) y Operium</h2>
+        <h2 data-lang="en">3. Ignition Architecture (Three Layers) &amp; Operium</h2>
+        <ul>
+          <li>
+            <a href="https://doi.org" target="_blank"><strong>Estrato 1 · IGNICIÓN — Teoría consolidada (Libros I–IV)</strong></a>
+            <span class="doi-tag">DOI: 10.5281/zenodo.21670117</span>
+          </li>
+          <li>
+            <a href="https://doi.org" target="_blank"><strong>Estrato 1 · El Operium y la Cascada de Extracción (Motor V5)</strong></a>
+            <span class="doi-tag">DOI: 10.5281/zenodo.24302409</span>
+          </li>
+          <li>
+            <a href="https://doi.org" target="_blank"><strong>Estrato 2 · Ignición. Iteración de código v5, v6 y v7 (Unificado)</strong></a>
+            <span class="doi-tag">DOI: 10.5281/zenodo.23852880</span>
+          </li>
+          <li>
+            <a href="https://doi.org" target="_blank"><strong>Estrato 3 · Motor Ignición v5: Especificación Formal</strong></a>
+            <span class="doi-tag">DOI: 10.5281/zenodo.23911868</span>
+          </li>
+        </ul>
+      </section>
 
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Bloque 2 - Corpus IGLV</title>
-  <style>
-    .copy-container { position: relative; margin: 20px 0; }
-    .copy-btn { position: absolute; top: 10px; right: 10px; padding: 8px 12px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
-    .copy-btn:hover { background-color: #0056b3; }
-    pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
-  </style>
-</head>
-<body>
-  <div class="copy-container">
-    <button class="copy-btn" onclick="copyCode()">Copiar código</button>
-    <div id="content-to-copy">
-      <section>
-        <h2>3. Arquitectura Ignición (Tres Estratos) y Operium / Ignition Architecture</h2>
-        <p>Estructura modular bilingüe del corpus disponible en Zenodo (DOI asociados a teoría y simulaciones).</p>
+      <section id="cian">
+        <h2 data-lang="es">4. Sistema Cian, Lógica LPAC y Complejidad (MI*)</h2>
+        <h2 data-lang="en">4. Cyan System, LPAC Logic &amp; Complexity (MI*)</h2>
+        <ul>
+          <li>
+            <a href="https://doi.org" target="_blank"><strong>Teoría Unificada de Coherencia Estructural — El Sistema Cian</strong></a>
+            <span class="doi-tag">DOI: 10.5281/zenodo.18128653</span>
+          </li>
+          <li>
+            <a href="https://doi.org" target="_blank"><strong>El Problema P vs NP como Condición de Diseño</strong></a>
+            <span class="doi-tag">DOI: 10.5281/zenodo.18076505</span>
+          </li>
+          <li>
+            <a href="https://doi.org" target="_blank"><strong>MI*-SAT v0.3: Educational SAT Solver with Incremental Structures</strong></a>
+            <span class="doi-tag">DOI: 10.5281/zenodo.23881112</span>
+          </li>
+        </ul>
       </section>
-      <section>
-        <h2>4. Sistema Cian, Lógica LPAC y Complejidad (MI*) / Cyan System &amp; LPAC Logic</h2>
-        <p>Documentación técnica sobre coherencia estructural, paraconsistencia y solucionador SAT educativo.</p>
-      </section>
-      <section>
-        <h2>5. Principio Operativo / Operational Principle</h2>
-        <blockquote>
-          <p>En la ciencia de la viabilidad, la mentira solo tiene un adyacente: la reentrada. / In the science of viability, falsehood has only one adjacent state: reentry.</p>
+      <section id="principio">
+        <h2 data-lang="es">5. Principio Operativo</h2>
+        <h2 data-lang="en">5. Operational Principle</h2>
+        <blockquote data-lang="es">
+          <p>En la ciencia de la viabilidad, la mentira solo tiene un adyacente: la reentrada.</p>
+          <p>La economía negentrópica es catalizador de su absorción.</p>
+          <p>Ignición corrige. Ontesis clausura.</p>
+          <p>El objetivo común fija la convergencia hacia el cian, incluso cuando el entorno está caliente y tiende a desacoplar.</p>
+        </blockquote>
+        <blockquote data-lang="en">
+          <p>In the science of viability, falsehood has only one adjacent state: reentry.</p>
+          <p>Negentropic economy acts as the catalyst for its absorption.</p>
+          <p>Ignition corrects. Ontesis closes.</p>
+          <p>The shared objective locks convergence toward cyan, even when the environment is hot and tends to decouple.</p>
         </blockquote>
       </section>
-      <section>
-        <h2>6. Citación y Archivo Completo / Citation &amp; Full Archive</h2>
-        <p>Archivos y metadatos disponibles en <a href="https://zenodo.org" target="_blank">Zenodo</a> y <a href="https://philarchive.org" target="_blank">PhilArchive</a>.</p>
+
+      <section id="citacion">
+        <h2 data-lang="es">6. Citación y Archivo Completo</h2>
+        <h2 data-lang="en">6. Citation &amp; Full Archive</h2>
+        <p data-lang="es">
+          Archivo histórico completo:
+          <a href="https://zenodo.org" target="_blank">Zenodo (General)</a> ·
+          <a href="https://zenodo.org" target="_blank">Zenodo (Sistema Cian)</a> ·
+          <a href="https://philarchive.org" target="_blank">PhilArchive</a>
+        </p>
+        <p data-lang="en">
+          Full historical archive:
+          <a href="https://zenodo.org" target="_blank">Zenodo (General)</a> ·
+          <a href="https://zenodo.org" target="_blank">Zenodo (Cyan System)</a> ·
+          <a href="https://philarchive.org" target="_blank">PhilArchive</a>
+        </p>
         <pre>@misc{IGLV2026,
   author = {Ignacio López Villanueva},
   title = {Corpus IGLV — Arquitectura Formal de Viabilidad y Coherencia Estructural},
   year = {2026},
-  url = {https://github.io}
+  url = {https://github.io},
+  note = {Edición canónica bilingüe: Persistencia, Cyber-synekia, Ontesis G, Ignición (3 estratos) y Sistema Cian}
 }</pre>
       </section>
-    </div>
+    </main>
+
+    <footer>
+      <p><strong>Ignacio López Villanueva</strong> · ORCID: <a href="https://orcid.org" target="_blank">0009-0008-4817-5228</a> · A Coruña, España.</p>
+    </footer>
   </div>
+
   <script>
-    function copyCode() {
-      const content = document.getElementById('content-to-copy').innerHTML;
-      navigator.clipboard.writeText(content).then(() => {
-        alert('¡Código copiado al portapapeles!');
-      });
+    function setLang(lang) {
+      document.body.classList.toggle('en', lang === 'en');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-es').classList.toggle('active', lang === 'es');
     }
   </script>
 </body>
