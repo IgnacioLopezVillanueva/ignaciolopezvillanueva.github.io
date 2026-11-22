@@ -2,296 +2,140 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Corpus IGLV — Filosofía y Ciencia de la Viabilidad</title>
+  <title>Corpus IGLV — Arquitectura Formal de Viabilidad y Coherencia Estructural</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <style>
     :root {
-      --bg: #f5f7fa;
-      --bg-panel: #ffffff;
-      --border: #d0d4dd;
-      --text: #1f2430;
-      --text-soft: #4b5263;
-      --accent: #1f7ae0;
-      --accent-soft: #e3f0ff;
+      --bg: #f5f7fa; --bg-panel: #ffffff; --border: #d0d4dd; --text: #1f2430;
+      --text-soft: #4b5263; --accent: #1f7ae0; --accent-soft: #e3f0ff;
+      --cyan: #007a7a; --cyan-soft: #e0f5f5;
     }
-
     * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    .page {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 24px 16px 40px;
-    }
-
-    header {
-      margin-bottom: 24px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    header h1 {
-      margin: 0 0 8px;
-      font-size: 1.9rem;
-    }
-
-    header p {
-      margin: 0;
-      color: var(--text-soft);
-      max-width: 720px;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 16px 0 0;
-    }
-
-    nav a {
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      text-decoration: none;
-      font-size: 0.9rem;
-      color: var(--text-soft);
-      background: var(--bg-panel);
-      transition: 0.15s ease;
-    }
-
-    nav a:hover {
-      border-color: var(--accent);
-      background: var(--accent-soft);
-      color: var(--accent);
-    }
-
-    main section {
-      margin-bottom: 24px;
-      padding: 16px 16px 18px;
-      background: var(--bg-panel);
-      border-radius: 10px;
-      border: 1px solid var(--border);
-    }
-
-    main section h2 {
-      margin: 0 0 10px;
-      font-size: 1.2rem;
-    }
-
-    details {
-      margin-top: 8px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: #fbfcff;
-      padding: 8px 10px 10px;
-    }
-
-    summary {
-      cursor: pointer;
-      font-weight: 600;
-      color: var(--text);
-      list-style: none;
-    }
-
-    summary::before {
-      content: "▸";
-      margin-right: 6px;
-      font-size: 0.8rem;
-      color: var(--accent);
-      transition: transform 0.15s ease;
-    }
-
-    details[open] summary::before {
-      transform: rotate(90deg);
-    }
-
-    ul {
-      margin: 8px 0 0;
-      padding-left: 18px;
-    }
-
-    li {
-      margin: 4px 0;
-      color: var(--text-soft);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    blockquote {
-      margin: 8px 0 0;
-      padding: 8px 10px;
-      border-left: 3px solid var(--accent);
-      background: var(--accent-soft);
-      color: var(--text);
-    }
-
-    footer {
-      margin-top: 24px;
-      padding-top: 12px;
-      border-top: 1px solid var(--border);
-      font-size: 0.9rem;
-      color: var(--text-soft);
-    }
-
-    pre {
-      background: #f0f3f8;
-      padding: 10px;
-      border-radius: 6px;
-      overflow-x: auto;
-      font-size: 0.85rem;
-      border: 1px solid var(--border);
-    }
+    body { margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .page { max-width: 960px; margin: 0 auto; padding: 24px 16px 48px; }
+    header { margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid var(--border); }
+    .top-bar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 6px; font-size: 0.8rem; }
+    .badge { padding: 3px 9px; border-radius: 999px; background: var(--cyan-soft); color: var(--cyan); border: 1px solid #b2e0e0; font-weight: 600; }
+    .lang-switch { display: flex; gap: 6px; }
+    .lang-btn { padding: 5px 12px; border-radius: 999px; border: 1px solid var(--border); background: var(--bg-panel); color: var(--text); font-weight: 600; font-size: 0.85rem; cursor: pointer; }
+    .lang-btn.active { background: var(--accent); color: #ffffff; border-color: var(--accent); }
+    header h1 { margin: 0 0 8px; font-size: 1.85rem; }
+    header p { margin: 0; color: var(--text-soft); max-width: 780px; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; }
+    nav a { padding: 6px 11px; border-radius: 999px; border: 1px solid var(--border); text-decoration: none; font-size: 0.88rem; color: var(--text-soft); background: var(--bg-panel); transition: 0.15s ease; }
+    nav a:hover { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+    main section { margin-bottom: 22px; padding: 18px; background: var(--bg-panel); border-radius: 10px; border: 1px solid var(--border); }
+    main section h2 { margin: 0 0 12px; font-size: 1.2rem; }
+    ul { margin: 8px 0 0; padding-left: 18px; }
+    li { margin: 8px 0; color: var(--text-soft); }
+    .doi-tag { font-family: ui-monospace, Menlo, monospace; font-size: 0.8rem; background: #eef2f7; padding: 2px 6px; border-radius: 4px; color: #2c3545; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    [data-lang="en"] { display: none; }
+    body.en [data-lang="es"] { display: none; }
+    body.en [data-lang="en"] { display: block; }
+    body.en span[data-lang="en"], body.en a[data-lang="en"] { display: inline; }
   </style>
 </head>
-
 <body>
-
+  <div class="page">
     <header>
-      <h1>Corpus IGLV — Filosofía y Ciencia de la Viabilidad</h1>
-      <p>
-        El Corpus IGLV es un conjunto estructurado de documentos conceptuales, operativos y formales
-        orientados a la viabilidad, estabilidad y capacidad de sistemas abiertos. Su núcleo es
-        <strong>Ignición</strong>, la arquitectura mínima que inicia la fuerza negentrópica del sistema.
-      </p>
-
+      <div class="top-bar">
+        <div class="badges">
+          <span class="badge">Edición Canónica 2026</span>
+          <span class="badge">ORCID: 0009-0008-4817-5228</span>
+        </div>
+        <div class="lang-switch">
+          <button id="btn-es" class="lang-btn active" onclick="setLang('es')">ES</button>
+          <button id="btn-en" class="lang-btn" onclick="setLang('en')">EN</button>
+        </div>
+      </div>
+      <h1 data-lang="es">Corpus IGLV — Arquitectura Formal de Viabilidad y Coherencia Estructural</h1>
+      <h1 data-lang="en">IGLV Corpus — Formal Architecture for Viability &amp; Structural Coherence</h1>
+      <p data-lang="es">Edición bilingüe de la obra de <strong>Ignacio López Villanueva</strong> sobre ingeniería ontológica, persistencia e ignición.</p>
+      <p data-lang="en">Bilingual edition of the work of <strong>Ignacio López Villanueva</strong> on ontological engineering, persistence, and ignition.</p>
       <nav>
-        <a href="#destacados">Docs destacados</a>
-        <a href="#nucleo">Núcleo conceptual</a>
-        <a href="#principio">Principio operativo</a>
-        <a href="#completa">Documentación completa</a>
-        <a href="#auditoria">Auditoría</a>
-        <a href="#citacion">Citación</a>
+        <a href="#lectura" data-lang="es">Guía de Lectura</a><a href="#lectura" data-lang="en">Reading Guide</a>
+        <a href="#cimientos" data-lang="es">Cimientos</a><a href="#cimientos" data-lang="en">Foundations</a>
+        <a href="#ontesia" data-lang="es">Núcleo Ontésico</a><a href="#ontesia" data-lang="en">Ontesic Core</a>
       </nav>
     </header>
-
     <main>
-      <section id="destacados">
-        <h2>Documentos destacados</h2>
-
-        <details open>
-          <summary><strong>Ver documentos destacados</strong></summary>
-          <ul>
-            <li><a href="docs/Ignicion_revisada%20(1).pdf">Ignición (revisada)</a></li>
-            <li><a href="docs/ONTESI%20(2).pdf">Ontesis</a></li>
-            <li><a href="docs/ontesia%202.pdf">Ontesia</a></li>
-            <li><a href="docs/ontesia–ontesis.pdf">Ontesia–Ontesis</a></li>
-            <li><a href="docs/IGNATIUM_LEX_EXISTENTIAE-1%20(2).pdf">Ignatium Lex Existentiale</a></li>
-            <li><a href="docs/RompeRalf.pdf">Invariancia Estructural y Álgebra Ontésica</a></li>
-            <li><a href="docs/GERMEN.pdf">GERMEN — Especificación de seguridad estructural</a></li>
-          </ul>
-        </details>
+      <section id="lectura">
+        <h2 data-lang="es">0. Puente Conceptual y Guía de Lectura</h2>
+        <h2 data-lang="en">0. Conceptual Bridge &amp; Reading Guide</h2>
+        <p data-lang="es">Consulte la <a href="https://github.com" target="_blank"><strong>Nota Aclaratoria</strong></a> y el <a href="https://github.com" target="_blank"><strong>Glosario Canónico</strong></a>.</p>
+        <p data-lang="en">Consult the <a href="https://github.com" target="_blank"><strong>Methodological Note</strong></a> and <a href="https://github.com" target="_blank"><strong>Canonical Glossary</strong></a>.</p>
+      </section>
+      <section id="cimientos">
+        <h2 data-lang="es">1. Cimientos Formales y Persistencia</h2>
+        <h2 data-lang="en">1. Formal Foundations &amp; Persistence</h2>
+        <ul>
+          <li><a href="https://doi.org" target="_blank"><strong>Persistencia</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.23458503</span></li>
+          <li><a href="https://doi.org" target="_blank"><strong>Cyber-synekia</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.23853133</span></li>
+          <li><a href="https://doi.org" target="_blank"><strong>Separabilidad aditiva</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.23852995</span></li>
+        </ul>
+      </section>
+      <section id="ontesia">
+        <h2 data-lang="es">2. Núcleo Ontésico y Clausura Ético-Geométrica</h2>
+        <h2 data-lang="en">2. Ontesic Core &amp; Ethical-Geometric Closure</h2>
+        <ul>
+          <li><a href="https://doi.org" target="_blank"><strong>IGNATIUM LEX EXISTENTIAE</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.20527435</span></li>
+          <li><a href="https://doi.org" target="_blank"><strong>ONTESIA</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.20670809</span></li>
+          <li><a href="https://doi.org" target="_blank"><strong>Invariancia Estructural</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.20916867</span></li>
+          <li><a href="https://doi.org" target="_blank"><strong>Ontesis g</strong></a> <span class="doi-tag">DOI: 10.5281/zenodo.21001680</span></li>
+        </ul>
       </section>
 
-      <section id="nucleo">
-        <h2>Núcleo conceptual</h2>
-
-        <details open>
-          <summary><strong>Ignición</strong></summary>
-          <p>Ignición es la arquitectura mínima que garantiza viabilidad, estabilidad dinámica y coherencia estructural.</p>
-        </details>
-
-        <details>
-          <summary><strong>Ontesis</strong></summary>
-          <p>Ontesis define los estados de estabilidad, su mantenimiento, degradación y recuperación.</p>
-        </details>
-
-        <details>
-          <summary><strong>Ontesis G</strong></summary>
-          <p><em>Pendiente de subida.</em></p>
-        </details>
-
-        <details>
-          <summary><strong>Ontesia</strong></summary>
-          <p>Ontesia despliega la arquitectura completa de sistemas capaces.</p>
-        </details>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bloque 2 - Corpus IGLV</title>
+  <style>
+    .copy-container { position: relative; margin: 20px 0; }
+    .copy-btn { position: absolute; top: 10px; right: 10px; padding: 8px 12px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    .copy-btn:hover { background-color: #0056b3; }
+    pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <div class="copy-container">
+    <button class="copy-btn" onclick="copyCode()">Copiar código</button>
+    <div id="content-to-copy">
+      <section>
+        <h2>3. Arquitectura Ignición (Tres Estratos) y Operium / Ignition Architecture</h2>
+        <p>Estructura modular bilingüe del corpus disponible en Zenodo (DOI asociados a teoría y simulaciones).</p>
       </section>
-
-      <section id="principio">
-        <h2>Principio operativo</h2>
+      <section>
+        <h2>4. Sistema Cian, Lógica LPAC y Complejidad (MI*) / Cyan System &amp; LPAC Logic</h2>
+        <p>Documentación técnica sobre coherencia estructural, paraconsistencia y solucionador SAT educativo.</p>
+      </section>
+      <section>
+        <h2>5. Principio Operativo / Operational Principle</h2>
         <blockquote>
-          <p>En la ciencia de la viabilidad, la mentira solo tiene un adyacente: la reentrada.</p>
-          <p>La economía negentrópica es catalizador de su absorción.</p>
-          <p>Ignición corrige. Ontesis clausura.</p>
-          <p>El objetivo común fija la convergencia hacia el cian, incluso cuando el entorno está caliente y tiende a desacoplar.</p>
+          <p>En la ciencia de la viabilidad, la mentira solo tiene un adyacente: la reentrada. / In the science of viability, falsehood has only one adjacent state: reentry.</p>
         </blockquote>
       </section>
-
-      <section id="completa">
-        <h2>Documentación completa</h2>
-
-        <details>
-          <summary><strong>Ver documentación completa</strong></summary>
-          <ul>
-            <li><a href="docs/Minisat.pdf">MI* — Módulo de Inestabilidad Estructural</a></li>
-            <li><a href="docs/La%20Mina%20de%20los%20Numeros%20Preciosos-1.pdf">La Mina de los Números Preciosos</a></li>
-            <li><a href="docs/Validacion.pdf">Validación del Corpus IGLV — Fases 1–3</a></li>
-            <li><a href="docs/Validación_fase_2_y_fase_3.pdf">Validación — Fase 2 y Fase 3</a></li>
-            <li><a href="docs/matematica-bola-de-nieve.html">Porqué la matemática se convirtió en una bola de nieve</a></li>
-            <li><a href="docs/Génesis_matematica.pdf">Génesis Matemática</a></li>
-            <li><a href="docs/INDEX_DOCS.md?plain=1">Índice de Documentación (Detallado)</a></li>
-            <li><a href="https://scholar.google.com" target="_blank">Google Scholar — Búsqueda académica</a></li>
-          </ul>
-        </details>
-      </section>
-
-      <section id="auditoria">
-        <h2>Auditoría y aclaratoria</h2>
-        <p>El repositorio incluye una nota de auditoría y aclaratoria que delimita el alcance del corpus.</p>
-      </section>
-
-      <section id="citacion">
-        <h2>Citación</h2>
-        <p>Para citar este corpus, consulte el archivo <strong>CITATION.cff</strong>.</p>
-
-        <p>Citación recomendada (BibTeX):</p>
-        <pre>
-@misc{IGLV2026,
+      <section>
+        <h2>6. Citación y Archivo Completo / Citation &amp; Full Archive</h2>
+        <p>Archivos y metadatos disponibles en <a href="https://zenodo.org" target="_blank">Zenodo</a> y <a href="https://philarchive.org" target="_blank">PhilArchive</a>.</p>
+        <pre>@misc{IGLV2026,
   author = {Ignacio López Villanueva},
-  title = {Corpus IGLV — Ciencia de la Viabilidad},
+  title = {Corpus IGLV — Arquitectura Formal de Viabilidad y Coherencia Estructural},
   year = {2026},
-  url = {https://github.com/IgnacioLV/Corpus-IGLV},
-  note = {Versión estable del corpus conceptual Ignición–Ontesis–Ontesia}
-}
-        </pre>
-
-        <p>Referencia externa: 
-          <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-        </p>
+  url = {https://github.io}
+}</pre>
       </section>
-    </main>
-
-    <footer>
-      <p><strong>Publicado por Ignacio López Villanueva</strong> (ORCID: 0009-0008-4817-5228).</p>
-    </footer>
+    </div>
   </div>
-  <hr>
-<div style="background-color: #f4f6f9; border-left: 5px solid #5865F2; padding: 15px; margin-top: 20px; border-radius: 4px;">
-    <h3 style="color: #2c3e50; margin-top: 0;">📢 ¡Únete a nuestra Comunidad Oficial!</h3>
-    <p>Si sigues de cerca el desarrollo del <strong>Corpus IGLV</strong> y la <strong>Economía Negentrópica</strong>, hemos abierto un espacio de debate, código y cooperación en directo. Rompamos la opacidad de los PDFs y coordinemos el retículo con buen rollo.</p>
-    <p><a href="https://discord.gg" target="_blank" style="display: inline-block; background-color: #5865F2; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">👉 Entrar al Servidor Oficial de Discord</a></p>
-</div>
-  
-   ### 📢 ¡Únete a nuestra Comunidad Oficial!
-Si sigues de cerca el desarrollo del **Corpus IGLV** y la **Economía Negentrópica**, hemos abierto un espacio de debate, código y cooperación en directo. Rompamos la opacidad de los PDFs y coordinemos el retículo con buen rollo.
-
-👉 [**Entrar al Servidor Oficial de Discord**](https://discord.gg)
-  
+  <script>
+    function copyCode() {
+      const content = document.getElementById('content-to-copy').innerHTML;
+      navigator.clipboard.writeText(content).then(() => {
+        alert('¡Código copiado al portapapeles!');
+      });
+    }
+  </script>
 </body>
- 
 </html>
